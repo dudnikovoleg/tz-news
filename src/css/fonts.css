@@ -1,0 +1,32 @@
+/*OpenSansRegular*/
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+    src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*OpenSansBold*/
+@font-face {
+    font-family: "OpenSansBold";
+    src: url("../fonts/OpenSansBold/OpenSansBold.eot");
+    src: url("../fonts/OpenSansBold/OpenSansBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff"),
+    url("../fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*AvenirNextW1G-Light*/
+@font-face {
+    font-family: "AvenirNextW1G-Light";
+    src: url("../fonts/Avenir/AvenirNextW1G-Light.eot");
+    src: url("../fonts/Avenir/AvenirNextW1G-Light.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Avenir/AvenirNextW1G-Light.woff") format("woff"),
+    url("../fonts/Avenir/AvenirNextW1G-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
