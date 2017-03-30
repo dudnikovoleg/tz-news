@@ -212,9 +212,17 @@
                             });
                         }
                         return elm.css({
+
+ //If use just desktop
+                            /*
                             position: "absolute",
                             bottom: padding_bottom,
                             top: "auto"
+                             */
+                            position: "fixed",
+                            bottom: "",
+                            top: offset
+
                         }).trigger("sticky_kit:bottom");
                     }
                 }

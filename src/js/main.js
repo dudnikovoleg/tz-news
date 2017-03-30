@@ -1,38 +1,54 @@
 /**
  * Created by Oleg on 28.03.2017.
  */
-
-$(document).ready(function () {
+(function($){
+    $(document).ready(function () {
 
 //sticky for left static
 
-    $("#responsive-menu").stick_in_parent();
+       $("#responsive-menu, #sidebar-mob").stick_in_parent();
 
-// Hamburger
-    var trigger = $('.hamburger'),
-        overlay = $('.overlay'),
-        isClosed = false;
 
-    trigger.click(function () {
-        hamburger_cross();
-    });
 
-    function hamburger_cross() {
-
-        if (isClosed == true) {
-            overlay.hide();
-            trigger.removeClass('is-open');
-            trigger.addClass('is-closed');
+        var menu = $('.mob-menu'),
+            search = $('.mob-search'),
+            sidebar = $('.sidebar'),
             isClosed = false;
-        } else {
-            overlay.show();
-            trigger.removeClass('is-closed');
-            trigger.addClass('is-open');
-            isClosed = true;
-        }
-    }
 
-    $(trigger).click(function () {
-        $('#responsive-menu').toggleClass('toggled');
+        menu.on('click', function () {
+            menuShow();
+        });
+        search.on('click', function () {
+            searchShow();
+        });
+
+
+
+        function menuShow() {
+
+            if (isClosed == true) {
+                $(sidebar).css("left", "-200px");
+                $(".remove-men, .glyphicon-remove").css("display", "none");
+                isClosed = false;
+            } else {
+                $(sidebar).css("left", "49px");
+                $(".remove-men").css("display", "inline-block");
+
+                isClosed = true;
+            }
+        }
+        function searchShow() {
+
+            if (isClosed == true) {
+                $(sidebar).css("left", "-200px");
+                $(".sidebar-sub-menu, .glyphicon-remove").css("display", "none");
+                isClosed = false;
+            } else {
+                $(sidebar).css("left", "49px");
+                $(".remove-search").css("display", "inline-block");
+                isClosed = true;
+            }
+        }
+
     });
-});
+})(jQuery);

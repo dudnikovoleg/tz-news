@@ -6,6 +6,11 @@ a
 		text-decoration: none
 		color: $main-col-text
 
+ul,
+ol
+	list-style: none
+	margin: 0
+	padding: 0
 h1,
 h2,
 h3,
@@ -16,8 +21,8 @@ h6
 	padding: 0
 
 body
-	font-family: 'OpenSansRegular', sans-serif
-	font-size: 17px
+	position: relative
+	font: 17px $os-regular
 	color: $main-col-text
 /*--- Header start ---*/
 
@@ -43,17 +48,17 @@ header
 		-webkit-font-smoothing: antialiased
 		color: $main-col-text
 	h1
-		font-family: 'AvenirNextW1G-Light'
+		font: 3em 'AvenirNextW1G-Light'
 		padding-bottom: 45px
-		font-size: 3em
 
 /*--- Header end ---*/
 
 /*--- Nav start ---*/
 .hamburger
 	display: none
+
 .sidebar
-	position: absolute
+	position: fixed
 	top: 0
 	width: 200px
 	min-height: 100%
@@ -63,18 +68,54 @@ header
 	img
 		max-width: 100%
 		padding: 35px
+
 	nav
 		margin: 15px 30px 0 15px
 		.sidebar-menu
-			font-family: $os-Bold
-			font-size: .7em
-			text-transform: uppercase
-			line-height: 20px
-			letter-spacing: 2px
-		a
-			color: #fff
+			li
+				font: .72em/20px $os-bold
+				text-transform: uppercase
+				letter-spacing: 2px
+			a
+				color: #fff
+		.sidebar-sub-menu
+			margin-top: 15px
+			li
+				font-size: .7em
+			a
+				color: #afafaf
+
+/*-- Sidebar-mob --*/
+
+.sidebar-mob
+	position: fixed
+	top: 9999px
+	height: 100%
+	width: 50px
+	background: #1a191a
+	z-index: 995
+	img
+		margin: 8px
+	span
+		height: 50px
+		width: 50px
+		padding: 12px
+		font-size: 24px
+		color: #ffffff
+	.glyphicon-remove
+		position: absolute
+		background: #010101
+	.remove-men
+		top: 50px
+		display: none
+	.remove-search
+		top: 100px
+		display: none
 
 /*--- Nav end ---*/
+
+
+
 
 .wrap
 	margin-left: 200px
