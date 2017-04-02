@@ -8,6 +8,7 @@ const concat 		= require('gulp-concat');
 const uglify 		= require('gulp-uglifyjs');
 const sourcemaps 	= require('gulp-sourcemaps');
 const cssmin 		= require('gulp-cssmin');
+const jsmin 		= require('gulp-jsmin');
 const rename 		= require('gulp-rename');
 const del 			= require('del');
 const browserSync 	= require('browser-sync').create();
@@ -30,11 +31,11 @@ gulp.task('sass', function () {
 
 });
 
-gulp.task('scripts', function (){
-	return gulp.src('src/libs/*.js')
-	.pipe(concat('libs.min.js'))
-	.pipe(uglify())
-	.pipe(gulp.dest('assets/js'))
+gulp.task('scripts', function () {
+    gulp.src('src/**/*.js')
+        .pipe(jsmin())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('assets'));
 });
 
 gulp.task('css', function () {
@@ -73,12 +74,13 @@ gulp.task('watch',['browser-sync', 'sass'],function(){
 });
 
 gulp.task('build',['clean','imgmin','css','scripts'], function(){
-	var buildJs = gulp.src('src/js/*.js')
-		.pipe(gulp.dest('assets/js'));
 	var buildHtml = gulp.src('src/index.html')
 		.pipe(gulp.dest('assets'));
 	var builFonts = gulp.src('src/fonts/**/*.*')
-		.pipe(gulp.dest('assets/fonts'))
+		.pipe(gulp.dest('assets/fonts'));
+	var builFonts = gulp.src('src/templates/**/*.*')
+		.pipe(gulp.dest('assets/templates'))
+
 
 });
 

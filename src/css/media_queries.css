@@ -1,15 +1,113 @@
-
-/*-------------------------------*/
-/*       Hamburger-Cross         */
-/*-------------------------------*/
+/***** Width 768px *****/
 @media all and (max-width: 768px) {
 
-.sidebar{
-    background: #010101;
-    left: -200px;
-    z-index: 996;
+    /******* Sidebar *******/
+    .sidebar-main,
+    .sidebar-sub,
+    .sidebar-address,
+    .download-price,
+    .form-search,
+    .logo{
+        display: none;
+    }
+    .sidebar, .bg-sidebar {
+        left: -200px;
+        background: #000000;
+    }
+    .sidebar .min-logo_name {
+        display: block;
+    }
+    .mobile-sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 50px;
+        background: #1a191a;
+        z-index: 97;
+    }
+    .mobile-sidebar li {
+        display: block;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        background: url("../img/all_icons.png") no-repeat;
+    }
+    .mobile-sidebar .menu-btn {
+        background-position: -1px -71px;
+    }
+    .mobile-sidebar .phone-btn {
+        background-position: -1px -135px;
+    }
+    .mobile-sidebar .search-btn {
+        background-position: -1px -199px;
+    }
+
+/*** Mobile class for script ***/
+    .open {
+        display: block;
+    }
+    .open-sidebar {
+        left: 50px;
+    }
+    .mobile-sidebar .active {
+        background: #000000 url("../img/all_icons.png") no-repeat 0 -253px;
+    }
+
+/***** Container *****/
+    .container{
+        padding-left: 50px;
+    }
+
+    header,
+    .navbar,
+    .news,
+    .callback-box{
+        padding: 0 4%;
+    }
+
+   .navbar .navbar-list{
+        padding-right: 20px;
+    }
+   .navbar .navbar-list:last-child{
+        padding-right: 0;
+    }
+
 }
-.sidebar-mob{
-    top: 0
+
+/***** Width 720px *****/
+
+@media all and (max-width: 720px){
+    .navbar .navbar-list{
+        display: block;
+    }
 }
+
+/***** Width 480px *****/
+
+@media all and (max-width: 480px){
+    footer{
+        height: 100%;
+    }
+     .footer-box{
+        display: block;
+         width: 100%;
+    }
+    .footer-fresh{
+        padding-bottom: 20px;
+    }
+
+    .modal-box 	.modal-content{
+        height: 100%;
+        margin: 0 auto;
+    }
+    .modal-box .modal-box-inp{
+        display: block;
+        width: 100%;
+        margin: 20px 0 ;
+    }
+    .social{
+        margin-top: 20px ;
+    }
+
 }
+
