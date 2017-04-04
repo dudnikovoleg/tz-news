@@ -10,6 +10,8 @@
 
         var iconClose       = false, //nid for changed icons menu on close icon
             allMenuBlock    = $('.sidebar-main, .sidebar-sub, .sidebar-address, .download-price, .form-search'),
+            maxWith         = 1600,
+            Indentation     = 36,
             modal           = $('.modal-box'),
             opnBtn          = $('.callback-btn'),
             closeBtn        = $('.modal-close'),
@@ -30,6 +32,21 @@
             $('html, body').stop().animate({scrollTop : 0}, 300);
         });
 
+// Changes the indentation for a width greater than 1600
+        function windowSize(){
+
+            if ($(window).width() >= '1600'){
+                var  dd  = $(window).width() - maxWith + Indentation;
+
+                $('.up-btn').css({right : dd + 'px'});
+                console.log()
+            } else {
+                $('.up-btn').css({right : '36px'});
+            }
+        }
+
+        $(window).ready(windowSize);
+        $(window).resize(windowSize);
 /* ---------------------------------------------- /*
  * menu show
 /* ---------------------------------------------- */
@@ -113,10 +130,6 @@
     $('.to_fool-3').on('click', function () {
         $('#reload-content').load('../templates/news_1.html')
     });
-
-
-
-   /* $('.v-link, .f-link, .g-link ').html(VK.Share.button(false, {type: 'custom', text: '<img src="../img/social_link-v.png" />'}));*/
 
     });
 })(jQuery);

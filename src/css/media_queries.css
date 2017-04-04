@@ -1,6 +1,8 @@
 /***** Width 768px *****/
 @media all and (max-width: 768px) {
-
+    body{
+        font-size: 16px;
+    }
     /******* Sidebar *******/
     .sidebar-main,
     .sidebar-sub,
@@ -41,7 +43,6 @@
     .mobile-sidebar .search-btn {
         background-position: -1px -199px;
     }
-
 /*** Mobile class for script ***/
     .open {
         display: block;
@@ -52,28 +53,32 @@
     .mobile-sidebar .active {
         background: #000000 url("../img/all_icons.png") no-repeat 0 -253px;
     }
-
 /***** Container *****/
     .container{
         padding-left: 50px;
     }
-
-    header,
     .navbar,
-    .news,
-    .callback-box{
-        padding: 0 4%;
+    .callback-box,
+    .bottom-news
+    {
+        padding: 0 6%;
     }
-
-   .navbar .navbar-list{
+    header{
+        padding: 15px 6%;
+    }
+    .news{
+        padding: 25px 6%;
+    }
+    .navbar .navbar-list{
         padding-right: 20px;
     }
-   .navbar .navbar-list:last-child{
+    .navbar .navbar-list a:hover{
+        color: #2e2e2e ;
+    }
+    .navbar .navbar-list:last-child{
         padding-right: 0;
     }
-
 }
-
 /***** Width 720px *****/
 
 @media all and (max-width: 720px){
@@ -82,20 +87,73 @@
     }
 }
 
+/***** Width 524px *****/
+
+@media all and (max-width: 524px){
+
+    /* Footer */
+    footer{
+        height: 100%;
+        padding: 20px 6% 30px 6%
+    }
+    .footer-box{
+        display: block;
+        width: 238px;
+        margin: 0 auto;
+    }
+    .footer-fresh{
+        margin-top: 20px;
+    }
+    .footer-fresh .logo-fresh{
+        margin-left: 0;
+    }
+}
+
 /***** Width 480px *****/
 
 @media all and (max-width: 480px){
-    footer{
-        height: 100%;
-    }
-     .footer-box{
-        display: block;
-         width: 100%;
-    }
-    .footer-fresh{
-        padding-bottom: 20px;
-    }
 
+/* Header */
+
+    header .title{
+        padding: 15px 0 10px 0;
+        font-size: 1.8em;
+    }
+    .navbar .navbar-list a {
+        padding: 12px 0;
+        font-size: .735em;
+    }
+/* News */
+    .news .news-title {
+        margin-bottom: 10px;
+        font-size: 1.26em;
+        line-height: 25px;
+    }
+    .news .news-content {
+        margin: 10px 0;
+    }
+    .news .news-content .news-text {
+        margin-top: 15px;
+        font-size: .9em;
+        line-height: 22px;
+    }
+    .news .read-more {
+        font-size: .8em;
+    }
+    .social{
+        margin-top: 15px ;
+    }
+/* Pop up*/
+    .callback-box {
+        margin-top: 25px;
+    }
+    .callback-box h3{
+        margin-right: 0;
+        font-size: 1em;
+    }
+    .callback-box .callback-btn{
+        margin: 20px 0 ;
+    }
     .modal-box 	.modal-content{
         height: 100%;
         margin: 0 auto;
@@ -104,9 +162,6 @@
         display: block;
         width: 100%;
         margin: 20px 0 ;
-    }
-    .social{
-        margin-top: 20px ;
     }
 
 }
