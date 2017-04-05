@@ -1,14 +1,33 @@
+
+/***** Width 1600 *****/
+
+@media all and (min-width: 1600px) {
+
+}
+
+/***** Width 1280 *****/
+
+@media all and (min-width: 1280px) {
+}
+
+/***** Width 1024 *****/
+
+@media all and (min-width: 1024px) {
+
+}
+
 /***** Width 768px *****/
 @media all and (max-width: 768px) {
     body{
         font-size: 16px;
     }
-    /******* Sidebar *******/
+
+/******* Sidebar *******/
+
     .sidebar-main,
     .sidebar-sub,
     .sidebar-address,
     .download-price,
-    .form-search,
     .logo{
         display: none;
     }
@@ -40,10 +59,10 @@
     .mobile-sidebar .phone-btn {
         background-position: -1px -135px;
     }
-    .mobile-sidebar .search-btn {
-        background-position: -1px -199px;
-    }
+
+
 /*** Mobile class for script ***/
+
     .open {
         display: block;
     }
@@ -53,7 +72,9 @@
     .mobile-sidebar .active {
         background: #000000 url("../img/all_icons.png") no-repeat 0 -253px;
     }
+
 /***** Container *****/
+
     .container{
         padding-left: 50px;
     }
@@ -63,7 +84,66 @@
     {
         padding: 0 6%;
     }
-    header{
+
+/**** Main ****/
+
+    .header-main .header-main-cont{
+        padding-bottom: 35px;
+    }
+    .header-main{
+        padding: 0 3%;
+    }
+
+    .header-main .header-main-cont h2 {
+        margin-top: 40px;
+        padding: 0;
+        font-size: 1.24em;
+    }
+    .header-main .header-main-nav li{
+        width: 54px;
+        margin: 0;
+    }
+    .header-main .header-main-nav {
+          margin-top: 15px;
+    }
+    .header-main .header-main-nav a{
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+        background-size: 40px;
+    }
+    .header-main .header-main-nav a:hover {
+        background-color: transparent;
+    }
+    .header-main .header-main-nav .baner{
+            background-position: 5px -13px;
+        }
+    .header-main .header-main-nav  .on-tr{
+            background-position: 3px -72px;
+        }
+    .header-main .header-main-nav  .at-tr{
+            background-position: 5px -135px;
+        }
+    .header-main .header-main-nav  .print{
+            background-position: 0 -202px;
+        }
+    .header-main .header-main-nav  .s-wind{
+            background-position: 2px -266px;
+        }
+    .header-main .header-main-nav .tr{
+            background-position: -3px -316px;
+        }
+
+    .header-main .header-main-nav span{
+        display: none;
+    }
+
+    .header-main .header-calc h3 {
+        margin-top: 10px;
+    }
+/**** News ****/
+
+    .header-news{
         padding: 15px 6%;
     }
     .news{
@@ -123,6 +203,14 @@
         padding: 12px 0;
         font-size: .735em;
     }
+
+
+ /*** Main Header ***/
+
+    .header-main .header-main-nav li{
+        width: 38px;
+    }
+
 /* News */
     .news .news-title {
         margin-bottom: 10px;

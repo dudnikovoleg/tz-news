@@ -9,7 +9,7 @@
 
 
         var iconClose       = false, //nid for changed icons menu on close icon
-            allMenuBlock    = $('.sidebar-main, .sidebar-sub, .sidebar-address, .download-price, .form-search'),
+            allMenuBlock    = $('.sidebar-main, .sidebar-sub, .sidebar-address, .download-price'),
             maxWith         = 1600,
             Indentation     = 36,
             modal           = $('.modal-box'),
@@ -63,25 +63,20 @@
             $('address ').addClass('open');  //shows the desired menu item
         });
 
-        $('.search-btn').on('click', function () {
-            allMenuBlock.removeClass('open');//remove added classes
-            $('.sidebar, .bg-sidebar').toggleClass('open-sidebar');  //open sidebar
-            $('.form-search ').addClass('open');     //shows the desired menu item
 
-        });
 
 /* ---------------------------------------------- /*
  * button menu Changed on close
  /* ---------------------------------------------- */
 
-        $(".menu-btn, .phone-btn, .search-btn").on('click', function(e) {
+        $(".menu-btn, .phone-btn").on('click', function(e) {
             e.preventDefault();
             if (iconClose == false){
                 $(this).addClass('active');
                 iconClose = true
             }
             else {
-                $('.menu-btn, .phone-btn, .search-btn').removeClass('active');
+                $('.menu-btn, .phone-btn').removeClass('active');
                 iconClose = false
             }
         });
