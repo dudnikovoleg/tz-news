@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!-- First 3 tegs -->
+<!-- First 3 tags -->
     <title>Revolt</title>
 
 <!-- Style -->
 
     <link href="css/fonts.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <link href="css/media_queries.css" rel="stylesheet">
 
 <!-- Fonts -->
@@ -108,8 +108,7 @@
     <div class="container" id="article">
 
 <!-- Header start -->
-        <div >
-            <header id="home">
+            <header id="home" class="header-news">
                 <ol class="breadcrumb breadcrumb-custom ">
                     <li><a href="#">Главная</a></li>
                     <li class="active">Новости</li>
@@ -143,11 +142,15 @@
 <!-- News 1 -->
 
             <article class="news clearfix">
-                <h3 class=" news-title to_fool-1">Основные преимуществ наружной рекламы</h3>
+                <a href="" class="to_fool">
+                    <h3 class=" news-title">Основные преимуществ наружной рекламы</h3>
+                </a>
                 <time class="news-time" datetime="2017-04-09">9 марта 2017</time>
 
                 <figure class="news-content">
-                    <img class="to_fool-1" src="img/photo_news1.jpg" alt="">
+                    <a href="news-opros.html" class="to_fool">
+                        <img  src="img/photo_news1.jpg" alt="photo">
+                    </a>
                     <figcaption class="news-text">
                         Наружная реклама — это эффективный способ
                         продвижения товаров и услуг. Этот тип медиа имеет множество
@@ -155,7 +158,7 @@
                     </figcaption>
                 </figure>
 
-                <a    class="read-more to_fool-1" href="news_1.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Читать дальше</a>
+                <a class="read-more to_fool" href="news-opros.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Читать дальше</a>
                 <ul class="social">
                     <li>
                         <a class="v-link" href="" target="_blank"></a>
@@ -172,12 +175,15 @@
 <!-- News 2 -->
 
             <article class="news clearfix">
-                <h3 class="news-title to_fool-2">Только 4% киевлян беспокоит большое количество наружной рекламы — соц. опрос</h3>
+                <a href="news-opros.html" class="to_fool">
+                    <h3 class="news-title">Только 4% киевлян беспокоит большое количество наружной рекламы — соц. опрос</h3>
+                </a>
                 <time class="news-time" datetime="2017-04-09">9 марта 2017</time>
 
                 <figure class="news-content">
-
-                    <img class="to_fool-2" src="img/photo_news2.jpg" alt="">
+                    <a href="news-opros.html" class="to_fool">
+                        <img src="img/photo_news2.jpg" alt="photo">
+                    </a>
                     <figcaption class="news-text">
                         Опрос социологической группы Рейтинг выявил,
                         что лишь 4% жителей столицы беспокоит чрезмерное количество уличной рекламы,
@@ -185,7 +191,7 @@
                     </figcaption>
                 </figure>
 
-                <a class=" read-more to_fool-2" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Читать дальше</a>
+                <a class="read-more to_fool" href="news-opros.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Читать дальше</a>
                 <ul class="social">
                     <li>
                         <a class="v-link" href="" target="_blank"></a>
@@ -202,31 +208,40 @@
 <!-- News 3 -->
 
             <article class="news clearfix" >
-                <h3 class="news-title to_fool-3">Рекламного беспорядка в столице не будет — заявил Кличко</h3>
-                <time class="news-time to_fool-3" datetime="2017-04-09">9 марта 2017</time>
+                <a href="news-opros.html" class="to_fool">
+                    <h3 class="news-title">Рекламного беспорядка в столице не будет — заявил Кличко</h3>
+                </a>
+                <time class="news-time" datetime="2017-04-09">9 марта 2017</time>
 
                 <figure class="news-content">
-                    <img class="to_fool-3" src="img/photo_news3.jpg" alt="">
+                    <a href="news-opros.html">
+                        <img src="img/photo_news3.jpg" alt="photo">
+                    </a>
                     <figcaption class="news-text">
                         Киевская власть разрабатывает новую концепцию размещения внешней рекламы,
                         заявил Киевский городской голова Виталий Кличко.
                     </figcaption>
                 </figure>
 
-                <a class=" read-more to_fool-3" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Читать дальше</a>
-                <ul class="social">
-                    <li>
-                        <a class="v-link" href="" target="_blank"></a>
-                    </li>
-                    <li>
-                        <a class="f-link" href="" target="_blank"></a>
-                    </li>
-                    <li>
-                        <a class="g-link" href="" target="_blank"></a>
-                    </li>
-                </ul>
+                <div >
+                    <ul class="social">
+                        <li>
+                            <a class="v-link" href="" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a class="f-link" href="" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a class="g-link" href="" target="_blank"></a>
+                        </li>
+                    </ul>
+
+                    <a class=" read-more to_fool" href="news-opros.html">
+                        <i class="fa fa-angle-right" aria-hidden="true">
+                        </i>Читать дальше</a>
+                </div>
             </article>
-        </div>
+
 <!-- Pop up -->
 
         <div class="callback-box">

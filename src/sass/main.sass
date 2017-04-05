@@ -1,9 +1,6 @@
 @import "variable"
 @import "reset_custom"
 
-
-
-
 /** sticky sidebar **/
 .sticky
 	position: fixed
@@ -36,6 +33,7 @@
 		color: $grey
 	i
 		font-size: 1.5em
+
 /**** Aside ****/
 
 .bg-sidebar
@@ -155,113 +153,93 @@
 			cursor: pointer
 			background: #262526 url("../img/all_icons.png") no-repeat -5px -208px
 
+/*** Header ***/
+
+.header-main
+	background: url("../img/main_logo.jpg") no-repeat center
+	width: 100%
+	height: 100%
+	background-size: cover
+	text-align: center
+	color: #ffffff
+	.header-main-cont
+		max-width: 860px
+		margin: 0 auto
+		padding: 100px 0
+		h1
+			font-family: 'AvenirNextW1G-Light', sans-serif
+			font-size: 2.77em
+		h2
+			margin-top: 55px
+			padding: 0 45px
+			font-family: $sans
+			font-size: 1.1em
+			
+	.header-main-nav
+		margin-top: 35px
+		li
+			display: inline-block
+			width: 19%
+			margin: 0 -28px
+			font-size: .7em
+		a
+			display: block
+			background:   url("../img/header_menu.png") no-repeat
+			width: 60px
+			height: 60px
+			margin: 0 auto 9px
+			border-radius: 50%
+			transition: background .3s
+			&:hover
+				background-color: #df1b3f
+			&:hover + span
+				opacity: 1
+		.baner
+			background-position: 11px -11px
+		.on-tr
+			background-position: 9px -86px
+		.at-tr
+			background-position: 11px -164px
+		.print
+			background-position: 6px -250px
+		.s-wind
+			background-position: 7px -332px
+		.tr
+			background-position: 3px -398px
+		span
+			opacity: 0
+			white-space: nowrap
+			font-size: .966em
+			transition: opacity .3s
+
+	.header-calc
+		margin-top: 30px
+	.calc-btn
+		display: inline-block
+		padding: 17px 35px
+
+		font-size: .8em
+		font-weight: 700
+		text-transform: uppercase
+		letter-spacing: 3px
+
+		background: #df1b3f
+		border-radius: 25px
+		&:hover
+			cursor: pointer
+	.header-calc
+		h3
+			margin-top: 10px
+			font-size: .68em
+
 /**** Main ****/
 
 .container
 	padding-left: 200px
 	background: #ffffff
 
-/*** Header ***/
-
-header
-	padding: 30px 8%
-	background: #f7f8f9
-	li
-		display: inline-block
-		font-size: .74em
-		&.active
-			color: $grey
-			&::before
-				content: "\f105"
-				display: inline-block
-				font-family: $awesome
-				color: black
-				padding: 0 12px
-				font-weight: 900
-	.title
-		padding: 35px 0 10px 0
-		font: 3em "AvenirNextW1G-Light"
-
-/*** Header nav ***/
-
-.navbar
-	padding: 0 8%
-	margin-top: -3px
-
-	.navbar-list
-		display: inline-block
-		padding-right: 45px
-		&:last-child
-			padding-right: 0
-		a
-			display: inline-block
-			padding: 20px  0
-			border-top: solid 4px transparent
-			font-size: .7em
-			font-weight: 700
-			letter-spacing: 2px
-			text-transform: uppercase
-			transition: border .3s, color .3s
-			&:hover
-				color: #df1b3f
-		.active
-			border-top: solid 4px #2e2e2e
-
-/*** News - main content ***/
-
-.news:last-of-type
-	border-bottom: none
-.news
-	padding: 20px 8%
-	border-bottom: solid 1px #e9ecee
-	.news-title
-		font-size: 1.66em
-		font-weight: 700
-.news-time
-	font-size: .7em
-	color: $grey
-.news
-	.news-content
-		margin: 25px 0
-		img
-			display: block
-			max-width: 100%
-			margin: 0 auto
-		.news-text
-			margin-top: 40px
-			font-size: .95em
-.read-more
-	font-size: .7em
-	font-weight: 700
-	i
-		padding-right: 10px
-		font-size: 1.3em
-
-.social
-	float: right
-	li
-		display: inline-block
-	a
-		display: inline-block
-		width: 90px
-		height: 25px
-		background: url("../img/social_link.png") no-repeat
-	.f-link
-		background-position: -97px
-	.g-link
-		background-position: -193px
-
-.to_fool-1,
-.to_fool-2,
-.to_fool-3
-	transition: color .3s
-.to_fool-1:hover,
-.to_fool-2:hover,
-.to_fool-3:hover
-	cursor: pointer
-	color: #df1b3f
-
 /*** Pop up ***/
+
 /* callback-box */
 
 .callback-box
@@ -338,7 +316,6 @@ footer
 	.link-fresh:hover .fresh-red
 		opacity: .6
 
-
 /* Pop up content  */
 
 .modal-box
@@ -392,6 +369,6 @@ footer
 		background: #ffffff
 		border-radius: 25px
 
-/** Include style for templates **/
+/** Include style for News **/
 
-@import "templates"
+@import "news"

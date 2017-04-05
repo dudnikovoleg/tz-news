@@ -1,0 +1,124 @@
+
+/*** News ***/
+
+/*** Header ***/
+
+.header-news
+	padding: 30px 8%
+	background: #f7f8f9
+	li
+		display: inline-block
+		font-size: .74em
+		&.active
+			color: $grey
+			&::before
+				content: "\f105"
+				display: inline-block
+				font-family: $awesome
+				color: black
+				padding: 0 12px
+				font-weight: 900
+	.title
+		padding: 35px 0 10px 0
+		font: 3em "AvenirNextW1G-Light"
+
+/*** Header nav ***/
+
+.navbar
+	padding: 0 8%
+	margin-top: -3px
+
+	.navbar-list
+		display: inline-block
+		padding-right: 45px
+		&:last-child
+			padding-right: 0
+		a
+			display: inline-block
+			padding: 20px  0
+			border-top: solid 4px transparent
+			font-size: .7em
+			font-weight: 700
+			letter-spacing: 2px
+			text-transform: uppercase
+			transition: border .3s, color .3s
+			&:hover
+				color: #df1b3f
+		.active
+			border-top: solid 4px #2e2e2e
+
+/*** News - main content ***/
+
+.news:last-of-type
+	border-bottom: none
+.news
+	padding: 20px 8%
+	border-bottom: solid 1px #e9ecee
+	.news-title
+		font-size: 1.66em
+		font-weight: 700
+.news-time
+	font-size: .7em
+	color: $grey
+.news
+	.news-content
+		margin: 25px 0
+		img
+			display: block
+			max-width: 100%
+			margin: 0 auto
+		.news-text
+			margin-top: 40px
+			font-size: .95em
+.read-more
+	font-size: .7em
+	font-weight: 700
+	i
+		padding-right: 10px
+		font-size: 1.3em
+
+.social
+	float: right
+	li
+		display: inline-block
+	a
+		display: inline-block
+		width: 90px
+		height: 25px
+		background: url("../img/social_link.png") no-repeat
+	.f-link
+		background-position: -97px
+	.g-link
+		background-position: -193px
+
+.to_fool
+	display: block
+	transition: color .3s
+.to_fool:hover
+	cursor: pointer
+	color: #df1b3f
+
+/*** Style for templates ***/
+.fool-news
+	h3
+		font-size: 1em
+		line-height: 24px
+	p
+		font-size: .89em
+		line-height: 22px
+	.fool-time
+		text-transform: uppercase
+		letter-spacing: 2px
+	.author-ph
+		margin: 20px 0
+		font-size: .7em
+		text-align: center
+	.news-tags
+		font-size: .76em
+		font-weight: 700
+		padding-top: 15px
+		span
+			font-weight: 300
+.bottom-news
+	padding: 34px 8% 0 8%
+	border-top: solid 1px #e9ecee

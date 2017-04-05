@@ -108,29 +108,6 @@
             modal.css('display', 'none');
         });
 
-
-/* ---------------------------------------------- /*
- *  Go to pages
- /* ---------------------------------------------- */
-
-    /* page 1 */
-
-    $('.to_fool-1').on('click', function () {
-        $('#reload-content').load('../templates/news_1.html')
-    });
-
-    /* page 2 */
-
-    $('.to_fool-2').on('click', function () {
-        $('#reload-content').load('../templates/news_1.html')
-    });
-
-    /* page 3 */
-
-    $('.to_fool-3').on('click', function () {
-        $('#reload-content').load('../templates/news_1.html')
-    });
-
     });
 })(jQuery);
 

@@ -74,7 +74,7 @@ gulp.task('watch',['browser-sync', 'sass'],function(){
 });
 
 gulp.task('build',['clean','imgmin','css','scripts'], function(){
-	var buildHtml = gulp.src('src/index.html')
+	var buildHtml = gulp.src('src/**/*.html')
 		.pipe(gulp.dest('assets'));
 	var builFonts = gulp.src('src/fonts/**/*.*')
 		.pipe(gulp.dest('assets/fonts'));
