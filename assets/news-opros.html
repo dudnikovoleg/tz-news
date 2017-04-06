@@ -12,9 +12,9 @@
 
         <!-- Style -->
 
-        <link href="css/fonts.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/media_queries.css" rel="stylesheet">
+        <link href="css/fonts.min.css" rel="stylesheet">
+        <link href="css/main.min.css" rel="stylesheet">
+        <link href="css/media_queries.min.css" rel="stylesheet">
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
@@ -23,7 +23,7 @@
         <!-- Scripts -->
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/main.min.js"></script>
 
     </head>
     <body>
@@ -35,7 +35,6 @@
             <li class="min-logo"></li>
             <li class="menu-btn"></li>
             <li class="phone-btn"></li>
-            <li class="search-btn"></li>
         </ul>
     </div>
 
@@ -93,14 +92,10 @@
                 <a href="mailto:info@revolt.com.ua">info@revolt.com.ua</a>
             </div>
         </address>
-        <div class="download__search">
+        <div class="download">
             <a href="#" class="download-price">
                 <i class="fa fa-file-o" aria-hidden="true"></i>Скачать прайс
             </a>
-            <form  name="formSearch" class="form-search">
-                <input type="text"  placeholder="Поиск..." class="search">
-                <button type="submit" class="button-search"></button>
-            </form>
         </div>
     </aside>
 
@@ -108,11 +103,11 @@
 
     <!-- Main content start -->
 
-    <div class="container" id="article">
+    <div class="container fool-news" id="article">
 
             <!-- Header start -->
 
-            <header id="home">
+            <header class="header-news" id="home">
                 <ol class="breadcrumb breadcrumb-custom ">
                     <li><a href="#">Главная</a></li>
                     <li class="active">Новости</li>
@@ -130,7 +125,7 @@
 
             <!-- News 1 -->
 
-            <article class="news fool-news clearfix">
+            <article class="news  clearfix">
 
                 <h3>
                     Опрос социологической группы Рейтинг выявил,
@@ -195,15 +190,11 @@
                         <a class="g-link" href="" target="_blank"></a>
                     </li>
                 </ul>
-
-                <a id="read"   class="read-more return" href="../index.html">
+                <a id="read"   class="read-more return" href="index.html">
                     <i class="fa fa-angle-left" aria-hidden="true"></i>
                     Вернутся к списку новостей
                 </a>
-
-
             </div>
-
 
         <!-- Pop up -->
 
@@ -286,7 +277,7 @@
 
     <!-- Sticky sidebar -->
 
-    <script src="js/sidebar_scroll.js"></script>
+    <script src="js/sidebar_scroll.min.js"></script>
 
 
     </body>
