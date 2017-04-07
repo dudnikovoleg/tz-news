@@ -4,11 +4,9 @@
 /** sticky sidebar **/
 .sticky
 	position: fixed
-	z-index: 996
 
 .stop
 	position: relative
-	z-index: 996
 /** clearfix **/
 
 .clearfix:after
@@ -161,33 +159,39 @@
 		margin-top: 35px
 		li
 			display: inline-block
-			width: 19%
-			margin: 0 -28px
+			width: 21%
+			margin: 0 -31px
 			font-size: .7em
-		a
-			display: block
-			background: url("../img/header_menu.png") no-repeat
-			width: 60px
-			height: 60px
-			margin: 0 auto 9px
-			border-radius: 50%
-			transition: background .3s
-			&:hover
-				background-color: #df1b3f
-			&:hover + span
-				opacity: 1
-		.baner
-			background-position: 11px -11px
-		.on-tr
-			background-position: 8px -86px
-		.at-tr
-			background-position: 11px -164px
-		.print
-			background-position: 5px -250px
-		.s-wind
-			background-position: 7px -332px
-		.tr
-			background-position: 3px -398px
+	a
+		display: block
+		background: url("../img/header_menu.png") no-repeat
+		width: 60px
+		height: 60px
+		margin: 0 auto 9px
+		border-radius: 50%
+		transition: background .3s
+		&:hover
+			background-color: $red
+		&:hover + span
+			opacity: 1
+
+.header-main-nav,
+.description-ad
+	.baner
+		background-position: 11px -11px
+	.on-tr
+		background-position: 8px -86px
+	.at-tr
+		background-position: 11px -164px
+	.print
+		background-position: 5px -250px
+	.s-wind
+		background-position: 7px -332px
+	.tr
+		background-position: 3px -398px
+
+.header-main
+	.header-main-nav
 		span
 			opacity: 0
 			white-space: nowrap
@@ -205,13 +209,13 @@
 		text-transform: uppercase
 		letter-spacing: 3px
 
-		background: #df1b3f
+		background: $red
 		border-radius: 25px
 		transition:  all .3s
 		&:hover
 			cursor: pointer
 			background: #ffffff
-			color: #df1b3f
+			color: $red
 
 	.header-calc
 		h3
@@ -222,12 +226,13 @@
 
 .container
 	padding-left: 200px
+	overflow: hidden
 	background: #ffffff
 
 /*** Portfolio ***/
 
 .portfolio-main
-	padding: 30px 4% 30px
+	padding: 30px 4% 40px
 	h2
 		margin-bottom: 15px
 		font-family: "AvenirNextW1G-Light", sans-serif
@@ -236,7 +241,7 @@
 	p
 		margin: 0
 	.folio-link:hover p
-		color: #df1b3f
+		color: $red
 	.folio-link:hover .folio-grad
 		opacity: 1
 	.img-small,
@@ -347,13 +352,207 @@
 			font-weight: 700
 			text-transform: uppercase
 			letter-spacing: 2px
-			border: solid 2px #1a191a
+			border: solid 2px #2e2e2e
 			border-radius: 25px
 			transition: all .3s
 			&:hover
-				border: solid 2px #df1b3f
-				color: #df1b3f
+				border: solid 2px $red
+				color: $red
 				cursor: pointer
+
+/**** Revolt today ****/
+
+.revolt-today
+	text-align: center
+	.about
+		background: url("../img/revolt_today.jpg") no-repeat center
+		background-size: cover
+		h2
+			padding-top: 40px
+			font-family: "AvenirNextW1G-Light", sans-serif
+			font-size: 2.78em
+		p
+			padding: 5px 35px
+			font-size: 1.11em
+	.revolt-today-btn
+		span
+			background: #ffffff
+			display: inline-block
+			margin-bottom: 50px
+			padding: 13px 26px
+			font-size: .67em
+			font-weight: 700
+			text-transform: uppercase
+			letter-spacing: 2px
+			border-radius: 25px
+			transition: all .3s
+			&:hover
+				cursor: pointer
+				color: $red
+	.statistic
+		li
+			display: inline-block
+			width: 23.5%
+			.number
+				font-size: 2em
+				margin-bottom: 5px
+			.text
+				margin: 5px 0 40px 0
+				font-size: .73em
+				letter-spacing: 1px
+				text-transform: uppercase
+				font-weight: 700
+			span
+				display: inline-block
+				width: 40px
+				height: 85px
+				border-top: solid 2px #2e2e2e
+				background: url("../img/staristic_icon.png") no-repeat
+			.year
+				background-position: 7px 40px
+			.comp
+				background-position: -87px 37px
+			.city
+				background-position: -171px 36px
+			.place
+				background-position: -268px 33px
+
+/**** Street advertising ****/
+
+.description-ad
+	.head-line
+		margin: 35px 0 13px 0
+		padding: 40px 0 20px 0
+		background: #2e2e2e
+		text-align: center
+		font-size: 1.04em
+		color: #ffffff
+	.arrow
+		display: inline-block
+		margin-bottom: -54px
+		border: 15px solid transparent
+		border-top: 15px solid #2e2e2e
+	.wrap-discr
+		position: relative
+		.line
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 49.9%
+			width: 1px
+			background: #e9ecee
+
+	ul
+		border-bottom: solid 1px #e9ecee
+		&:last-child
+			border-bottom: transparent
+	li
+		display: inline-block
+		width: 50%
+		padding: 0 6% 3% 12%
+		vertical-align: middle
+
+		h3
+			position: relative
+			font-size: 1.55em
+			display: block
+			vertical-align: middle
+			padding-top: 45px
+
+		span
+			position: absolute
+			top: 40%
+			left: -85px
+
+			display: inline-block
+			background: $red url("../img/header_menu.png") no-repeat
+			width: 60px
+			height: 60px
+			border-radius: 50%
+		p
+			margin-top: 30px
+			font-size: .668em
+			line-height: 20px
+
+/****  News slide  ****/
+
+.news-slid
+	position: relative
+	padding: 35px 160px
+	background: #2e2e2e
+	.news-link
+		position: absolute
+		top: 40px
+		left: 3.5%
+		a
+			display: inline-block
+			padding: 11px 25px
+			font-size: .67em
+			font-weight: 700
+			text-transform: uppercase
+			letter-spacing: 2px
+			border: solid 2px #ffffff
+			border-radius: 25px
+			color: #ffffff
+			transition: all .3s
+			&:hover
+				background: #ffffff
+				color: $red
+	.news-slider
+		width: 87%
+		margin: 0 auto
+		line-height: 25px
+		color: #ffffff
+		img
+			float: left
+			width: 100%
+			max-width: 125px
+			padding: 0 15px 0 0
+		time
+			font-size: .67em
+			color: $grey
+		h3
+			font-size: .92em
+			font-weight: 700
+		p
+			font-size: .68em
+			margin: 0
+		.slick-arrow
+			position: absolute
+			font-size: 0
+			line-height: 0
+			width: 20px
+			height: 20px
+			margin-top: -10px
+			padding: 0
+			cursor: pointer
+			color: transparent
+			border: none
+			outline: none
+			background: transparent
+		.slick-next,
+		.slick-prev
+			&::before
+				content: "\f105"
+				display: block
+				font-size: 32px
+				font-family: "FontAwesome"
+				color: #ffffff
+		.slick-next
+			top: 30px
+			right: -169px
+		.slick-prev
+			right: -48px
+			top: 30px
+			&::before
+				content: "\f104"
+	.slick-pag
+		position: absolute
+		top: 55px
+		right: 104px
+		font-size: .77em
+		color: $grey
+
 
 
 /*** Pop up ***/
@@ -365,7 +564,7 @@
 	min-height: 110px
 	margin-top: 50px
 	padding: 0 4%
-	background: #df1b3f
+	background: $red
 	text-align: center
 	h3
 		display: inline-block
@@ -385,7 +584,7 @@
 		background: #ffffff
 		border-radius: 25px
 		&:hover
-			color: #df1b3f
+			color: $red
 			cursor: pointer
 
 /***  Footer ***/

@@ -15,11 +15,53 @@
             modal           = $('.modal-box'),
             opnBtn          = $('.callback-btn'),
             closeBtn        = $('.modal-close'),
-            upBtn           = $('#up-btn');
+            upBtn           = $('#up-btn'),
+            count           = $('.page').length,
+            pageIndex,
+            startPage;
+
+
+
+
 
 /* ---------------------------------------------- /*
- * Up button
- /* ---------------------------------------------- */
+ * Slider
+ /* ----------------------------------------- */
+
+
+
+        $('.news-slider').slick({
+            infinite: false,
+            touchMove: false
+        });
+
+
+
+    function slidPage() {
+        pageIndex = $('.page.slick-active').index()+1;
+
+        startPage = (pageIndex + '/' + count);
+
+        $('.slick-pag').text(startPage)
+
+    }
+
+        slidPage();
+
+
+        $('.slick-arrow').on('click', function () {
+            slidPage()
+        });
+
+
+
+
+
+
+
+        /* ---------------------------------------------- /*
+         * Up button
+         /* ---------------------------------------------- */
 
         $(window).scroll(function() {
             if ($(this).scrollTop() > 100 && screen.width >= 768) {
