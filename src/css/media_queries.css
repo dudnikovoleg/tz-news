@@ -99,7 +99,7 @@
     }
     .portfolio-main .folio-2{
         margin-bottom: 0;
-        margin-right: 21px;
+        margin-right: 18px;
     }
     .portfolio-main .folio-list .folio-item{
         width: 46%;
@@ -404,6 +404,7 @@ body{
         width: 27%;
         padding-top: 14%;
         margin-top: 10px;
+        margin-bottom: 20px;
 
     }
          .portfolio-main .folio-list .folio-item p{
@@ -412,7 +413,7 @@ body{
 
          }
         .folio-list .folio-city{
-            padding-left: 34%;
+            padding-left: 7%;
         }
     .portfolio-main .folio-btn{
         margin-top: 50px;
@@ -436,6 +437,9 @@ body{
     .revolt-today{
         margin-bottom: 35px;
     }
+        .statistic{
+            margin-top: 40px;
+        }
         .revolt-today .statistic li{
             width: 21.5%;
         }
