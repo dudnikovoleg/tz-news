@@ -119,6 +119,7 @@
 
 
         $('.news-slider').slick({
+
             infinite: false,
             touchMove: false,
             prevArrow: $('.prev-arrow'),
@@ -136,6 +137,9 @@
         }
 
         slidPage();
+        $('.news-slider').on('swipe', function(event, slick, direction){
+            slidPage();
+        });
 
 
         $('.slick-arrow').on('click', function () {
@@ -149,6 +153,7 @@
 
         $('.responsive-carousel').slick({
             dots: true,
+            touchMove: false,
 
             infinite: true,
             slidesToShow: 6,

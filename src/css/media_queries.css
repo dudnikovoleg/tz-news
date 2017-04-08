@@ -404,7 +404,7 @@ body{
         width: 27%;
         padding-top: 14%;
         margin-top: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 45px;
 
     }
          .portfolio-main .folio-list .folio-item p{
@@ -416,7 +416,7 @@ body{
             padding-left: 7%;
         }
     .portfolio-main .folio-btn{
-        margin-top: 50px;
+        margin-top: 5px;
     }
     /*********************/
 
@@ -457,7 +457,24 @@ body{
         }
 
     /*********************/
+    .description-ad ul li::before{
+        content: "";
+        width: 100%;
+        position: absolute;
+        display: block;
+        height: 1px;
+        left: 0;
+        right: 0;
 
+        width: 100%;
+        background: #e9ecee;
+    }
+
+
+
+    .description-ad ul {
+        border-bottom: solid 1px transparent;
+    }
 
     .description-ad .head-line{
         font-size: .91em;
@@ -467,10 +484,13 @@ body{
     }
 
     .description-ad li {
-        min-width: 100%;
-        padding: 0 3% 4% 37%;
-    }
 
+        min-width: 100%;
+        padding: 0 10% 4% 37%;
+    }
+    .description-ad li h3{
+        font-size: 1.4em;
+    }
     /*********************/
 
     .news-link,
@@ -582,6 +602,9 @@ body{
         margin-top: 15px ;
     }
 
+    .wrap-carousel .responsive-carousel{
+        padding: 28px 0;
+    }
 /**** Main page end *****/
 
 /**** News page start *****/
@@ -606,7 +629,7 @@ body{
     }
     .callback-box h3{
         margin-right: 0;
-        font-size: 1em;
+        font-size: 1.3em;
     }
     .callback-box .callback-btn{
         margin: 20px 0 ;
