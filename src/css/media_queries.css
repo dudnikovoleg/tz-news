@@ -3,26 +3,167 @@
 
 @media all and (min-width: 1600px) {
 
-}
+/**** Main page ****/
 
-/***** Width 1280 *****/
+    .reviews p  {
+        padding: 0 20%;
+    }
 
-@media all and (min-width: 1280px) {
 }
 
 /***** Width 1024 *****/
 
 @media all and (min-width: 1024px) {
 
+/**** Main page start ****/
+
+    .header-main .header-main-cont{
+        padding: 80px 0 50px 0;
+    }
+
+    .header-main .header-main-nav li{
+        width: 17%;
+    }
+
+    .portfolio-main {
+        padding: 40px 4% 40px;
+    }
+
+    .portfolio-main .folio-btn{
+        margin-top: 60px;
+    }
+
+    .revolt-today .revolt-today-btn span{
+        margin-bottom: 20px;
+    }
+
+    .description-ad{
+        margin-top: 15px;
+    }
+    .description-ad li{
+        padding-bottom: 2%;
+    }
+
+
+/**** Main page end ****/
+
 }
 
 /***** Width 768px *****/
+
 @media all and (max-width: 768px) {
     body{
         font-size: 16px;
     }
 
-/******* Sidebar *******/
+/**** Main page end ****/
+
+    .header-main .header-main-cont h1{
+        font-size: 2.9em;
+    }
+    .header-main .header-main-cont h3 {
+        margin-top: 40px;
+        letter-spacing: 1px;
+        font-size: 1.12em;
+    }
+
+    /*********************/
+    .portfolio-main .folio-link:hover p{
+        color: #ffffff;
+    }
+    .portfolio-main .folio-grad{
+        display: none;
+    }
+    .portfolio-main{
+        padding: 30px 3% 40px;
+    }
+    .portfolio-main .folio-1 .folio-text{
+        font-size: 1.17em;
+    }
+    .portfolio-main .img-big{
+        width: 100%;
+        margin-right: 0;
+    }
+    .portfolio-main .folio-1{
+        padding-top: 25%;
+    }
+    .portfolio-main .img-small{
+        width: 100%;
+        margin-top: 35px;
+    }
+    .portfolio-main .folio-2,
+    .portfolio-main .folio-3{
+        display: inline-block;
+        width: 48%;
+        padding-top: 24%;
+    }
+    .portfolio-main .folio-2{
+        margin-bottom: 0;
+        margin-right: 21px;
+    }
+    .portfolio-main .folio-list .folio-item{
+        width: 46%;
+        margin: 25px 0 0 0 ;
+    }
+    .portfolio-main .folio-list .folio-item:nth-child(odd){
+        margin-right: 23px;
+    }
+
+    /*********************/
+
+    .revolt-today .about p {
+        padding: 5px 40px;
+        font-size: 1.255em;
+    }
+    .revolt-today .revolt-today-btn span{
+        margin-bottom: 15px
+    }
+    .revolt-today .statistic li .text{
+        font-size: 1em;
+    }
+
+    /*********************/
+
+    .description-ad {
+        margin-top: 20px;
+        font-size: 1.1em;
+    }
+    .description-ad li{
+        padding: 0 6% 3% 16%;
+    }
+
+    .news-slid .news-link
+    {
+        width: 22%;
+    }
+    .news-slid .news-slider{
+        font-size: 1.12em;
+        width: 57%;
+    }
+    .news-slid .news-slider img{
+        width: 30%;
+    }
+    .news-slid .news-slider .text    {
+        padding-left: 30%;
+    }
+
+    /*********************/
+
+    .reviews {
+        font-size: 1.133em;
+    }
+    .reviews h2 {
+        font-size: 2.5em;
+    }
+
+    /*********************/
+    .callback-box .callback-btn{
+        margin-top: 15px;
+    }
+/**** Main page end ****/
+
+
+    /******* Sidebar *******/
 
     .sidebar-main,
     .sidebar-sub,
@@ -85,6 +226,8 @@
         padding: 0 6%;
     }
 
+/**** News page start *****/
+
 /**** Main ****/
 
     .header-main .header-main-cont{
@@ -141,11 +284,13 @@
     .header-main .header-calc h3 {
         margin-top: 10px;
     }
-/**** News ****/
 
     .header-news{
         padding: 15px 6%;
     }
+
+    /*********************/
+
     .news{
         padding: 25px 6%;
     }
@@ -158,6 +303,9 @@
     .navbar .navbar-list:last-child{
         padding-right: 0;
     }
+
+/**** News page end *****/
+
 }
 /***** Width 720px *****/
 
@@ -165,6 +313,311 @@
     .navbar .navbar-list{
         display: block;
     }
+}
+
+
+/***** Width 630px *****/
+
+@media all and (max-width: 630px){
+body{
+    font-size: 13px;
+}
+
+/**** Main page start *****/
+
+    .header-main .header-main-cont{
+        padding-top: 35px;
+        font-size: .75em;
+    }
+        .header-main .header-main-cont h3{
+            margin-top: 20px;
+            padding: 0;
+            line-height: 24px;
+            font-size: 1.5em;
+        }
+        .header-main .calc-btn{
+            font-size: 1em;
+        }
+            .header-main .header-calc h3{
+                margin-top: 10px;
+                font-size: 1.18em;
+
+            }
+        .header-main .header-main-nav li{
+            width: 38px;
+        }
+
+    /*********************/
+
+    .portfolio-main .folio-list .folio-item:nth-child(n+5) {
+        display: none;
+    }
+    .portfolio-main {
+        padding: 30px 6% 40px;
+    }
+        .portfolio-main .folio-1,
+        .portfolio-main .folio-2,
+        .portfolio-main .folio-3{
+            overflow: visible;
+            width: 100%;
+            padding-top: 50%;
+            font-size: 1em;
+        }
+
+        .portfolio-main h2{
+            font-size: 2.299em;
+        }
+        .portfolio-main .folio-2,
+        .portfolio-main .folio-3{
+            margin-top: 100px;
+        }
+
+            .portfolio-main .folio-1 .folio-text{
+                bottom: -90px;
+                padding: 0;
+                font-size: .81em;
+                color: #1a191a;
+            }
+                .folio-1 .folio-city{
+                    font-size: 1em;
+                }
+            .portfolio-main .folio-2 .folio-text{
+                bottom: -70px;
+                padding: 0;
+                font-size: 1.25em;
+                color: #1a191a;
+            }
+            .portfolio-main .folio-3 .folio-text{
+                bottom: -50px;
+                padding: 0;
+                font-size: 1.25em;
+                color: #1a191a;
+            }
+    .portfolio-main .folio-list{
+        margin-top: 80px;
+    }
+    .portfolio-main .folio-list .folio-item{
+        width: 100%;
+        margin: 0 0 35px 0;
+    }
+    .portfolio-main .item-img{
+        float: left;
+        width: 27%;
+        padding-top: 14%;
+        margin-top: 10px;
+
+    }
+         .portfolio-main .folio-list .folio-item p{
+           padding: 0 15px 0 34%;
+           font-size: 1.3em;
+
+         }
+        .folio-list .folio-city{
+            padding-left: 34%;
+        }
+    .portfolio-main .folio-btn{
+        margin-top: 50px;
+    }
+    /*********************/
+
+    .revolt-today .about h2{
+        font-size: 2.1em;
+    }
+    .revolt-today .about p{
+        padding: 5px 7px;
+        margin: 0;
+        font-size: 1.255em;
+    }
+    .revolt-today-btn{
+        font-size: 1.4em;
+        margin-top: 30px;
+    }
+
+    /*********************/
+    .revolt-today{
+        margin-bottom: 35px;
+    }
+        .revolt-today .statistic li{
+            width: 21.5%;
+        }
+        .revolt-today .statistic li .number,
+        .revolt-today .statistic li .text{
+            margin: 0;
+        }
+        .revolt-today .statistic li .number {
+            font-size: 1.4em;
+        }
+        .revolt-today .statistic li .text {
+            margin-bottom: 20px;
+            font-size: .7em;
+            letter-spacing: normal;
+        }
+
+    /*********************/
+
+
+    .description-ad .head-line{
+        font-size: .91em;
+    }
+    .description-ad .wrap-discr .line{
+        display: none;
+    }
+
+    .description-ad li {
+        min-width: 100%;
+        padding: 0 3% 4% 37%;
+    }
+
+    /*********************/
+
+    .news-link,
+    .news-slider,
+    .wrap-pag{
+        float: none;
+    }
+    .news-slid .news-slider{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .news-slid .news-link{
+        width: 59%;
+        margin: 15px 0 0 15px;
+    }
+        .news-slid .news-link a{
+            font-size: 0.9em;
+            padding: 11px 33px;
+        }
+            .news-slid .news-link a:hover {
+                color: #ffffff;
+                background: transparent;
+            }
+
+    .news-slid .wrap-pag{
+        width: 35%;
+    }
+        .news-slid .slick-pag{
+            font-size: 1.3em;
+            padding: 0 5%;
+            vertical-align: text-bottom;
+        }
+    .news-slid .news-slider img{
+        width: 33%;
+    }
+
+    .news-slid .news-slider .text{
+        padding: 0 20px 0 38%;
+        line-height: 22px;
+    }
+        .news-slid .news-slider time{
+            font-size: .94em;
+        }
+        .news-slid .news-slider h3{
+            font-size: 1.16em;
+        }
+        .news-slid .news-slider p{
+            font-size: .85em;
+            padding-top: 5px;
+        }
+
+
+    /*********************/
+
+    .reviews{
+        padding: 0 25px;
+    }
+    .reviews h2{
+        padding-top: 35px;
+        font-size: 1.9em;
+    }
+    .reviews p{
+        margin-top: 15px;
+        padding: 0;
+    }
+    .reviews .video-holder{
+        font-size: .89em;
+    }
+    .reviews .author{
+        margin-top: 15px;
+        font-size: 1.1em;
+    }
+    .reviews .author-position{
+        font-size: .88em;
+    }
+
+    /*********************/
+
+    .wrap-carousel .next-item{
+        right: 30px;
+    }
+    .wrap-carousel .prev-item{
+        left: 30px;
+    }
+    .wrap-carousel{
+        padding: 0 45px;
+    }
+
+    /*********************/
+
+    .news .news-title {
+        margin-bottom: 10px;
+        font-size: 1.26em;
+        line-height: 25px;
+    }
+    .news .news-content {
+        margin: 10px 0;
+    }
+    .news .news-content .news-text {
+        margin-top: 15px;
+        font-size: .9em;
+        line-height: 22px;
+    }
+    .news .read-more {
+        font-size: .8em;
+    }
+    .social{
+        margin-top: 15px ;
+    }
+
+/**** Main page end *****/
+
+/**** News page start *****/
+
+    /* Header */
+
+    header .title{
+        padding: 15px 0 10px 0;
+        font-size: 1.8em;
+    }
+    .navbar .navbar-list a {
+        padding: 12px 0;
+        font-size: .735em;
+    }
+
+/**** News page start *****/
+
+    /*********************/
+
+    .callback-box {
+        margin-top: 50px;
+    }
+    .callback-box h3{
+        margin-right: 0;
+        font-size: 1em;
+    }
+    .callback-box .callback-btn{
+        margin: 20px 0 ;
+    }
+    .modal-box 	.modal-content{
+        height: 100%;
+        margin: 0 auto;
+    }
+    .modal-box .modal-box-inp{
+        display: block;
+        width: 100%;
+        margin: 20px 0 ;
+    }
+
 }
 
 /***** Width 524px *****/
@@ -188,69 +641,3 @@
         margin-left: 0;
     }
 }
-
-/***** Width 480px *****/
-
-@media all and (max-width: 480px){
-
-/* Header */
-
-    header .title{
-        padding: 15px 0 10px 0;
-        font-size: 1.8em;
-    }
-    .navbar .navbar-list a {
-        padding: 12px 0;
-        font-size: .735em;
-    }
-
-
- /*** Main Header ***/
-
-    .header-main .header-main-nav li{
-        width: 38px;
-    }
-
-/* News */
-    .news .news-title {
-        margin-bottom: 10px;
-        font-size: 1.26em;
-        line-height: 25px;
-    }
-    .news .news-content {
-        margin: 10px 0;
-    }
-    .news .news-content .news-text {
-        margin-top: 15px;
-        font-size: .9em;
-        line-height: 22px;
-    }
-    .news .read-more {
-        font-size: .8em;
-    }
-    .social{
-        margin-top: 15px ;
-    }
-/* Pop up*/
-    .callback-box {
-        margin-top: 25px;
-    }
-    .callback-box h3{
-        margin-right: 0;
-        font-size: 1em;
-    }
-    .callback-box .callback-btn{
-        margin: 20px 0 ;
-    }
-    .modal-box 	.modal-content{
-        height: 100%;
-        margin: 0 auto;
-    }
-    .modal-box .modal-box-inp{
-        display: block;
-        width: 100%;
-        margin: 20px 0 ;
-    }
-
-}
-

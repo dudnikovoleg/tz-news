@@ -106,7 +106,7 @@
 			font-style: normal
 
 	.phone
-		height: 25px
+		height: 20px
 		overflow: hidden
 		transition: height 1s
 		a
@@ -135,9 +135,10 @@
 /*** Header ***/
 
 .header-main
-	background: url("../img/main_logo.jpg") no-repeat center
+	background: url("../img/main_header.jpg") no-repeat center
 	width: 100%
 	height: 100%
+	min-height: 100vh
 	padding: 0 6%
 	background-size: cover
 	text-align: center
@@ -146,7 +147,7 @@
 		max-width: 860px
 		margin: 0 auto
 		padding: 100px 0
-		h1
+		h2
 			font-family: "AvenirNextW1G-Light", sans-serif
 			font-size: 2.77em
 		h3
@@ -420,12 +421,15 @@
 /**** Street advertising ****/
 
 .description-ad
+	margin-top: 35px
+
 	.head-line
-		margin: 35px 0 13px 0
+		position: relative
 		padding: 40px 0 20px 0
 		background: #2e2e2e
 		text-align: center
 		font-size: 1.04em
+		z-index: 99
 		color: #ffffff
 	.arrow
 		display: inline-block
@@ -449,13 +453,14 @@
 	li
 		display: inline-block
 		width: 50%
-		padding: 0 6% 3% 12%
+		padding: 0 6% 4% 12%
 		vertical-align: middle
 
 		h3
 			position: relative
 			font-size: 1.55em
 			display: block
+			word-wrap: break-word
 			vertical-align: middle
 			padding-top: 45px
 
@@ -478,12 +483,17 @@
 
 .news-slid
 	position: relative
-	padding: 35px 160px
+	padding: 20px 0
 	background: #2e2e2e
+	.news-link,
+	.news-slider
+		float: left
+	.wrap-pag
+		float: right
 	.news-link
-		position: absolute
-		top: 40px
-		left: 3.5%
+		width: 20%
+		margin-top: 25px
+		text-align: center
 		a
 			display: inline-block
 			padding: 11px 25px
@@ -499,15 +509,16 @@
 				background: #ffffff
 				color: $red
 	.news-slider
-		width: 87%
-		margin: 0 auto
-		line-height: 25px
+		width: 60%
 		color: #ffffff
 		img
 			float: left
-			width: 100%
-			max-width: 125px
-			padding: 0 15px 0 0
+			width: 18%
+			padding: 10px
+
+		.text
+			padding-left: 20%
+			line-height: 27px
 		time
 			font-size: .67em
 			color: $grey
@@ -515,45 +526,163 @@
 			font-size: .92em
 			font-weight: 700
 		p
-			font-size: .68em
 			margin: 0
-		.slick-arrow
-			position: absolute
-			font-size: 0
-			line-height: 0
+			font-size: .68em
+	.wrap-pag
+		width: 20%
+		margin-top: 25px
+		text-align: center
+		i
 			width: 20px
-			height: 20px
-			margin-top: -10px
-			padding: 0
 			cursor: pointer
-			color: transparent
-			border: none
-			outline: none
-			background: transparent
-		.slick-next,
-		.slick-prev
-			&::before
-				content: "\f105"
-				display: block
-				font-size: 32px
-				font-family: "FontAwesome"
-				color: #ffffff
-		.slick-next
-			top: 30px
-			right: -169px
-		.slick-prev
-			right: -48px
-			top: 30px
-			&::before
-				content: "\f104"
+			color: white
 	.slick-pag
-		position: absolute
-		top: 55px
-		right: 104px
+		display: inline-block
+		padding: 0 17%
+		vertical-align: text-top
 		font-size: .77em
 		color: $grey
 
+/**** Reviews client ****/
 
+.reviews
+	text-align: center
+	h2
+		padding-top: 40px
+		font-family: "AvenirNextW1G-Light", sans-serif
+		font-size: 2.78em
+	p
+		padding: 0 4%
+		margin: 27px 0 10px 0
+		font-size: 1.103em
+	.video-holder
+		font-size: .67em
+		transition: none
+		i
+			font-size: 1.76em
+			vertical-align: sub
+		&:hover,
+		&:hover i
+			color: $red
+	.author
+		margin-top: 25px
+		margin-bottom: 0
+		font-weight: 700
+		font-size: .9em
+	.author-position
+		font-size: .7em
+		color: $grey
+
+/** Iframe **/
+
+
+#full-screen-video
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background: #000000
+	z-index: 1000
+	padding-left: 75px
+	padding-right: 75px
+	display: none
+
+#full-screen-video.show
+	display: block
+
+#full-screen-video #fsv-close
+	width: 50px
+	height: 50px
+	position: absolute
+	top: 20px
+	right: 60px
+	background: #000 url(../img/all_icons.png) center center no-repeat
+	background-position-y: -253px
+	cursor: pointer
+	z-index: 200
+	&:hover
+		background-color: $red
+
+#full-screen-video table
+	width: 100%
+	height: 100%
+	position: relative
+	td
+		vertical-align: middle
+		text-align: center
+		img
+			max-width: 100%
+
+.scroll-stop
+	overflow: hidden
+
+.video-wrapper
+   width: 100%
+   height: 100%
+   z-index: 100
+   position: fixed
+   top: 0
+   left: 0
+.video-wrapper iframe
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+
+/**** Carousel ****/
+
+.wrap-carousel
+	position: relative
+	background: #f7f8f9
+	margin: 65px 0 -50px 0
+	padding: 0 100px
+	.responsive-carousel
+		padding: 45px 0
+		max-height: 140px
+	.carousel-item
+		display: block
+		white-space: nowrap
+		margin-left: 1%
+	img
+		width: 100%
+	.next-item,
+	.prev-item
+		position: absolute
+		z-index: 98
+		&:hover
+			cursor: pointer
+			color: $red
+
+	.next-item
+		right: 50px
+		top: 38%
+	.prev-item
+		left: 50px
+		top: 38%
+
+.slick-dots
+	position: absolute
+	top: -40px
+	right: 0
+	left: 0
+	text-align: center
+	.slick-active .slide
+		background: #afafaf
+
+	li
+		margin: 0 10px
+		display: inline-block
+		cursor: pointer
+		.slide
+			display: inline-block
+			width: 7px
+			height: 7px
+			border: solid 1px #afafaf
+			border-radius: 50%
+			&:hover
+				border: solid 1px $red
 
 /*** Pop up ***/
 
@@ -574,8 +703,8 @@
 
 	.callback-btn
 		display: inline-block
+		margin-top: 35px
 		padding: 13px 26px
-		margin: 35px 0 12px
 		font-size: .8em
 		font-weight: 700
 		text-transform: uppercase
