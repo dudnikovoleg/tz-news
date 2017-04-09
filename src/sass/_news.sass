@@ -9,15 +9,17 @@
 	li
 		display: inline-block
 		font-size: .74em
-		&.active
-			color: $grey
-			&::before
-				content: "\f105"
-				display: inline-block
-				font-family: $awesome
-				color: black
-				padding: 0 12px
-				font-weight: 900
+		color: $grey
+	li+li::before
+		content: "\f105"
+		display: inline-block
+		font-family: $awesome
+		color: black
+		padding: 0 12px
+		font-weight: 900
+	.active
+		color: #2e2e2e
+
 	.title
 		padding: 35px 0 10px 0
 		font: 3em "AvenirNextW1G-Light"
@@ -27,7 +29,6 @@
 .navbar
 	padding: 0 8%
 	margin-top: -3px
-
 	.navbar-list
 		display: inline-block
 		padding-right: 45px

@@ -1,7 +1,4 @@
-
-
-
-    <!doctype html>
+ <!doctype html>
     <html lang="ru">
     <head>
         <meta charset="UTF-8">
@@ -42,63 +39,68 @@
 
     <!-- Sidebar start -->
 
-    <div class="bg-sidebar">
-    </div>
+    <div class="content">
 
-    <aside id="sidebar" class="sidebar">
-        <!-- Mob logo_name -->
-        <div class="min-logo_name"><h1>revolt</h1></div>
-
-        <img  class="logo" src="img/logo.png" alt="Revolt">
-        <nav>
-            <ul class="sidebar-main">
-                <li>
-                    <a href="">Наружная реклама</a>
-                </li>
-                <li>
-                    <a href="">Реклама на/в транспорте</a>
-                </li>
-                <li>
-                    <a href="">Печать</a>
-                </li>
-            </ul>
-
-            <ul class="sidebar-sub">
-                <li>
-                    <a href="">О нас</a>
-                </li>
-                <li>
-                    <a href="">Портфолио</a>
-                </li>
-                <li>
-                    <a href="">Вопросы и ответы</a>
-                </li>
-                <li>
-                    <a href="">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-
-        <address class="sidebar-address">
-            <input type="checkbox" id="cbox-p" class="phone-cbox">
-            <label for="cbox-p"><i class="fa fa-angle-down phone-arrow" aria-hidden="true"></i></label>
-            <div class="phone">
-                <a href="tel:0675669206">(067) <span class="phone-bold">566-92-06</span></a>
-                <a href="tel:0504503132">(050) <span class="phone-bold">450-31-32</span></a>
-                <a href="tel:0442477287">(044) <span class="phone-bold">247-72-87</span></a>
-                <a href="tel:0567900336">(056) <span class="phone-bold">790-03-36</span></a>
-            </div>
-            <div class="mail">
-                <a href="mailto:info@revolt.com.ua">info@revolt.com.ua</a>
-            </div>
-        </address>
-        <div class="download">
-            <a href="#" class="download-price">
-                <i class="fa fa-file-o" aria-hidden="true"></i>Скачать прайс
-            </a>
+        <div class="bg-sidebar">
         </div>
-    </aside>
+        <aside id="sidebar" class="sidebar">
+            <!-- Mob logo  -->
 
+            <div class="min-logo_name"><h2>revolt</h2></div>
+
+            <!-- Desktop logo  -->
+
+            <a href="index.html">
+                <img  class="logo" src="img/logo.png" alt="Revolt">
+            </a>
+            <nav>
+                <ul class="sidebar-main">
+                    <li>
+                        <a href="">Наружная реклама</a>
+                    </li>
+                    <li>
+                        <a href="">Реклама на/в транспорте</a>
+                    </li>
+                    <li>
+                        <a href="">Печать</a>
+                    </li>
+                </ul>
+
+                <ul class="sidebar-sub">
+                    <li>
+                        <a href="">О нас</a>
+                    </li>
+                    <li>
+                        <a href="">Портфолио</a>
+                    </li>
+                    <li>
+                        <a href="">Вопросы и ответы</a>
+                    </li>
+                    <li>
+                        <a href="">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <address class="sidebar-address">
+                <input type="checkbox" id="cbox-p" class="phone-cbox">
+                <label for="cbox-p"><i class="fa fa-angle-down phone-arrow" aria-hidden="true"></i></label>
+                <div class="phone">
+                    <a href="tel:0675669206">(067) <span class="phone-bold">566-92-06</span></a>
+                    <a href="tel:0504503132">(050) <span class="phone-bold">450-31-32</span></a>
+                    <a href="tel:0442477287">(044) <span class="phone-bold">247-72-87</span></a>
+                    <a href="tel:0567900336">(056) <span class="phone-bold">790-03-36</span></a>
+                </div>
+                <div class="mail">
+                    <a href="mailto:info@revolt.com.ua">info@revolt.com.ua</a>
+                </div>
+            </address>
+            <div class="download">
+                <a href="#" class="download-price">
+                    <i class="fa fa-file-o" aria-hidden="true"></i>Скачать прайс
+                </a>
+            </div>
+        </aside>
     <!-- Sidebar end -->
 
     <!-- Main content start -->
@@ -109,7 +111,7 @@
 
             <header class="header-news" id="home">
                 <ol class="breadcrumb breadcrumb-custom ">
-                    <li><a href="#">Главная</a></li>
+                    <li><a href="news.html">Главная</a></li>
                     <li class="active">Новости</li>
                 </ol>
 
@@ -190,7 +192,7 @@
                         <a class="g-link" href="" target="_blank"></a>
                     </li>
                 </ul>
-                <a id="read"   class="read-more return" href="index.html">
+                <a id="read"   class="read-more return" href="news.html">
                     <i class="fa fa-angle-left" aria-hidden="true"></i>
                     Вернутся к списку новостей
                 </a>
@@ -237,7 +239,7 @@
         <!-- Footer end -->
 
     </div>
-
+    </div>
     <!-- Main content end -->
 
     <!-- Pop up content -->
@@ -276,9 +278,9 @@
     </div>
 
     <!-- Sticky sidebar -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
-    <script src="js/sidebar_scroll.js"></script>
+    <script src="js/sticky.js"></script>
 
-
-    </body>
-    </html>
+</body>
+</html>

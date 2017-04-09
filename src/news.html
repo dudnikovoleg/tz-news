@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!-- First 3 tags -->
-    <title>Revolt</title>
 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- First 3 tags -->
+    <title>Revolt</title>
 <!-- Style -->
 
     <link href="css/fonts.css" rel="stylesheet">
@@ -39,14 +39,20 @@
 <!-- Mobile menu end-->
 
 <!-- Sidebar start -->
+<div class="content">
+
     <div class="bg-sidebar">
     </div>
-
     <aside id="sidebar" class="sidebar">
-        <!-- Mob logo_name -->
-        <div class="min-logo_name"><h1>revolt</h1></div>
+        <!-- Mob logo  -->
 
-        <img  class="logo" src="img/logo.png" alt="Revolt">
+        <div class="min-logo_name"><h2>revolt</h2></div>
+
+        <!-- Desktop logo  -->
+
+        <a href="index.html">
+            <img  class="logo" src="img/logo.png" alt="Revolt">
+        </a>
         <nav>
             <ul class="sidebar-main">
                 <li>
@@ -95,7 +101,6 @@
             </a>
         </div>
     </aside>
-
 <!-- Sidebar end -->
 
 <!-- Main content start -->
@@ -105,8 +110,8 @@
 <!-- Header start -->
             <header id="home" class="header-news">
                 <ol class="breadcrumb breadcrumb-custom ">
-                    <li><a href="#">Главная</a></li>
-                    <li class="active">Новости</li>
+                    <li class="active">Главная</li>
+                    <li>Новости</li>
                 </ol>
                 <h2 class="title">Новости</h2>
             </header>
@@ -245,7 +250,7 @@
         </div>
 
         <!-- Footer start -->
-
+    </div>
         <footer>
             <div class="footer-box footer-cop">
                 <p>&#169;2016 Revolt. Все права защищены.</p>
@@ -317,8 +322,9 @@
     </div>
 
 <!-- Sticky sidebar -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
-<script src="js/sidebar_scroll.js"></script>
+<script src="js/sticky.js"></script>
 
 
 </body>

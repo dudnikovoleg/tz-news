@@ -20,30 +20,33 @@
     .header-main .header-main-cont{
         padding: 80px 0 50px 0;
     }
+        .header-main .header-main-nav li{
+            width: 17%;
+        }
 
-    .header-main .header-main-nav li{
-        width: 17%;
-    }
+    /*********************/
 
     .portfolio-main {
         padding: 40px 4% 40px;
     }
+        .portfolio-main .folio-btn{
+            margin-top: 60px;
+        }
 
-    .portfolio-main .folio-btn{
-        margin-top: 60px;
-    }
+    /*********************/
 
     .revolt-today .revolt-today-btn span{
         margin-bottom: 20px;
     }
 
+    /*********************/
+
     .description-ad{
         margin-top: 15px;
     }
-    .description-ad li{
-        padding-bottom: 2%;
-    }
-
+        .description-ad li{
+            padding-bottom: 2%;
+        }
 
 /**** Main page end ****/
 
@@ -56,7 +59,7 @@
         font-size: 16px;
     }
 
-/**** Main page end ****/
+/**** Main page start ****/
 
     .header-main .header-main-cont h1{
         font-size: 2.9em;
@@ -68,46 +71,50 @@
     }
 
     /*********************/
-    .portfolio-main .folio-link:hover p{
-        color: #ffffff;
-    }
-    .portfolio-main .folio-grad{
-        display: none;
-    }
+
     .portfolio-main{
         padding: 30px 3% 40px;
     }
-    .portfolio-main .folio-1 .folio-text{
-        font-size: 1.17em;
-    }
-    .portfolio-main .img-big{
-        width: 100%;
-        margin-right: 0;
-    }
-    .portfolio-main .folio-1{
-        padding-top: 25%;
-    }
-    .portfolio-main .img-small{
-        width: 100%;
-        margin-top: 35px;
-    }
-    .portfolio-main .folio-2,
-    .portfolio-main .folio-3{
-        display: inline-block;
-        width: 48%;
-        padding-top: 24%;
-    }
-    .portfolio-main .folio-2{
-        margin-bottom: 0;
-        margin-right: 18px;
-    }
-    .portfolio-main .folio-list .folio-item{
-        width: 46%;
-        margin: 25px 0 0 0 ;
-    }
-    .portfolio-main .folio-list .folio-item:nth-child(odd){
-        margin-right: 23px;
-    }
+        .portfolio-main .folio-link:hover p{
+            color: #ffffff;
+        }
+        .portfolio-main .folio-grad{
+            display: none;
+        }
+
+        .portfolio-main .img-big{
+            width: 100%;
+            margin-right: 0;
+        }
+            .portfolio-main .folio-1{
+                padding-top: 25%;
+            }
+                .portfolio-main .folio-1 .folio-text{
+                     font-size: 1.17em;
+                  }
+
+        .portfolio-main .img-small{
+            width: 100%;
+            margin-top: 35px;
+            }
+            .portfolio-main .folio-2,
+            .portfolio-main .folio-3{
+                display: inline-block;
+                width: 48%;
+                padding-top: 24%;
+            }
+            .portfolio-main .folio-2{
+                margin-bottom: 0;
+                margin-right: 18px;
+            }
+
+        .portfolio-main .folio-list .folio-item{
+            width: 46%;
+            margin: 25px 0 0 0 ;
+        }
+        .portfolio-main .folio-list .folio-item:nth-child(odd){
+            margin-right: 23px;
+        }
 
     /*********************/
 
@@ -128,40 +135,44 @@
         margin-top: 20px;
         font-size: 1.1em;
     }
-    .description-ad li{
-        padding: 0 6% 3% 16%;
-    }
+        .description-ad li{
+            padding: 0 6% 3% 16%;
+        }
 
-    .news-slid .news-link
-    {
-        width: 22%;
-    }
-    .news-slid .news-slider{
-        font-size: 1.12em;
-        width: 57%;
-    }
-    .news-slid .news-slider img{
-        width: 30%;
-    }
-    .news-slid .news-slider .text    {
-        padding-left: 30%;
-    }
+        .news-slid .news-link
+        {
+            width: 22%;
+        }
+            .news-slid .news-slider{
+                font-size: 1.12em;
+                width: 57%;
+            }
+                .news-slid .news-slider img{
+                    width: 30%;
+                }
+                .news-slid .news-slider .text    {
+                    padding-left: 30%;
+                }
 
     /*********************/
 
     .reviews {
         font-size: 1.133em;
     }
-    .reviews h2 {
-        font-size: 2.5em;
-    }
+        .reviews h2 {
+            font-size: 2.5em;
+        }
 
     /*********************/
+
     .callback-box .callback-btn{
         margin-top: 15px;
     }
-/**** Main page end ****/
+    .slick-dots li .slide:hover {
+        border: solid 1px #afafaf;
+    }
 
+/**** Main page end ****/
 
     /******* Sidebar *******/
 
@@ -176,9 +187,10 @@
         left: -200px;
         background: #000000;
     }
-    .sidebar .min-logo_name {
-        display: block;
-    }
+        .sidebar .min-logo_name {
+            display: block;
+        }
+
     .mobile-sidebar {
         position: fixed;
         top: 0;
@@ -187,19 +199,19 @@
         background: #1a191a;
         z-index: 97;
     }
-    .mobile-sidebar li {
-        display: block;
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-        background: url("../img/all_icons.png") no-repeat;
-    }
-    .mobile-sidebar .menu-btn {
-        background-position: -1px -71px;
-    }
-    .mobile-sidebar .phone-btn {
-        background-position: -1px -135px;
-    }
+        .mobile-sidebar li {
+            display: block;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            background: url("../img/all_icons.png") no-repeat;
+        }
+            .mobile-sidebar .menu-btn {
+                background-position: -1px -71px;
+            }
+            .mobile-sidebar .phone-btn {
+                background-position: -1px -135px;
+            }
 
 
 /*** Mobile class for script ***/
@@ -214,7 +226,7 @@
         background: #000000 url("../img/all_icons.png") no-repeat 0 -253px;
     }
 
-/***** Container *****/
+    /*********************/
 
     .container{
         padding-left: 50px;
@@ -226,69 +238,69 @@
         padding: 0 6%;
     }
 
-/**** News page start *****/
+/***** News page start *****/
 
 /**** Main ****/
 
-    .header-main .header-main-cont{
-        padding-bottom: 35px;
-    }
     .header-main{
         padding: 0 3%;
     }
+        .header-main .header-main-cont{
+            padding-bottom: 35px;
+        }
+            .header-main .header-main-cont h2 {
+                margin-top: 40px;
+                padding: 0;
+            }
+            .header-main .header-main-nav {
+                margin-top: 15px;
+            }
+            .header-main .header-main-nav li{
+                width: 54px;
+                margin: 0;
+            }
+            .header-main .header-main-nav a{
+                width: 40px;
+                height: 40px;
+                margin: 0 auto;
+                background-size: 40px;
+            }
+            .header-main .header-main-nav a:hover {
+                background-color: transparent;
+            }
 
-    .header-main .header-main-cont h2 {
-        margin-top: 40px;
-        padding: 0;
-    }
-    .header-main .header-main-nav li{
-        width: 54px;
-        margin: 0;
-    }
-    .header-main .header-main-nav {
-          margin-top: 15px;
-    }
-    .header-main .header-main-nav a{
-        width: 40px;
-        height: 40px;
-        margin: 0 auto;
-        background-size: 40px;
-    }
-    .header-main .header-main-nav a:hover {
-        background-color: transparent;
-    }
-    .header-main .header-main-nav .baner{
-            background-position: 5px -13px;
-        }
-    .header-main .header-main-nav  .on-tr{
-            background-position: 3px -72px;
-        }
-    .header-main .header-main-nav  .at-tr{
-            background-position: 5px -135px;
-        }
-    .header-main .header-main-nav  .print{
-            background-position: 0 -202px;
-        }
-    .header-main .header-main-nav  .s-wind{
-            background-position: 2px -266px;
-        }
-    .header-main .header-main-nav .tr{
-            background-position: -3px -316px;
-        }
+                .header-main .header-main-nav .baner{
+                        background-position: 5px -13px;
+                    }
+                .header-main .header-main-nav  .on-tr{
+                        background-position: 3px -72px;
+                    }
+                .header-main .header-main-nav  .at-tr{
+                        background-position: 5px -135px;
+                    }
+                .header-main .header-main-nav  .print{
+                        background-position: 0 -202px;
+                    }
+                .header-main .header-main-nav  .s-wind{
+                        background-position: 2px -266px;
+                    }
+                .header-main .header-main-nav .tr{
+                        background-position: -3px -316px;
+                    }
 
-    .header-main .header-main-nav span{
-        display: none;
-    }
+                .header-main .header-main-nav span{
+                    display: none;
+                }
+                .header-main .header-calc h3 {
+                    margin-top: 10px;
+                }
 
-    .header-main .header-calc h3 {
-        margin-top: 10px;
-    }
+
+    /*********************/
 
     .header-news{
         padding: 15px 6%;
     }
-
-    /*********************/
 
     .news{
         padding: 25px 6%;
@@ -334,26 +346,32 @@ body{
             line-height: 24px;
             font-size: 1.5em;
         }
+
         .header-main .calc-btn{
             font-size: 1em;
         }
             .header-main .header-calc h3{
                 margin-top: 10px;
                 font-size: 1.18em;
-
             }
+
         .header-main .header-main-nav li{
             width: 38px;
         }
 
     /*********************/
 
-    .portfolio-main .folio-list .folio-item:nth-child(n+5) {
-        display: none;
-    }
     .portfolio-main {
         padding: 30px 6% 40px;
     }
+        .portfolio-main h2{
+            font-size: 2.299em;
+        }
+
+        .portfolio-main .folio-2,
+        .portfolio-main .folio-3{
+            margin-top: 100px;
+        }
         .portfolio-main .folio-1,
         .portfolio-main .folio-2,
         .portfolio-main .folio-3{
@@ -362,15 +380,6 @@ body{
             padding-top: 50%;
             font-size: 1em;
         }
-
-        .portfolio-main h2{
-            font-size: 2.299em;
-        }
-        .portfolio-main .folio-2,
-        .portfolio-main .folio-3{
-            margin-top: 100px;
-        }
-
             .portfolio-main .folio-1 .folio-text{
                 bottom: -90px;
                 padding: 0;
@@ -392,32 +401,37 @@ body{
                 font-size: 1.25em;
                 color: #1a191a;
             }
+
     .portfolio-main .folio-list{
         margin-top: 80px;
     }
-    .portfolio-main .folio-list .folio-item{
-        width: 100%;
-        margin: 0 0 35px 0;
-    }
-    .portfolio-main .item-img{
-        float: left;
-        width: 27%;
-        padding-top: 14%;
-        margin-top: 10px;
-        margin-bottom: 45px;
+        .portfolio-main .folio-list .folio-item p{
+            padding: 0 15px 0 34%;
+            font-size: 1.3em;
 
-    }
-         .portfolio-main .folio-list .folio-item p{
-           padding: 0 15px 0 34%;
-           font-size: 1.3em;
-
-         }
-        .folio-list .folio-city{
-            padding-left: 7%;
         }
+            .portfolio-main .folio-list .folio-item:nth-child(n+5) {
+                display: none;
+            }
+            .portfolio-main .folio-list .folio-item{
+                width: 100%;
+                margin: 0 0 35px 0;
+            }
+                .portfolio-main .item-img{
+                    float: left;
+                    width: 27%;
+                    padding-top: 14%;
+                    margin-top: 10px;
+                    margin-bottom: 45px;
+                }
+
+    .folio-list .folio-city{
+        padding-left: 7%;
+    }
     .portfolio-main .folio-btn{
         margin-top: 5px;
     }
+
     /*********************/
 
     .revolt-today .about h2{
@@ -434,15 +448,17 @@ body{
     }
 
     /*********************/
+
     .revolt-today{
         margin-bottom: 35px;
     }
         .statistic{
             margin-top: 40px;
         }
-        .revolt-today .statistic li{
-            width: 21.5%;
-        }
+
+    .revolt-today .statistic li{
+        width: 21.5%;
+    }
         .revolt-today .statistic li .number,
         .revolt-today .statistic li .text{
             margin: 0;
@@ -457,40 +473,36 @@ body{
         }
 
     /*********************/
-    .description-ad ul li::before{
-        content: "";
-        width: 100%;
-        position: absolute;
-        display: block;
-        height: 1px;
-        left: 0;
-        right: 0;
-
-        width: 100%;
-        background: #e9ecee;
-    }
-
-
-
-    .description-ad ul {
-        border-bottom: solid 1px transparent;
-    }
 
     .description-ad .head-line{
         font-size: .91em;
     }
-    .description-ad .wrap-discr .line{
-        display: none;
-    }
+        .description-ad .wrap-discr .line{
+            display: none;
+        }
 
-    .description-ad li {
+    .description-ad ul {
+        border-bottom: solid 1px transparent;
+    }
+        .description-ad ul li::before{
+            content: "";
+            width: 100%;
+            position: absolute;
+            display: block;
+            height: 1px;
+            left: 0;
+            right: 0;
+            background: #e9ecee;
+        }
+        .description-ad li {
 
-        min-width: 100%;
-        padding: 0 10% 4% 37%;
-    }
-    .description-ad li h3{
-        font-size: 1.4em;
-    }
+            min-width: 100%;
+            padding: 0 10% 4% 37%;
+        }
+            .description-ad li h3{
+                font-size: 1.4em;
+            }
+
     /*********************/
 
     .news-link,
@@ -498,6 +510,7 @@ body{
     .wrap-pag{
         float: none;
     }
+
     .news-slid .news-slider{
         width: 100%;
         margin-top: 20px;
@@ -524,10 +537,10 @@ body{
             padding: 0 5%;
             vertical-align: text-bottom;
         }
+
     .news-slid .news-slider img{
         width: 33%;
     }
-
     .news-slid .news-slider .text{
         padding: 0 20px 0 38%;
         line-height: 22px;
@@ -535,50 +548,49 @@ body{
         .news-slid .news-slider time{
             font-size: .94em;
         }
-        .news-slid .news-slider h3{
-            font-size: 1.16em;
-        }
-        .news-slid .news-slider p{
-            font-size: .85em;
-            padding-top: 5px;
-        }
-
+            .news-slid .news-slider h3{
+                font-size: 1.16em;
+            }
+            .news-slid .news-slider p{
+                font-size: .85em;
+                padding-top: 5px;
+            }
 
     /*********************/
 
     .reviews{
         padding: 0 25px;
     }
-    .reviews h2{
-        padding-top: 35px;
-        font-size: 1.9em;
-    }
-    .reviews p{
-        margin-top: 15px;
-        padding: 0;
-    }
-    .reviews .video-holder{
-        font-size: .89em;
-    }
-    .reviews .author{
-        margin-top: 15px;
-        font-size: 1.1em;
-    }
-    .reviews .author-position{
-        font-size: .88em;
-    }
+        .reviews h2{
+            padding-top: 35px;
+            font-size: 1.9em;
+        }
+        .reviews p{
+            margin-top: 15px;
+            padding: 0;
+        }
+        .reviews .video-holder{
+            font-size: .89em;
+        }
+        .reviews .author{
+            margin-top: 15px;
+            font-size: 1.1em;
+        }
+        .reviews .author-position{
+            font-size: .88em;
+        }
 
     /*********************/
 
-    .wrap-carousel .next-item{
-        right: 30px;
-    }
-    .wrap-carousel .prev-item{
-        left: 30px;
-    }
     .wrap-carousel{
         padding: 0 45px;
     }
+        .wrap-carousel .next-item{
+            right: 30px;
+        }
+        .wrap-carousel .prev-item{
+            left: 30px;
+        }
 
     /*********************/
 
@@ -590,14 +602,16 @@ body{
     .news .news-content {
         margin: 10px 0;
     }
-    .news .news-content .news-text {
-        margin-top: 15px;
-        font-size: .9em;
-        line-height: 22px;
-    }
+        .news .news-content .news-text {
+            margin-top: 15px;
+            font-size: .9em;
+            line-height: 22px;
+        }
+
     .news .read-more {
         font-size: .8em;
     }
+
     .social{
         margin-top: 15px ;
     }
@@ -605,36 +619,37 @@ body{
     .wrap-carousel .responsive-carousel{
         padding: 28px 0;
     }
+
 /**** Main page end *****/
 
 /**** News page start *****/
-
-    /* Header */
 
     header .title{
         padding: 15px 0 10px 0;
         font-size: 1.8em;
     }
+
     .navbar .navbar-list a {
         padding: 12px 0;
         font-size: .735em;
     }
 
-/**** News page start *****/
+/**** News page ebd *****/
 
     /*********************/
 
     .callback-box {
         margin-top: 50px;
     }
-    .callback-box h3{
-        margin-right: 0;
-        font-size: 1.3em;
-    }
-    .callback-box .callback-btn{
-        margin: 20px 0 ;
-    }
-    .modal-box 	.modal-content{
+        .callback-box h3{
+            margin-right: 0;
+            font-size: 1.3em;
+        }
+        .callback-box .callback-btn{
+            margin: 20px 0 ;
+        }
+
+    .modal-box  .modal-content{
         height: 100%;
         margin: 0 auto;
     }
@@ -650,20 +665,21 @@ body{
 
 @media all and (max-width: 524px){
 
-    /* Footer */
+    /*********************/
+
     footer{
         height: 100%;
         padding: 20px 6% 30px 6%
     }
-    .footer-box{
-        display: block;
-        width: 238px;
-        margin: 0 auto;
-    }
-    .footer-fresh{
-        margin-top: 20px;
-    }
-    .footer-fresh .logo-fresh{
-        margin-left: 0;
-    }
+        .footer-box{
+            display: block;
+            width: 238px;
+            margin: 0 auto;
+        }
+            .footer-fresh{
+                margin-top: 20px;
+            }
+            .footer-fresh .logo-fresh{
+                margin-left: 0;
+            }
 }
