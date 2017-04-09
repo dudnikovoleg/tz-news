@@ -17,14 +17,36 @@
             closeBtn        = $('.modal-close'),
             upBtn           = $('#up-btn'),
             count           = $('.page').length,
+            sbAddress       = $('.sidebar-address'),
+            cbNav           = $('.sidebar nav, .download'),
             pageIndex,
             startPage;
+
+
+
 
 /* ---------------------------------------------- /*
  * Sidebar sticky
 /* ---------------------------------------------- */
 
         $("#sidebar").stick_in_parent({});
+
+        function offStiky () {
+
+            if ( screen.width <= 768) {
+                $("#sidebar").trigger("sticky_kit:detach");
+                $("#sidebar").css({
+                    "position": "fixed",
+                    "top": "0",
+                });
+
+            }else {
+                $("#sidebar").stick_in_parent({});
+
+            }
+}
+        $(window).ready(offStiky);
+        $(window).resize(offStiky);
 
 /* ---------------------------------------------- /*
  * Up button
@@ -60,16 +82,23 @@
  * menu show
 /* ---------------------------------------------- */
 
+
+
+
         $('.menu-btn').on('click', function () {
-            allMenuBlock.removeClass('open');   //remove added classes
+            sbAddress.removeClass('open');//remove added classes
+            sbAddress.addClass('close');//remove added classes
+
             $('.sidebar, .bg-sidebar').toggleClass('open-sidebar');  //open sidebar
-            $('.sidebar-main, .sidebar-sub, .download-price').addClass('open'); //shows the desired menu item
+            cbNav.addClass('open'); //shows the desired menu item
         });
 
         $('.phone-btn').on('click', function () {
-            allMenuBlock.removeClass('open');//remove added classes
+            cbNav.removeClass('open');//remove added classes
+            cbNav.addClass('close');//remove added classes
+
             $('.sidebar, .bg-sidebar').toggleClass('open-sidebar');  //open sidebar
-            $('address ').addClass('open');  //shows the desired menu item
+            sbAddress.addClass('open');  //shows the desired menu item
         });
 
 /* ---------------------------------------------- /*

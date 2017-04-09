@@ -176,21 +176,49 @@
 
     /******* Sidebar *******/
 
-    .sidebar-main,
-    .sidebar-sub,
-    .sidebar-address,
-    .download-price,
-    .logo{
+    .close{
         display: none;
     }
+    .open {
+        display: block ;
+    }
+
+    /*********************/
+
     .sidebar, .bg-sidebar {
         left: -200px;
         background: #000000;
     }
-        .sidebar .min-logo_name {
-            display: block;
+
+    .sidebar{
+        position: fixed;
+        top:20px;
+        bottom: 0;
+        overflow-y: scroll;
+        font-size: 1.35em;
+    }
+
+        .sidebar .logo-link {
+            display: none;
         }
 
+    .sidebar nav{
+        margin-top: 60px;
+    }
+    .sidebar .sidebar-address{
+        margin-top: 65px;
+    }
+        .sidebar .phone{
+            height: auto;
+            line-height: 35px;
+        }
+            .sidebar .sidebar-address label{
+                display: none;
+            }
+                .mail{
+                    font-size: 1.16em;
+                    margin-top: 25px;
+                }
     .mobile-sidebar {
         position: fixed;
         top: 0;
@@ -199,26 +227,26 @@
         background: #1a191a;
         z-index: 97;
     }
-        .mobile-sidebar li {
+        .sidebar .min-logo_name{
             display: block;
-            width: 50px;
-            height: 50px;
-            cursor: pointer;
-            background: url("../img/all_icons.png") no-repeat;
+            z-index: 991;
         }
-            .mobile-sidebar .menu-btn {
-                background-position: -1px -71px;
+            .mobile-sidebar li {
+                display: block;
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+                background: url("../img/all_icons.png") no-repeat;
             }
-            .mobile-sidebar .phone-btn {
-                background-position: -1px -135px;
-            }
-
+                .mobile-sidebar .menu-btn {
+                    background-position: -1px -71px;
+                }
+                .mobile-sidebar .phone-btn {
+                    background-position: -1px -135px;
+                }
 
 /*** Mobile class for script ***/
 
-    .open {
-        display: block;
-    }
     .open-sidebar {
         left: 50px;
     }
