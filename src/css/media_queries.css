@@ -90,8 +90,13 @@
                 padding-top: 25%;
             }
                 .portfolio-main .folio-1 .folio-text{
-                     font-size: 1.17em;
+                    padding: 15px 30px;
+                     font-size: .99em;
                   }
+                    .portfolio-main .folio-1 .folio-grad{
+                        display: block;
+                        opacity: 1;
+                    }
 
         .portfolio-main .img-small{
             width: 100%;
@@ -417,6 +422,9 @@ body{
                 .folio-1 .folio-city{
                     font-size: 1em;
                 }
+                    .portfolio-main .folio-1 .folio-grad{
+                        display: none;
+                    }
             .portfolio-main .folio-2 .folio-text{
                 bottom: -70px;
                 padding: 0;

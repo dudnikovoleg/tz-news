@@ -544,12 +544,13 @@
 
 /**** Reviews client ****/
 
+.reviews-title
+	padding: 40px 20px 0 20px
+	font-family: "AvenirNextW1G-Light", sans-serif
+	text-align: center
+	font-size: 2.78em
 .reviews
 	text-align: center
-	h2
-		padding-top: 40px
-		font-family: "AvenirNextW1G-Light", sans-serif
-		font-size: 2.78em
 	p
 		padding: 0 4%
 		margin: 27px 0 10px 0
@@ -571,6 +572,28 @@
 	.author-position
 		font-size: .7em
 		color: $grey
+
+.slick-dots
+	position: absolute
+	right: 0
+	left: 0
+	bottom: -45px
+	text-align: center
+	.slick-active .slide
+		background: #afafaf
+
+	li
+		margin: 0 12px
+		display: inline-block
+		cursor: pointer
+		.slide
+			display: inline-block
+			width: 7px
+			height: 7px
+			border: solid 1px #afafaf
+			border-radius: 50%
+			&:hover
+				border: solid 1px $red
 
 /** Iframe **/
 
@@ -660,28 +683,6 @@
 	.prev-item
 		left: 50px
 		top: 38%
-
-.slick-dots
-	position: absolute
-	top: -40px
-	right: 0
-	left: 0
-	text-align: center
-	.slick-active .slide
-		background: #afafaf
-
-	li
-		margin: 0 10px
-		display: inline-block
-		cursor: pointer
-		.slide
-			display: inline-block
-			width: 7px
-			height: 7px
-			border: solid 1px #afafaf
-			border-radius: 50%
-			&:hover
-				border: solid 1px $red
 
 /*** Pop up ***/
 
@@ -815,3 +816,4 @@ footer
 /** Include style for News **/
 
 @import "news"
+@import "narujnaya"

@@ -9,19 +9,14 @@
 
 
         var iconClose       = false, //nid for changed icons menu on close icon
-            allMenuBlock    = $('.sidebar-main, .sidebar-sub, .sidebar-address, .download-price'),
             maxWith         = 1600,
             Indentation     = 36,
             modal           = $('.modal-box'),
             opnBtn          = $('.callback-btn'),
             closeBtn        = $('.modal-close'),
             upBtn           = $('#up-btn'),
-            count           = $('.page').length,
             sbAddress       = $('.sidebar-address'),
-            cbNav           = $('.sidebar nav, .download'),
-            pageIndex,
-            startPage;
-
+            cbNav           = $('.sidebar nav, .download');
 
 
 
@@ -83,8 +78,6 @@
 /* ---------------------------------------------- */
 
 
-
-
         $('.menu-btn').on('click', function () {
             sbAddress.removeClass('open');//remove added classes
             sbAddress.addClass('close');//remove added classes
@@ -138,89 +131,6 @@
         closeBtn.on('click', function() {
             modal.css('display', 'none');
         });
-
-/* ---------------------------------------------- /*
-* Slider
-/* ----------------------------------------- */
-
-        $('.news-slider').slick({
-
-            infinite: false,
-            touchMove: false,
-            prevArrow: $('.prev-arrow'),
-            nextArrow: $('.next-arrow')
-        });
-
-
-        function slidPage() {
-            pageIndex = $('.page.slick-active').index()+1;
-
-            startPage = (pageIndex + '/' + count);
-
-            $('.slick-pag').text(startPage)
-
-        }
-
-        slidPage();
-        $('.news-slider').on('swipe', function(event, slick, direction){
-            slidPage();
-        });
-
-
-        $('.slick-arrow').on('click', function () {
-            slidPage()
-        });
-
-
-/* ---------------------------------------------- /*
-*  Carousel footer
-/* ---------------------------------------------- */
-
-        $('.responsive-carousel').slick({
-            dots: true,
-            touchMove: false,
-
-            infinite: true,
-            slidesToShow: 6,
-            slidesToScroll: 2,
-            prevArrow: $('.prev-item'),
-            nextArrow: $('.next-item'),
-            customPaging : function( i) {
-
-                return '<a class="slide"></a>';
-            },
-            responsive: [
-                {
-                    breakpoint: 1300,
-                    settings: {
-                        slidesToShow: 4,
-                        slidesToScroll: 2,
-                        infinite: true,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                    }
-                }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ]
-
-        });
-
-
 
 
     });
