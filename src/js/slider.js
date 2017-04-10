@@ -7,16 +7,10 @@
     $(document).ready(function () {
 
 
-
     var     modal           = $('.modal-box'),
             count           = $('.page').length,
             pageIndex,
             startPage;
-
-
-
-
-
 
         /* ---------------------------------------------- /*
          * Slider
@@ -24,7 +18,7 @@
 
         $('.news-slider').slick({
 
-            infinite: false,
+            infinite: true,
             touchMove: false,
             prevArrow: $('.prev-arrow'),
             nextArrow: $('.next-arrow')
@@ -32,12 +26,11 @@
 
 
         function slidPage() {
-            pageIndex = $('.page.slick-active').index()+1;
+            pageIndex = $('.page.slick-active').index();
 
             startPage = (pageIndex + '/' + count);
 
             $('.slick-pag').text(startPage)
-
         }
 
         slidPage();
@@ -78,7 +71,6 @@
         $('.responsive-carousel').slick({
             dots: false,
             touchMove: false,
-
             infinite: true,
             slidesToShow: 6,
             slidesToScroll: 2,

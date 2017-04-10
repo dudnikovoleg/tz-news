@@ -197,7 +197,6 @@
 			white-space: nowrap
 			font-size: .966em
 			transition: opacity .3s
-
 	.header-calc
 		margin-top: 30px
 	.calc-btn
@@ -217,7 +216,6 @@
 			cursor: pointer
 			background: #ffffff
 			color: $red
-
 	.header-calc
 		h3
 			margin-top: 10px
@@ -241,8 +239,7 @@
 		text-align: center
 	p
 		margin: 0
-	.folio-link:hover p
-		color: $red
+
 	.folio-link:hover .folio-grad
 		opacity: 1
 	.img-small,
@@ -307,6 +304,8 @@
 
 	.folio-list
 		margin-right: -4%
+		.folio-link:hover p
+			color: $red
 		.folio-item
 			display: inline-table
 			width: 29.65%
@@ -442,7 +441,7 @@
 			position: absolute
 			top: 0
 			bottom: 0
-			left: 49.9%
+			left: 49.9999%
 			width: 1px
 			background: #e9ecee
 
@@ -511,11 +510,13 @@
 	.news-slider
 		width: 60%
 		color: #ffffff
+		.page
+			color: #ffffff
+			cursor: pointer
 		img
 			float: left
 			width: 18%
 			padding: 10px
-
 		.text
 			padding-left: 20%
 			line-height: 27px
@@ -525,6 +526,10 @@
 		h3
 			font-size: .92em
 			font-weight: 700
+			color: #ffffff
+			transition: color .3s
+			&:hover
+				color: $red
 		p
 			margin: 0
 			font-size: .68em
@@ -546,7 +551,7 @@
 /**** Reviews client ****/
 
 .reviews-title
-	padding: 40px 0px 0 20px
+	padding: 40px 0 0 20px
 	font-family: "AvenirNextW1G-Light", sans-serif
 	text-align: center
 	font-size: 2.78em

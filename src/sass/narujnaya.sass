@@ -59,6 +59,11 @@
 		background: $red
 		border-radius: 25px
 		transition:  all .3s
+		color: #ffffff
+		&:hover
+			cursor: pointer
+			background: #ffffff
+			color: $red
 	.header-calc h3
 		width: 57%
 		margin: 10px auto
@@ -103,8 +108,7 @@
 			margin-top: 30px
 			font-size: 1.1em
 			span
-				font-size: .82em
-
+				font-size: .78em
 		.advantages-icon
 			display: block
 			background: url("../img/target_price.png") no-repeat
@@ -115,3 +119,44 @@
 				background-position: -104px 4px
 			&.purse
 				background-position: 0px -2px
+
+/**** statistic billboard ****/
+
+.number-statistic
+	.total-billboard
+		padding: 9% 16%
+		background: url("../img/total_billboard-bg.jpg") no-repeat center
+		background-size: cover
+	.total-info
+		padding: 45px 5% 30px 11%
+		background: $red
+		color: #ffffff
+		p
+			margin-top: 0
+		.info-text,
+		.info-number
+			display: inline-block
+			vertical-align: top
+		.info-number
+			width: 28%
+			font-size: 1.119em
+			.number
+				font-weight: 700
+				font-size: 3em
+				line-height: 50px
+		.info-text
+			width: 65%
+			.title
+				margin-bottom: 35px
+				font-size: 1.58em
+				line-height: 30px
+			.descr
+				margin-bottom: 5px
+				font-size: .674em
+			a
+				font-weight: 700
+				font-size: .67em
+				border-bottom: dotted 1px rgba(250,250,250,.5)
+				color: #ffffff
+
+
