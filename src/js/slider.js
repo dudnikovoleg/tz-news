@@ -57,11 +57,14 @@
         $('.reviews-slide').slick({
             dots: true,
             arrows: false,
+            slidesToScroll: 1,
             adaptiveHeight: true,
             touchMove: false,
             infinite: true,
+            autoplay: true,
+            autoplaySpeed: 6000,
 
-            customPaging : function( i) {
+            customPaging : function(i) {
 
                 return '<a class="slide"></a>';
             }
