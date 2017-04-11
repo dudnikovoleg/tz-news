@@ -10,7 +10,7 @@
 		background-size: cover
 		display: block
 		width: 100%
-		padding-top: 660px
+		padding-top: 650px
 		opacity: .5
 	.header-naruj-cont
 		position: absolute
@@ -159,4 +159,266 @@
 				border-bottom: dotted 1px rgba(250,250,250,.5)
 				color: #ffffff
 
+/*** Diagram ***/
 
+.diagram
+	position: relative
+	height: 300px
+	overflow: hidden
+	background: #2e2e2e
+	text-align: center
+	color: white
+	h3
+		position: absolute
+		top: 35px
+		left: 85px
+		right: 0
+		font-size: 1.56em
+		z-index: 99
+	.y-axis
+		height: 100%
+		padding: 20px 10px 30px 15px
+		float: left
+		text-align: end
+		border-right: solid 2px #454545
+		li
+			font-size: .58em
+			line-height: 25px
+			color: #606060
+		.lrg-indent
+			line-height: 35px
+		.price,
+		.amount
+			font-size: .91em
+			color: #afafaf
+		.price
+			padding-bottom: 17px
+			line-height: 22px
+		.amount
+			padding-top: 20px
+
+	.x-axis
+		margin-top: 20px
+		text-align: start
+		white-space: nowrap
+		vertical-align: text-top
+		font-size: 0
+		overflow-x: scroll
+	.x-axis::-webkit-scrollbar
+		width: 0
+	.x-axis
+		-ms-overflow-style: none
+	.x-axis
+		overflow: -moz-scrollbars-none
+		li
+			display: inline-block
+			font-size: 18px
+			border-right: solid 1px transparent
+			text-align: center
+			.chart
+				position: absolute
+				display: block
+				width: 100%
+				background: #454545
+				bottom: 0
+				left: 0
+			.bilb-diagr
+				height: 33%
+			.sity-diagr
+				height: 19%
+			.scroll-diagr
+				height: 36%
+			.brand-diagr
+				height: 100%
+			.back-sm-diagr
+				height: 30%
+			.back-lg-diagr
+				height: 48%
+			.ost-diagr
+				height: 35%
+			div
+				display: inline-block
+				position: relative
+				width: 100%
+				min-width: 135px
+				height: 200px
+				padding-top: 85px
+			p
+				position: relative
+				font-size: .89em
+			.size
+				font-size: .9em
+				color: $grey
+
+		.bord-icon
+			display: block
+			margin: 0 auto 0
+			background: url("../img/diagram_icon.png") no-repeat
+			width: 72px
+			height: 55px
+		.bilb
+			background-position-x: 10px
+		.sity
+			background-position-x: -95px
+		.scroll
+			background-position-x: -196px
+		.brand
+			background-position-x: -297px
+		.back-sm
+			background-position-x: -393px
+		.back-lg
+			background-position-x: -505px
+		.ost
+			background-position-x: -628px
+	.sum
+		display: block
+		padding-top: 24px
+		font-size: .89em
+
+/*** Compare ***/
+
+.compare
+	padding: 30px 0
+	background: #f7f8f9
+	.plus,
+	.minus
+		float: left
+		padding: 0 5% 0 12%
+		width: 48%
+	.plus
+		li:before
+			content: "\f067"
+			display: inline-block
+			padding-right: 10px
+			font-family: $awesome
+			font-size: inherit
+			text-rendering: auto
+			-webkit-font-smoothing: antialiased
+			color: $red
+	.minus
+		li:before
+			content: "\f068"
+			display: inline-block
+			padding-right: 10px
+			font-family: $awesome
+			font-size: inherit
+			text-rendering: auto
+			-webkit-font-smoothing: antialiased
+			color: $red
+	h3
+		margin-bottom: 15px
+		font-size: 	1.11em
+	li
+		line-height: 35px
+		font-size: .66em
+
+/****  How works  ****/
+
+.howe-work
+	.online
+		padding: 4% 44% 0 11.5%
+		background: url("../img/online_raschet.jpg") no-repeat top left
+		background-size: cover
+		h3
+			font: 2.8em "AvenirNextW1G-Light", sans-serif
+		p
+			margin: 10px 65px 0 0
+			font-size:  1.12em
+		.calculation
+			span
+				display: inline-block
+				margin: 25px 8px 40px 8px
+				padding: 13px 30px
+				font-size: .74em
+				font-weight: 700
+				text-transform: uppercase
+				letter-spacing: 1px
+
+				background: #ffffff
+				border-radius: 25px
+				transition: color .3s
+				&:hover
+					color: $red
+
+.about-work
+	padding: 50px 0
+	h3
+		font: 2.8em "AvenirNextW1G-Light", sans-serif
+		text-align: center
+	ul
+		font-size: 0
+		text-align: center
+	.top
+		margin: 0 -19px 0 6px
+		li
+			display: inline-block
+			margin-top: 40px
+			font-size: 18px
+			text-align: start
+			width: 23.99%
+			vertical-align: top
+	.bottom
+		margin: 0 135px 0 157px
+		li
+			display: inline-block
+			margin-top: 40px
+			font-size: 18px
+			text-align: start
+			width: 33%
+			vertical-align: top
+	li
+		&:after
+			content: "."
+			display: block
+			clear: both
+			visibility: hidden
+			height: 0
+		p
+			margin: 20px 10px 0 20px
+			padding-left: 35px
+			font-size: .9em
+		.number
+			float: left
+			font-family: "AvenirNextW1G-Light", sans-serif
+			font-size: 3.79em
+			color: $red
+		.descr
+			display: inline-block
+			margin-top: 14px
+			font-size: .78em
+
+.check-point
+	height: 270px
+	margin-bottom: -50px
+	background: url("../img/map.jpg") no-repeat center
+	background-size: cover
+
+.complex
+	padding: 40px 2% 0 2%
+	text-align: center
+	h3
+		font: 2.8em "AvenirNextW1G-Light", sans-serif
+
+	ul
+		padding: 40px 0 45px 0
+		font-size: 0
+		li
+			vertical-align: top
+			display: inline-block
+			width: 25%
+			padding:  0 25px
+			font-size: 16px
+			font-weight: 700
+		span
+			display: inline-block
+			width: 70px
+			height: 70px
+			background: url("../img/complex.png") no-repeat
+		.bilb
+			background-position: -9px -2px
+		.mac
+			background-position: -129px -3px
+		.print
+			background-position: -247px -4px
+		.past
+			background-position: -367px 0px

@@ -3,19 +3,54 @@
 
 @media all and (min-width: 1600px) {
 
-/**** Main page ****/
+/**** Main page start ****/
 
     .reviews p  {
         padding: 0 20%;
     }
 
+/**** Main page end ****/
+
+
+/**** Narujnaya reklama ****/
+
+    .advantages-naruj .wrap-discr ul{
+        padding: 0 14%;
+    }
+
+    /*********************/
+
+    .number-statistic .total-billboard{
+        padding: 7% 16%;
+
+    }
+
+    /*********************/
+
+    .diagram {
+        padding-left: 25px;
+    }
+
+    .diagram .x-axis li div{
+        min-width: 175px;
+    }
+
+    /*********************/
+
+    .howe-work .online {
+        padding: 4% 44% 4% 11.5%;
+    }
 }
 
 /***** Width 1024 *****/
 
-@media all and (min-width: 1024px) {
+@media all and (max-width: 1024px) {
+    .callback-box .callback-btn{
+        margin-top: 15px;
+    }
 
-/**** Main page start ****/
+
+    /**** Main page start ****/
 
     .header-main .header-main-cont{
         padding: 80px 0 50px 0;
@@ -170,9 +205,6 @@
 
     /*********************/
 
-    .callback-box .callback-btn{
-        margin-top: 15px;
-    }
     .slick-dots li .slide:hover {
         border: solid 1px #afafaf;
     }

@@ -83,8 +83,6 @@
                     settings: {
                         slidesToShow: 4,
                         slidesToScroll: 2,
-                        infinite: true,
-                        dots: true
                     }
                 },
                 {
