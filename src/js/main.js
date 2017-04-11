@@ -136,7 +136,10 @@
     });
 })(jQuery);
 
+$(document).on('click', '.header-calc .calc-btn, .online .calculation a', function(){
 
+    localStorage["calcHistory"] = location.href;
 
+});
 
 
