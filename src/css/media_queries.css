@@ -1,5 +1,13 @@
 
+
+
+
+/***********************/
 /***** Width 1600 *****/
+/***********************/
+
+
+
 
 @media all and (min-width: 1600px) {
 
@@ -10,7 +18,6 @@
     }
 
 /**** Main page end ****/
-
 
 /**** Narujnaja reklama ****/
 
@@ -42,15 +49,20 @@
     }
 }
 
+
+
+
+/***********************/
 /***** Width 1024 *****/
+/***********************/
+
+
+
 
 @media all and (max-width: 1024px) {
 
 
-
-
-
-    /**** Main page start ****/
+/**** Main page start ****/
 
     .header-main .header-main-cont{
         padding: 80px 0 50px 0;
@@ -202,7 +214,15 @@
     }
 }
 
+
+
+
+/***********************/
 /***** Width 768px *****/
+/***********************/
+
+
+
 
 @media all and (max-width: 768px) {
     body{
@@ -333,7 +353,7 @@
 
 /**** Main page end ****/
 
-    /******* Sidebar *******/
+/******* Sidebar *******/
 
     .close{
         display: none;
@@ -378,6 +398,7 @@
                     font-size: 1.16em;
                     margin-top: 25px;
                 }
+
     .mobile-sidebar {
         position: fixed;
         top: 0;
@@ -612,20 +633,17 @@
         padding-right: 0;
     }
 
-
 /**** News page end *****/
 
 }
-/***** Width 720px *****/
-
-@media all and (max-width: 720px){
-    .navbar .navbar-list{
-        display: block;
-    }
-}
 
 
+/***********************/
 /***** Width 630px *****/
+/***********************/
+
+
+
 
 @media all and (max-width: 630px){
 body{
@@ -1022,15 +1040,12 @@ body{
                 font-size: 1.15em;
                 line-height: 20px;
             }
-            .number-statistic .total-info .info-text a{
+            .number-statistic .total-info .info-text .show-text{
                 font-size: 1.11em;
             }
-            .text-over{
-                display: inline-block;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                width: 75%;
-                white-space: nowrap;
+            .number-statistic .total-info .info-text .text-over{
+                width: 35%
+
             }
 
     /*********************/
@@ -1139,7 +1154,7 @@ body{
     }
 
 
-    /**** Narujnaja end ****/
+/**** Narujnaja end ****/
 
 /**** News page start *****/
 
@@ -1148,8 +1163,11 @@ body{
         font-size: 1.8em;
     }
 
+    .navbar .navbar-list{
+        display: block;
+    }
     .navbar .navbar-list a {
-        padding: 12px 0;
+        padding: 12px 10px;
         font-size: .735em;
     }
 
@@ -1181,7 +1199,15 @@ body{
 
 }
 
+
+
+
+/***********************/
 /***** Width 524px *****/
+/***********************/
+
+
+
 
 @media all and (max-width: 524px){
 

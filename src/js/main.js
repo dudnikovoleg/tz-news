@@ -132,6 +132,17 @@
             modal.css('display', 'none');
         });
 
+/* ---------------------------------------------- /*
+ *  Slice text
+ /* ---------------------------------------------- */
+
+
+        $(".show-text").click(function() {
+            $('.text-over').css({
+                'white-space': 'normal',
+                'width':  '100%'
+            });
+        });
 
     });
 })(jQuery);
