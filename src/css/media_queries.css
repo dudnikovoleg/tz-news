@@ -12,7 +12,7 @@
 /**** Main page end ****/
 
 
-/**** Narujnaya reklama ****/
+/**** Narujnaja reklama ****/
 
     .advantages-naruj .wrap-discr ul{
         padding: 0 14%;
@@ -45,9 +45,9 @@
 /***** Width 1024 *****/
 
 @media all and (max-width: 1024px) {
-    .callback-box .callback-btn{
-        margin-top: 15px;
-    }
+
+
+
 
 
     /**** Main page start ****/
@@ -62,7 +62,7 @@
     /*********************/
 
     .portfolio-main {
-        padding: 40px 4% 40px;
+        padding: 40px 4% 50px;
     }
         .portfolio-main .folio-btn{
             margin-top: 60px;
@@ -85,6 +85,121 @@
 
 /**** Main page end ****/
 
+    /*********************/
+
+    .header-naruj .billboard-info li{
+        padding: 50px 5px;
+    }
+
+    /*********************/
+
+    .advantages-naruj .head-line{
+        padding: 40px 40px 0;
+    }
+    .advantages-naruj .arrow{
+        margin-bottom: -34px;
+    }
+
+    /*********************/
+
+    .advantages-naruj .wrap-discr li {
+        padding: 60px 10px 60px 15px;
+    }
+
+    .number-statistic .total-billboard {
+        padding: 12% 4%;
+    }
+
+    .number-statistic .total-info {
+        padding: 45px 4% 28px 4%;
+    }
+        .number-statistic .total-info .info-text .title{
+            padding-right: 15px;
+        }
+
+    /*********************/
+
+    .diagram .y-axis{
+        padding: 24px 5px 30px 9px;
+
+    }
+        .diagram .y-axis .price{
+            padding-bottom: 21px;
+            line-height: 17px;
+        }
+            .diagram .y-axis .price, .diagram .y-axis .amount{
+                font-size: .8em;
+            }
+
+    /*********************/
+
+    .diagram .x-axis li div{
+        min-width: 103px;
+    }
+        .diagram h3{
+            left: 35px;
+        }
+
+    /*********************/
+
+    .compare h3{
+        margin-bottom: 5px;
+    }
+        .plus  h3{
+            padding-left: 15px;
+        }
+
+    .compare li{
+        padding-left: 20px;
+        line-height: 20px;
+    }
+        .compare .plus, .compare .minus{
+            padding: 0 5% 0 10%;
+        }
+        .compare .minus li:before{
+            margin-left: -20px;
+        }
+
+    /*********************/
+
+
+    .howe-work .online {
+        padding: 5% 28% 0 11.5%;
+
+        background-size: 130% 100%;
+        background-position-x: 17%;
+    }
+
+    /*********************/
+
+    .about-work {
+        padding: 25px 0;
+    }
+
+    .about-work .bottom li{
+        margin-top: 20px;
+    }
+
+    /*********************/
+
+    .callback-box .callback-btn{
+        vertical-align: text-bottom;
+        width: 200px;
+        margin-top: 0 ;
+        padding: 13px 0;
+    }
+    .callback-box h3{
+        width: 59%;
+        text-align: right;
+        margin: 25px 15px 0 0;
+
+    }
+
+    /*********************/
+
+    .complex ul li{
+        padding: 0 15px;
+    }
 }
 
 /***** Width 768px *****/
@@ -92,6 +207,9 @@
 @media all and (max-width: 768px) {
     body{
         font-size: 16px;
+    }
+    h1{
+        font-size: 2.9em;
     }
 
 /**** Main page start ****/
@@ -110,6 +228,10 @@
     .portfolio-main{
         padding: 30px 3% 40px;
     }
+        .portfolio-main h2{
+
+            font-size: 2.9em;
+        }
         .portfolio-main .folio-link:hover p{
             color: #ffffff;
         }
@@ -300,7 +422,7 @@
     .callback-box,
     .bottom-news
     {
-        padding: 0 6%;
+        padding: 0 2%;
     }
 
 /***** News page start *****/
@@ -361,7 +483,117 @@
                 }
 
 
+    /********** Narujka ***********/
+
+    .header-naruj .naruj-bg {
+        background-size: 161% 100%;
+        background-position:  55% 100% ;
+        padding-top: 570px;
+    }
+
+    .header-naruj .header-naruj-cont{
+        padding: 115px 4% 4%;
+    }
+        .header-naruj .billboard-info li{
+            font-size: 14px;
+            padding: 38px 13px;
+            height: 155px;
+        }
+            .header-naruj .billboard-info li .number {
+                font-size: 1.21em;
+            }
+                .header-naruj .billboard-info li p{
+                    margin-top: 0;
+                    line-height: 20px;
+                }
+
+                .header-naruj .calc-btn{
+                    font-size: .934em;
+                }
+
     /*********************/
+
+    .advantages-naruj .head-line{
+        font-size: 1.18em;
+        padding: 30px 80px 7px 80px;
+    }
+    .advantages-naruj .arrow {
+        margin-bottom: -42px;
+    }
+
+    .advantages-naruj .wrap-discr ul {
+        padding: 0 ;
+        font-size: 1.12em;
+    }
+        .advantages-naruj .wrap-discr li {
+            padding: 60px 15px 40px 15px;
+        }
+
+    /*********************/
+
+    .number-statistic .total-billboard {
+        padding: 13.5% 4%;
+        font-size: 1.129em;
+    }
+    .diagram h3 {
+        top: 30px;
+        left: 40px;
+        font-size: 1.23em;
+    }
+    .number-statistic{
+        margin-bottom: 15px;
+    }
+
+    /*********************/
+
+    .portfolio-main .folio-btn {
+        margin-top: 75px;
+    }
+
+
+    /*********************/
+
+    .howe-work .online {
+        padding: 7% 35% 0 3%;
+        background-size: 156% 100%;
+    }
+        .howe-work .online .calculation span {
+            font-size: .82em
+        }
+        .howe-work .online p {
+                margin: 30px 65px 0 0;
+                font-size: 1.25em;
+            }
+
+    /*********************/
+    .about-work {
+        padding: 40px 0;
+    }
+        .about-work h3{
+            font-size: 3.12em;
+        }
+        .about-work .top {
+            margin: 0;
+        }
+            .about-work .top li{
+                margin-top: 20px;
+                font-size: 18px;
+            }
+                .about-work li p{
+                    margin: 25px 10px 0px 10px;
+                }
+                    .about-work .bottom {
+                        margin: 0 14% 1% 14%;
+                    }
+
+    /*********************/
+    .revolt-today .about h2{
+        padding-top: 20px;
+    }
+    .revolt-today .revolt-today-btn span{
+        font-size: .75em;
+    }
+    /********** Novosti ***********/
 
     .header-news{
         padding: 15px 6%;
@@ -379,6 +611,7 @@
     .navbar .navbar-list:last-child{
         padding-right: 0;
     }
+
 
 /**** News page end *****/
 
@@ -398,6 +631,9 @@
 body{
     font-size: 13px;
 }
+    h1 {
+        font-size: 2.2em;
+    }
 
 /**** Main page start *****/
 
@@ -684,11 +920,226 @@ body{
         margin-top: 15px ;
     }
 
+/**** Main page end *****/
+
+/**** Narujnaja start ****/
+
+    .header-naruj .naruj-bg {
+        background-size: 431% 100%;
+        background-position: 41% 100%;
+    }
+        .header-naruj .header-naruj-cont {
+            padding: 35px 4% 4%;
+        }
+
+    .header-naruj .billboard-info{
+        white-space: normal;
+        margin-top: 15px;
+    }
+
+    /*********************/
+
     .wrap-carousel .responsive-carousel{
         padding: 28px 0;
     }
+    .header-naruj .billboard-info li{
+        width: 47%;
+        max-height: 108px;
+        margin: 0 -1px -1px 0 ;
+        padding: 20px 5px;
+        font-size: 13px;
+        border: solid 1px #949495;
+    }
+        .header-naruj .billboard-info li:last-of-type{
+            height: 85px;
+        }
 
-/**** Main page end *****/
+    .header-naruj .calc-btn {
+        padding: 15px 20px;
+        font-size: .82em;
+    }
+        .header-naruj .header-calc {
+            margin-top: 20px;
+        }
+            .header-naruj .header-calc h3 {
+                width: auto;
+                letter-spacing: 1px;
+                margin: 10px 5px;
+                line-height: 20px;
+                font-size: .79em;
+            }
+
+    .advantages-naruj .head-line{
+        padding: 30px 15px 10px 15px;
+        font-size: 1.02em;
+    }
+        .advantages-naruj .wrap-discr .line{
+            display: none;
+        }
+        .advantages-naruj .wrap-discr li{
+            display: block;
+            width: 100%;
+            padding: 30px 15px 2px 15px;
+            border: solid 1px #f7f8f9;
+        }
+
+            .advantages-naruj .wrap-discr p{
+                margin-top: 15px;
+            }
+                .advantages-naruj .wrap-discr .advantages-icon.target {
+                    background-position: -76px 7px;
+                }
+                .advantages-naruj .wrap-discr .advantages-icon {
+                     width: 55px;
+                    background-size: 129px;
+
+                    height: 65px;
+                 }
+
+    /*********************/
+
+    .number-statistic .total-info .info-text,
+    .number-statistic .total-info .info-number{
+        display: block;
+        width: 100%;
+    }
+        .number-statistic .total-info{
+          padding:   30px 10% 28px 12%;
+        }
+            .number-statistic .total-info .info-number {
+                font-size: 1.29em;
+            }
+
+            .number-statistic .total-info .info-text {
+                font-size: 0.72em;
+            }
+            .number-statistic .total-info .info-text .title{
+                margin: 20px 0 5px 0;
+
+                line-height: 25px;
+            }
+            .number-statistic .total-info .info-text .descr {
+                font-size: 1.15em;
+                line-height: 20px;
+            }
+            .number-statistic .total-info .info-text a{
+                font-size: 1.11em;
+            }
+            .text-over{
+                display: inline-block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 75%;
+                white-space: nowrap;
+            }
+
+    /*********************/
+
+    .diagram h3 {
+        top: 23px;
+        left: 13px;
+        font-size: 1.5em;
+        right: 5px;
+    }
+
+    /*********************/
+
+    .portfolio-main .folio-btn span {
+        padding: 14px 20px;
+        font-size: .98em;
+        letter-spacing: 1px;
+
+    }
+
+    /*********************/
+
+    .compare .plus, .compare .minus{
+        float: none;
+        width: 100%;
+        padding: 0;
+        font-size: 1.4em;
+    }
+
+    .compare .minus{
+        margin-top: 25px;
+        padding: 0 30px 0 20px;
+    }
+
+    .howe-work .online{
+        text-align: center;
+        padding: 40px 10px 0 10px;
+
+    }
+
+    .howe-work .online h3{
+        font-size: 2.12em;
+    }
+    .howe-work .online p{
+        margin: 5px 0 0 0 ;
+    }
+
+    .howe-work .online .calculation span {
+        margin: 20px 0 25px 0;
+        padding: 13px 30px;
+        font-size: 1.0203em;
+    }
+
+
+    /*********************/
+
+    .about-work {
+        padding: 30px 14px;
+    }
+        .about-work h3{
+            font-size: 2.3em;
+        }
+        .about-work .top li,
+        .about-work .bottom li{
+            margin-top: 25px;
+        }
+            .about-work .top li,
+            .about-work .bottom li{
+                display: inline-block;
+                width: 100%;
+            }
+            .about-work .bottom{
+                margin: 0;
+            }
+    .about-work li .number{
+            font-size: 2.6em;
+        }
+
+        .about-work li p{
+            margin-top: 0;
+        }
+
+    /*********************/
+
+    .callback-box h3{
+        width: 100%;
+        text-align: center;
+    }
+    .callback-box .callback-btn{
+        font-size: 1.012em;
+    }
+
+    /*********************/
+    .complex h3{
+        font-size: 2.2em;
+    }
+    .complex ul{
+        padding-top: 25px;
+    }
+        .complex ul li{
+            width: 50%;
+            padding: 0;
+        }
+    .complex ul li p{
+        margin-top: 5px;
+    }
+
+
+    /**** Narujnaja end ****/
 
 /**** News page start *****/
 
@@ -701,6 +1152,7 @@ body{
         padding: 12px 0;
         font-size: .735em;
     }
+
 
 /**** News page ebd *****/
 
