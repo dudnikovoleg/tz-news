@@ -142,4 +142,11 @@ $(document).on('click', '.header-calc .calc-btn, .online .calculation a', functi
 
 });
 
+$(document).on('ready', function(){
+
+   localStorage.removeItem("calcHistory");
+
+});
+
+
 
