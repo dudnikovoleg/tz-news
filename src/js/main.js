@@ -47,32 +47,12 @@
  * Up button
 /* ---------------------------------------------- */
 
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 100 && screen.width >= 768) {
-                if (upBtn.is(':hidden')) {
-                    upBtn.css({opacity : 1}).fadeIn('slow');
-                }
-            } else { $('#up-btn').stop(true, false).fadeOut('fast'); }
-        });
+
         upBtn.click(function() {
             $('html, body').stop().animate({scrollTop : 0}, 300);
         });
 
-// Changes the indentation for a width greater than 1600
-        function windowSize(){
 
-            if ($(window).width() >= '1600'){
-                var  dd  = $(window).width() - maxWith + Indentation;
-
-                $('.up-btn').css({right : dd + 'px'});
-                console.log()
-            } else {
-                $('.up-btn').css({right : '36px'});
-            }
-        }
-
-        $(window).ready(windowSize);
-        $(window).resize(windowSize);
 /* ---------------------------------------------- /*
  * menu show
 /* ---------------------------------------------- */
@@ -92,6 +72,27 @@
 
             $('.sidebar, .bg-sidebar').toggleClass('open-sidebar');  //open sidebar
             sbAddress.addClass('open');  //shows the desired menu item
+        });
+
+
+/******* If clock out element *******/
+
+        $(document).on('click', function(event) {
+            if ($(event.target).closest("#sidebar, .mobile-sidebar").length) return;
+
+            cbNav.removeClass('open');
+            cbNav.addClass('close');
+            $('.sidebar, .bg-sidebar').removeClass('open-sidebar');
+
+
+            sbAddress.removeClass('open');
+            sbAddress.addClass('close');
+            $('.sidebar, .bg-sidebar').removeClass('open-sidebar');
+
+
+            $('.menu-btn, .phone-btn').removeClass('active');
+            iconClose = false
+
         });
 
 /* ---------------------------------------------- /*
@@ -138,10 +139,13 @@
 
 
         $(".show-text").click(function() {
-            $('.text-over').css({
-                'white-space': 'normal',
-                'width':  '100%'
-            });
+            $('.text-over').slideDown('300')
+
+            $('.text-over').toggleClass('open');
+
+            $(this).text(function(i, text){
+                return text === "Свернуть" ? "Подробнее" : "Свернуть";
+            })
         });
 
     });

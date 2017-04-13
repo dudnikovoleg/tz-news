@@ -16,7 +16,18 @@
     .reviews p  {
         padding: 0 20%;
     }
+    .revolt-today .about{
+        padding: 0 15%;
+    }
 
+    /*********************/
+
+    .wrap-carousel img{
+        width: auto;
+    }
+ .up-btn{
+     right: 60px;
+ }
 /**** Main page end ****/
 
 /**** Narujnaja reklama ****/
@@ -27,9 +38,8 @@
 
     /*********************/
 
-    .number-statistic .total-billboard{
-        padding: 7% 16%;
-
+    .number-statistic .total-info .info-text{
+        width: 50%;
     }
 
     /*********************/
@@ -65,10 +75,12 @@
 /**** Main page start ****/
 
     .header-main .header-main-cont{
-        padding: 80px 0 50px 0;
+        padding: 80px 0 60px 0;
     }
         .header-main .header-main-nav li{
-            width: 17%;
+            width: 22%;
+            margin: 0 -50px;
+
         }
 
     /*********************/
@@ -89,12 +101,35 @@
     /*********************/
 
     .description-ad{
-        margin-top: 15px;
+        margin-top: 20px;
     }
         .description-ad li{
             padding-bottom: 2%;
         }
+    .revolt-today .statistic li .text {
+        margin-bottom: 35px;
+        font-size: .8em;
+    }
 
+
+        .revolt-today .statistic li .year{
+            background-position: 4px 24px
+        }
+        .revolt-today .statistic li .comp{
+            background-position: -87px 22px
+        }
+        .revolt-today .statistic li .city{
+            background-position: -171px 23px
+        }
+        .revolt-today .statistic li .place{
+            background-position: -268px 20px
+        }
+
+    /*********************/
+
+    .description-ad li span{
+        left: -75px;
+    }
 /**** Main page end ****/
 
     /*********************/
@@ -118,11 +153,12 @@
         padding: 60px 10px 60px 15px;
     }
 
-    .number-statistic .total-billboard {
-        padding: 12% 4%;
-    }
+
 
     .number-statistic .total-info {
+        top: 21%;
+        left: 3%;
+        right: 3%;
         padding: 45px 4% 28px 4%;
     }
         .number-statistic .total-info .info-text .title{
@@ -218,6 +254,25 @@
 
 
 /***********************/
+/***** min-width: 769px max-width: 1023px*****/
+/***********************/
+
+
+
+
+@media all and (min-width: 769px) and (max-width: 1023px) {
+    .header-main .header-main-nav li{
+        width: 28%;
+        margin: 0 -50px;
+
+    }
+}
+
+
+
+
+
+/***********************/
 /***** Width 768px *****/
 /***********************/
 
@@ -242,7 +297,14 @@
         letter-spacing: 1px;
         font-size: 1.12em;
     }
-
+    .header-main .calc-btn {
+        padding: 16px 36px;
+        font-size: 1em;
+        letter-spacing: 2px;
+    }
+    .header-main .header-calc h3 {
+        font-size: .65em;
+    }
     /*********************/
 
     .portfolio-main{
@@ -274,10 +336,15 @@
                         display: block;
                         opacity: 1;
                     }
-
-        .portfolio-main .img-small{
+            .img-small .folio-city {
+                font-size: .75em;
+            }
+            .folio-city {
+                 font-size: .8em;
+             }
+    .portfolio-main .img-small{
             width: 100%;
-            margin-top: 35px;
+            margin-top: 30px;
             }
             .portfolio-main .folio-2,
             .portfolio-main .folio-3{
@@ -298,18 +365,41 @@
             margin-right: 23px;
         }
 
-    /*********************/
+     /*********************/
 
     .revolt-today .about p {
         padding: 5px 40px;
         font-size: 1.255em;
     }
+    .revolt-today .about h2{
+        padding-top: 35px;
+    }
     .revolt-today .revolt-today-btn span{
-        margin-bottom: 15px
+        margin-bottom: 15px;
+        font-size: .75em;
+        letter-spacing: 1px;
+    }
+    .revolt-today .statistic li .number {
+        font-size: 2.4em;
     }
     .revolt-today .statistic li .text{
         font-size: 1em;
+        margin-bottom: 30px;
     }
+
+
+        .revolt-today .statistic li .year{
+            background-position: 4px 20px
+        }
+        .revolt-today .statistic li .comp{
+            background-position: -87px 18px
+        }
+        .revolt-today .statistic li .city{
+            background-position: -171px 19px
+        }
+        .revolt-today .statistic li .place{
+            background-position: -268px 17px
+        }
 
     /*********************/
 
@@ -333,8 +423,9 @@
                     width: 30%;
                 }
                 .news-slid .news-slider .text    {
-                    padding-left: 30%;
+                    padding-left: 32%;
                 }
+
 
     /*********************/
 
@@ -351,7 +442,10 @@
         border: solid 1px #afafaf;
     }
 
-/**** Main page end ****/
+    .up-btn{
+        display: none;
+    }
+        /**** Main page end ****/
 
 /******* Sidebar *******/
 
@@ -376,28 +470,43 @@
         overflow-y: scroll;
         font-size: 1.35em;
     }
-
         .sidebar .logo-link {
             display: none;
         }
-
-    .sidebar nav{
-        margin-top: 60px;
-    }
-    .sidebar .sidebar-address{
-        margin-top: 65px;
-    }
-        .sidebar .phone{
-            height: auto;
-            line-height: 35px;
-        }
-            .sidebar .sidebar-address label{
-                display: none;
+            .sidebar .sidebar-main a {
+                font-size: 0.75em;
+                letter-spacing: 0;
+                line-height: 20px;
             }
-                .mail{
-                    font-size: 1.16em;
-                    margin-top: 25px;
+
+    .sidebar nav {
+        margin-top: 70px;
+        margin-left: 4px;
+    }
+        .sidebar .sidebar-sub a ,
+        .sidebar .download .download-price{
+            font-size: .57em;
+        }
+            .sidebar .sidebar-address{
+                margin-top: 65px;
+            }
+                .sidebar .phone{
+                    height: auto;
+                    line-height: 35px;
                 }
+                    .sidebar .sidebar-address label{
+                        display: none;
+                    }
+                    .sidebar .phone a {
+                        font-size: 0.7em;
+                    }
+                    .sidebar .mail a {
+                        font-size: .49em;
+                    }
+                        .mail{
+                            font-size: 1.16em;
+                            margin-top: 25px;
+                        }
 
     .mobile-sidebar {
         position: fixed;
@@ -446,7 +555,6 @@
         padding: 0 2%;
     }
 
-/***** News page start *****/
 
 /**** Main ****/
 
@@ -454,7 +562,7 @@
         padding: 0 3%;
     }
         .header-main .header-main-cont{
-            padding-bottom: 35px;
+            padding-bottom: 37px;
         }
             .header-main .header-main-cont h2 {
                 margin-top: 40px;
@@ -553,7 +661,6 @@
     /*********************/
 
     .number-statistic .total-billboard {
-        padding: 13.5% 4%;
         font-size: 1.129em;
     }
     .diagram h3 {
@@ -570,7 +677,6 @@
     .portfolio-main .folio-btn {
         margin-top: 75px;
     }
-
 
     /*********************/
 
@@ -607,14 +713,7 @@
                         margin: 0 14% 1% 14%;
                     }
 
-    /*********************/
-    .revolt-today .about h2{
-        padding-top: 20px;
-    }
-    .revolt-today .revolt-today-btn span{
-        font-size: .75em;
-    }
-    /********** Novosti ***********/
+    /********** News ***********/
 
     .header-news{
         padding: 15px 6%;
@@ -665,18 +764,28 @@ body{
             line-height: 24px;
             font-size: 1.5em;
         }
+    .header-main .header-calc {
+        margin-top: 38px;
+    }
+        .header-main .calc-btn {
+            font-size: 1.2em;
+            letter-spacing: 2px;
+            padding:  15px 25px;
 
-        .header-main .calc-btn{
-            font-size: 1em;
         }
             .header-main .header-calc h3{
                 margin-top: 10px;
-                font-size: 1.18em;
+                font-size: 1.25em;
+                letter-spacing: 0;
             }
 
         .header-main .header-main-nav li{
             width: 38px;
         }
+
+            .header-main{
+                padding: 0 3%;
+            }
 
     /*********************/
 
@@ -700,12 +809,14 @@ body{
             font-size: 1em;
         }
             .portfolio-main .folio-1 .folio-text{
-                bottom: -90px;
+                bottom: -95px;
                 padding: 0;
                 font-size: .81em;
                 color: #1a191a;
             }
                 .folio-1 .folio-city{
+                    display: inline-block;
+                    padding-top: 8px;
                     font-size: 1em;
                 }
                     .portfolio-main .folio-1 .folio-grad{
@@ -725,10 +836,10 @@ body{
             }
 
     .portfolio-main .folio-list{
-        margin-top: 80px;
+        margin-top: 75px;
     }
         .portfolio-main .folio-list .folio-item p{
-            padding: 0 15px 0 34%;
+            padding: 5px 15px 10px 34%;
             font-size: 1.3em;
 
         }
@@ -737,7 +848,7 @@ body{
             }
             .portfolio-main .folio-list .folio-item{
                 width: 100%;
-                margin: 0 0 35px 0;
+                margin: 0 0 25px 0;
             }
                 .portfolio-main .item-img{
                     float: left;
@@ -749,6 +860,8 @@ body{
 
     .folio-list .folio-city{
         padding-left: 7%;
+        font-size: .89em;
+
     }
     .portfolio-main .folio-btn{
         margin-top: 5px;
@@ -771,8 +884,9 @@ body{
 
     /*********************/
 
+
     .revolt-today{
-        margin-bottom: 35px;
+        margin-bottom: 43px;
     }
         .statistic{
             margin-top: 40px;
@@ -799,10 +913,15 @@ body{
     .description-ad .head-line{
         font-size: .91em;
     }
+    .description-ad .head-line {
+        padding: 25px 0 10px 0;
+    }
+    .description-ad .arrow{
+        margin-bottom: -43px;
+    }
         .description-ad .wrap-discr .line{
             display: none;
         }
-
     .description-ad ul {
         border-bottom: solid 1px transparent;
     }
@@ -819,12 +938,16 @@ body{
         .description-ad li {
 
             min-width: 100%;
-            padding: 0 10% 4% 37%;
+            padding: 0 6% 4% 37%;
         }
             .description-ad li h3{
                 font-size: 1.4em;
+                padding-top: 37px;
             }
-
+        .description-ad li p {
+            margin-top: 10px;
+            font-size: .86em;
+        }
     /*********************/
 
     .news-link,
@@ -855,8 +978,11 @@ body{
         width: 35%;
     }
         .news-slid .slick-pag{
-            font-size: 1.3em;
+            font-size: .99em;
             padding: 0 5%;
+            vertical-align: super;
+        }
+        .news-slid .wrap-pag i{
             vertical-align: text-bottom;
         }
 
@@ -868,9 +994,10 @@ body{
         line-height: 22px;
     }
         .news-slid .news-slider time{
-            font-size: .94em;
+            font-size: .8em;
         }
             .news-slid .news-slider h3{
+                margin-top: 10px;
                 font-size: 1.16em;
             }
             .news-slid .news-slider p{
@@ -883,6 +1010,9 @@ body{
     .reviews{
         padding: 0 25px;
     }
+        .reviews-title{
+            font-size: 2.1em;
+        }
         .reviews h2{
             padding-top: 35px;
             font-size: 1.9em;
@@ -913,6 +1043,12 @@ body{
         .wrap-carousel .prev-item{
             left: 30px;
         }
+
+    /*********************/
+
+    .footer-box{
+        font-size: .94em;
+    }
 
     /*********************/
 
@@ -1021,8 +1157,12 @@ body{
         display: block;
         width: 100%;
     }
-        .number-statistic .total-info{
-          padding:   30px 10% 28px 12%;
+
+    .number-statistic .total-info{
+        top: 13%;
+        left: 4%;
+        right: 6%;
+        padding: 30px 7% 35px 11%;
         }
             .number-statistic .total-info .info-number {
                 font-size: 1.29em;
@@ -1083,7 +1223,8 @@ body{
     .howe-work .online{
         text-align: center;
         padding: 40px 10px 0 10px;
-
+        background-size: 311% 100%;
+        background-position-x: 27% ;
     }
 
     .howe-work .online h3{

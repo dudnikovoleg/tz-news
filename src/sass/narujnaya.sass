@@ -127,11 +127,16 @@
 
 .number-statistic
 	.total-billboard
-		padding: 9% 16%
+		position: relative
+		padding-top: 425px
 		background: url("../img/total_billboard-bg.jpg") no-repeat center
 		background-size: cover
 	.total-info
-		padding: 45px 5% 30px 11%
+		position: absolute
+		top: 23%
+		left: 16%
+		right: 16%
+		padding: 43px 3% 25px 8%
 		background: $red
 		color: #ffffff
 		p
@@ -158,10 +163,17 @@
 				font-size: .674em
 			.text-over
 				white-space: nowrap
-				display: inline-block
+				display: block
 				width: 100%
 				overflow: hidden
 				text-overflow: ellipsis
+				height: 15px
+				transition: all .3s
+			.text-over.open
+				white-space: normal
+				width: 100%
+				height: 55px
+
 			.show-text
 				font-weight: 700
 				font-size: .67em

@@ -10,22 +10,6 @@
 	visibility: hidden
 	height: 0
 
-/** Up button **/
-
-.up-btn
-	display: none
-	position: fixed
-	height: auto
-
-	bottom: 35px
-	right: 35px
-	z-index: 998
-	a
-		font-size: .74em
-		color: $grey
-	i
-		font-size: 1.5em
-
 /**** Aside ****/
 
 .bg-sidebar
@@ -97,7 +81,7 @@
 		label
 			position: absolute
 			right: 20px
-			bottom: 25px
+			bottom: 20px
 		.phone-arrow
 			cursor: pointer
 			color: #676767
@@ -156,13 +140,14 @@
 			font-size: 1.1em
 			
 	.header-main-nav
-		margin-top: 35px
+		margin-top: 25px
 		li
 			display: inline-block
 			width: 21%
 			margin: 0 -31px
 			font-size: .7em
 		a
+			position: relative
 			display: block
 			background: url("../img/header_menu.png") no-repeat
 			width: 60px
@@ -170,6 +155,7 @@
 			margin: 0 auto 9px
 			border-radius: 50%
 			transition: background .3s
+			z-index: 978
 			&:hover
 				background-color: $red
 			&:hover + span
@@ -277,6 +263,8 @@
 		background-position: center
 		background-repeat: no-repeat
 		overflow: hidden
+		.folio-grad
+			opacity: .5
 
 	.folio-text
 		position: absolute
@@ -289,6 +277,10 @@
 .folio-city
 		font-size: .65em
 		color: $grey
+.img-small
+	.folio-city
+		font-size: .7em
+
 
 .portfolio-main
 	.folio-2,
@@ -409,7 +401,7 @@
 				border-top: solid 2px #2e2e2e
 				background: url("../img/staristic_icon.png") no-repeat
 			.year
-				background-position: 7px 40px
+				background-position: 4px 40px
 			.comp
 				background-position: -87px 37px
 			.city
@@ -453,7 +445,7 @@
 		display: inline-block
 		width: 49%
 		padding: 0 6% 4% 12%
-		vertical-align: middle
+		vertical-align: top
 
 		h3
 			position: relative
@@ -551,7 +543,7 @@
 /**** Reviews client ****/
 
 .reviews-title
-	padding: 40px 0 0 20px
+	padding: 35px 25px 0 25px
 	font-family: "AvenirNextW1G-Light", sans-serif
 	text-align: center
 	font-size: 2.78em
@@ -580,7 +572,7 @@
 		color: $grey
 
 .slick-dots
-	display: none
+	position: absolute
 	right: 0
 	left: 0
 	bottom: -45px
@@ -726,6 +718,7 @@
 /***  Footer ***/
 
 footer
+	position: relative
 	width: 100%
 	height: 110px
 	padding: 30px 4%
@@ -734,11 +727,11 @@ footer
 .footer-box
 	display: inline-block
 	width: 49%
-	font-size: .74em
+	font-size: .65em
 	p
 		margin: 0
 		padding-top: 2px
-		line-height: 1.8em
+		line-height: 1.99em
 
 	.footer-map, .footer-create
 		color: $grey
@@ -753,7 +746,7 @@ footer
 		position: relative
 		width: 65px
 		height: 50px
-		margin-left: 20%
+		margin-left: 27%
 	img
 		width: 100%
 		height: 100%
@@ -767,6 +760,20 @@ footer
 		opacity: 0
 	.link-fresh:hover .fresh-red
 		opacity: .6
+
+/** Up button **/
+
+.up-btn
+	position: absolute
+	bottom: 55px
+	right: 30px
+	z-index: 998
+	a
+		font-size: .74em
+		color: $grey
+	i
+		vertical-align: sub
+		font-size: 2.5em
 
 /* Pop up content  */
 
