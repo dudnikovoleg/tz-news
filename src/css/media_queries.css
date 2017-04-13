@@ -734,6 +734,24 @@
 
 /**** News page end *****/
 
+/**** Arenda page start *****/
+    .header-arenda {
+        padding: 8px 3%;
+        font-size: 1.15em;
+
+    }
+    .types-ad .types-ad-item p {
+        font-size: .799em;
+    }
+
+    .select-city {
+        margin-bottom: 15px;
+    }
+    .types-ad .types-ad-item:hover{
+        background: #ffffff;
+    }
+/**** Arenda page end *****/
+
 }
 
 
@@ -1337,6 +1355,16 @@ body{
         width: 100%;
         margin: 20px 0 ;
     }
+
+/**** Arenda page start *****/
+
+    .types-ad .types-ad-list{
+        white-space: normal;
+    }
+    .types-ad .types-ad-item{
+        width: 50%;
+    }
+/**** Arenda page end *****/
 
 }
 

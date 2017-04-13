@@ -1,0 +1,160 @@
+
+.header-arenda .title
+	font: 2.77em "AvenirNextW1G-Light"
+
+
+
+/**** Selecter city ****/
+
+.select-city
+	position: relative
+	.selecter
+		position: relative
+		font-size: .67em
+		cursor: pointer
+		z-index: 88
+		&:before
+			content: ""
+			display: inline-block
+			width: 15px
+			height: 15px
+			padding-left: 2px
+			background: url("../img/map_marker.png") no-repeat -15px
+			vertical-align: text-top
+		&:hover:before
+			background-position: 3px
+		&:hover
+			color: $red
+
+	.arrow-top
+		display: none
+		content: ""
+		position: absolute
+		left: 55px
+		bottom: -20px
+		border: 15px solid transparent
+		border-bottom: 15px solid #2e2e2e
+
+	.list-city-top
+		display: none
+		position: absolute
+		padding: 28px 74px 28px 24px
+		max-height: 330px
+		overflow-y: scroll
+		top: 40px
+		left: -60px
+		background: #2e2e2e
+		z-index: 99
+		span,
+		.list-city-row li
+			display: block
+			font-size: .67em
+			font-weight: 700
+			text-transform: uppercase
+			letter-spacing: 2px
+			line-height: 30px
+			color: #f7f8f9
+			cursor: pointer
+			transition: color .3s
+			&:hover
+					color: $grey
+.types-ad
+	background: #f7f8f9
+	text-align: center
+	margin-bottom: -50px
+	.types-ad-list
+		text-align: center
+		font-size: 0
+		white-space: nowrap
+	.types-ad-item
+		position: relative
+		white-space: normal
+		font-size: 20px
+		display: inline-block
+		width: 25%
+		height: 160px
+		padding: 25px
+		vertical-align: top
+		background: white
+		border: 1px solid #eaeaea
+		cursor: pointer
+		&:hover
+			background: #eaeaea
+		p
+			margin: 0
+		.types-ad-icon
+			display: block
+			width: 60px
+			height: 60px
+			margin: 0 auto
+			background: url("../img/arenda_icon.png") no-repeat
+		.types-ad-size
+			display: block
+			margin-top: 10px
+			font-size: .7em
+			word-spacing: 10px
+			color: $grey
+
+		.bilb
+			background-position: 5px 5px
+		.scrl
+			background-position: -101px 6px
+		.ct-lt
+			background-position: -194px 4px
+		.prizm
+			background-position: -291px 5px
+
+		.brm
+			background-position: -382px 3px
+		.ostan
+			background-position: -507px 0
+		.convecs
+			background-position: -94px -80px
+		.pilon
+			background-position: -207px -84px
+
+		.nest
+			background-position: -328px -82px
+		.unipol
+			background-position: -459px -89px
+		.bac-lt
+			background-position: -588px -89px
+
+	.list-city
+		height: 0
+		background: #2e2e2e
+		overflow: hidden
+		transition: height .5s
+
+		.list-city-row
+			display: inline-block
+			width: 32%
+
+			padding: 3% 6.4%
+			vertical-align: text-top
+			text-align: left
+			color: #ffffff
+			li
+				font-size: .67em
+				font-weight: 700
+				text-transform: uppercase
+				letter-spacing: 2px
+				line-height: 30px
+				color: #f7f8f9
+				cursor: pointer
+				transition: color .3s
+				&:hover
+					color: $grey
+	.open
+		height: 330px
+	.active
+		background: #eaeaea
+	.active:before
+		content: ""
+		position: absolute
+		left: 46%
+		bottom: -3px
+		border: 11px solid transparent
+		border-bottom: 12px solid #2e2e2e
+
+

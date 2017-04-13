@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- First 3 tags -->
+    <title>Revolt</title>
+    <link rel="icon" href="img/favicon.ico" type="image/ico">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Style -->
+
+    <link href="css/fonts.min.css" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet">
+    <link href="css/media_queries.min.css" rel="stylesheet">
+
+    <!-- Scripts -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/city_selecter.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+
+</head>
+<body>
+
+<!-- Mobile menu start -->
+
+<div class="mobile-sidebar">
+    <ul>
+        <li class="min-logo"></li>
+        <li class="menu-btn"></li>
+        <li class="phone-btn"></li>
+    </ul>
+</div>
+
+<!-- Mobile menu end-->
+
+<!-- Sidebar start -->
+
+<div class="content">
+
+    <div class="bg-sidebar">
+    </div>
+    <aside id="sidebar" class="sidebar">
+        <!-- Mob logo  -->
+
+        <div class="min-logo_name"><h2>revolt</h2></div>
+
+        <!-- Desktop logo  -->
+
+        <a  class="logo-link" href="index.html">
+            <img  class="logo" src="img/logo.png" alt="Revolt">
+        </a>
+        <nav>
+            <ul class="sidebar-main">
+                <li>
+                    <a href="">Наружная реклама</a>
+                </li>
+                <li>
+                    <a href="">Реклама на/в транспорте</a>
+                </li>
+                <li>
+                    <a href="">Печать</a>
+                </li>
+            </ul>
+
+            <ul class="sidebar-sub">
+                <li>
+                    <a href="">О нас</a>
+                </li>
+                <li>
+                    <a href="">Портфолио</a>
+                </li>
+                <li>
+                    <a href="">Вопросы и ответы</a>
+                </li>
+                <li>
+                    <a href="">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+
+        <address class="sidebar-address">
+            <input type="checkbox" id="cbox-p" class="phone-cbox">
+            <label for="cbox-p"><i class="fa fa-angle-down phone-arrow" aria-hidden="true"></i></label>
+            <div class="phone">
+                <a href="tel:0675669206">(067) <span class="phone-bold">566-92-06</span></a>
+                <a href="tel:0504503132">(050) <span class="phone-bold">450-31-32</span></a>
+                <a href="tel:0442477287">(044) <span class="phone-bold">247-72-87</span></a>
+                <a href="tel:0567900336">(056) <span class="phone-bold">790-03-36</span></a>
+            </div>
+            <div class="mail">
+                <a href="mailto:info@revolt.com.ua">info@revolt.com.ua</a>
+            </div>
+        </address>
+        <div class="download">
+            <a href="#" class="download-price">
+                <i class="fa fa-file-o" aria-hidden="true"></i>Скачать прайс
+            </a>
+        </div>
+    </aside>
+
+    <!-- Sidebar end -->
+
+    <!-- Main content start -->
+
+    <div class="container" id="article">
+
+        <!-- Header start -->
+        <header id="home" class=" header-arenda ">
+            <ol class="breadcrumb breadcrumb-custom ">
+                <li class="active">Главная</li>
+                <li>Наружная реклама</li>
+            </ol>
+            <h2 class="title">Аренда рекламоносителей в Украине</h2>
+            <div class="select-city">
+                <div>
+                    <span class="selecter">Выберите город</span>
+                        <span class="arrow-top"></span>
+                    <div class="list-city-top">
+                        <span id="removeCity">Все города</span>
+
+                        <ul class="list-city-row">
+                            <li>Киев</li>
+                            <li>Львов</li>
+                            <li>Днепропетровск</li>
+                            <li>Одесса</li>
+                            <li>Харьков</li>
+                            <li>Ивано-франковск</li>
+                            <li>Запорожье</li>
+                            <li>Луцк</li>
+                            <li>Полтава</li>
+                        </ul>
+
+                        <ul class="list-city-row">
+                            <li>Умань</li>
+                            <li>Белая церковь</li>
+                            <li>Мариуполь</li>
+                            <li>Кременчуг</li>
+                            <li>Сумы</li>
+                            <li>Херсон</li>
+                            <li>Чернигов</li>
+                            <li>Винница</li>
+                            <li>Кировоград</li>
+                        </ul>
+
+                        <ul class="list-city-row">
+                            <li>Николаев</li>
+                            <li>Тернополь</li>
+                            <li>Хмельницкий</li>
+                            <li>Черновцы</li>
+                            <li>Житомир</li>
+                            <li>Ровно</li>
+                            <li>ужгород</li>
+                            <li>черкассы</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Header end -->
+
+        <!-- Types of advertising start -->
+
+        <section class="types-ad ">
+            <ul class="types-ad-list">
+                <li class="types-ad-item">
+
+                    <span class="types-ad-icon bilb"></span>
+                    <p>Биллборд
+                        <span class="types-ad-size">6х3  12х3  4х3</span>
+                    </p>
+
+                </li>
+                <li class="types-ad-item">
+
+                    <span class="types-ad-icon scrl"></span>
+                    <p>Скроллер
+                        <span class="types-ad-size">3.14х2.32 4х3</span>
+                    </p>
+
+                </li>
+                <li class="types-ad-item">
+
+                    <span class="types-ad-icon ct-lt"></span>
+                    <p>Сити-лайт
+                        <span class="types-ad-size">1.2х1.8</span>
+                    </p>
+
+                </li>
+                <li class="types-ad-item">
+
+                    <span class="types-ad-icon prizm"></span>
+                    <p>Призматрон
+                        <span class="types-ad-size">6х3 3х2 4х12</span>
+                    </p>
+
+                </li>
+            </ul>
+
+            <div class="list-city">
+                <ul class="list-city-row">
+                    <li>Киев</li>
+                    <li>Львов</li>
+                    <li>Днепропетровск</li>
+                    <li>Одесса</li>
+                    <li>Харьков</li>
+                    <li>Ивано-франковск</li>
+                    <li>Запорожье</li>
+                    <li>Луцк</li>
+                    <li>Полтава</li>
+                </ul>
+
+                <ul class="list-city-row">
+                    <li>Умань</li>
+                    <li>Белая церковь</li>
+                    <li>Мариуполь</li>
+                    <li>Кременчуг</li>
+                    <li>Сумы</li>
+                    <li>Херсон</li>
+                    <li>Чернигов</li>
+                    <li>Винница</li>
+                    <li>Кировоград</li>
+                </ul>
+
+                <ul class="list-city-row">
+                    <li>Николаев</li>
+                    <li>Тернополь</li>
+                    <li>Хмельницкий</li>
+                    <li>Черновцы</li>
+                    <li>Житомир</li>
+                    <li>Ровно</li>
+                    <li>ужгород</li>
+                    <li>черкассы</li>
+                </ul>
+            </div>
+
+            <ul class="types-ad-list">
+                <li class="types-ad-item">
+
+                    <span class="types-ad-icon brm"></span>
+                    <p>Брандмауэр
+                        <span class="types-ad-size"></span>
+                    </p>
+
+                </li>
+                <li class="types-ad-item">
+
+                    <span class="types-ad-icon ostan"></span>
+                    <p>Остановка
+                        <span class="types-ad-size"></span>
+                    </p>
+
+                </li>
+
+                <li class="types-ad-item">
+
+                    <span class="types-ad-icon convecs"></span>
+                    <p>Конвекс борд
+                        <span class="types-ad-size">1.2х1.8</span>
+                    </p>
+
+                </li>
+                <li class="types-ad-item">
+
+                    <span class="types-ad-icon pilon"></span>
+                    <p>Пиллон
+                        <span class="types-ad-size">6х3</span>
+                    </p>
+
+                </li>
+            </ul>
+            <div class="list-city">
+                <ul class="list-city-row">
+                    <li>Киев</li>
+                    <li>Львов</li>
+                    <li>Днепропетровск</li>
+                    <li>Одесса</li>
+                    <li>Харьков</li>
+                    <li>Ивано-франковск</li>
+                    <li>Запорожье</li>
+                    <li>Луцк</li>
+                    <li>Полтава</li>
+                </ul>
+
+                <ul class="list-city-row">
+                    <li>Умань</li>
+                    <li>Белая церковь</li>
+                    <li>Мариуполь</li>
+                    <li>Кременчуг</li>
+                    <li>Сумы</li>
+                    <li>Херсон</li>
+                    <li>Чернигов</li>
+                    <li>Винница</li>
+                    <li>Кировоград</li>
+                </ul>
+
+                <ul class="list-city-row">
+                    <li>Николаев</li>
+                    <li>Тернополь</li>
+                    <li>Хмельницкий</li>
+                    <li>Черновцы</li>
+                    <li>Житомир</li>
+                    <li>Ровно</li>
+                    <li>ужгород</li>
+                    <li>черкассы</li>
+                </ul>
+            </div>
+            <ul class="types-ad-list">
+                <li class="types-ad-item">
+
+                    <span class="types-ad-icon nest"></span>
+                    <p>Нестандартная
+                        реклама
+                        <span class="types-ad-size"></span>
+                    </p>
+
+                </li>
+                <li class="types-ad-item">
+
+                    <span class="types-ad-icon unipol"></span>
+                    <p>
+                        Юнипол
+                        <span class="types-ad-size"></span>
+                    </p>
+
+                </li>
+                <li class="types-ad-item">
+
+                    <span class="types-ad-icon bac-lt"></span>
+                    <p>
+                        Бэклайт
+                        <span class="types-ad-size">4x3 8х4</span>
+                    </p>
+
+                </li>
+            </ul>
+            <div class="list-city">
+                <ul class="list-city-row">
+                    <li>Киев</li>
+                    <li>Львов</li>
+                    <li>Днепропетровск</li>
+                    <li>Одесса</li>
+                    <li>Харьков</li>
+                    <li>Ивано-франковск</li>
+                    <li>Запорожье</li>
+                    <li>Луцк</li>
+                    <li>Полтава</li>
+                </ul>
+
+                <ul class="list-city-row">
+                    <li>Умань</li>
+                    <li>Белая церковь</li>
+                    <li>Мариуполь</li>
+                    <li>Кременчуг</li>
+                    <li>Сумы</li>
+                    <li>Херсон</li>
+                    <li>Чернигов</li>
+                    <li>Винница</li>
+                    <li>Кировоград</li>
+                </ul>
+
+                <ul class="list-city-row">
+                    <li>Николаев</li>
+                    <li>Тернополь</li>
+                    <li>Хмельницкий</li>
+                    <li>Черновцы</li>
+                    <li>Житомир</li>
+                    <li>Ровно</li>
+                    <li>ужгород</li>
+                    <li>черкассы</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Types of advertising end -->
+
+        <!-- Pop up -->
+
+        <div class="callback-box">
+            <h3>Получайте результаты от своего бизнеса уже сегодня</h3>
+            <span class="callback-btn">Заполнить заявку</span>
+        </div>
+
+        <!-- Footer start -->
+
+        <footer>
+            <div class="footer-box footer-cop">
+                <p>&#169;2016 Revolt. Все права защищены.</p>
+                <a class="footer-map" href="">Карта сайта</a>
+            </div>
+
+            <div class="footer-box footer-fresh">
+                <a  class="link-fresh" href="http://www.fresh-d.net" target="_blank">
+
+                    <div class="logo-fresh">
+                        <img src="img/logo_fresh_w.svg" alt="Fresh agency">
+                        <img class="fresh-red" src="img/logo_fresh_r.svg" alt="Fresh agency">
+                    </div>
+
+                    <p >
+                        <span class="footer-create">Создание сайта </span> <br>
+                        Fresh Agency
+                    </p>
+                </a>
+            </div>
+            <div id="up-btn" class="up-btn">
+                <a href="#home">
+                    Наверх
+                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                </a>
+
+            </div>
+        </footer>
+
+        <!-- Footer end -->
+
+    </div>
+
+</div>
+
+<!-- Main content end -->
+
+<!-- Pop up content -->
+
+<div class="modal-box">
+    <div class="modal-content">
+        <span class="modal-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <h3>Оформление заявки</h3>
+        <form >
+            <div class="modal-box-inp">
+                <label for="cb-name">Имя</label>
+                <input id="cb-name" type="text" name="name">
+            </div>
+
+            <div class="modal-box-inp">
+                <label for="cb-surname">Фамилия</label>
+                <input id="cb-surname" type="text" name="surname">
+
+            </div>
+            <div class="modal-box-inp">
+                <label for="cb-email">Эл. Почта</label>
+                <input id="cb-email" type="email" name="email">
+
+            </div>
+
+            <div class="modal-box-inp">
+                <label for="cb-tel">Контактный телефон</label>
+                <input id="cb-tel" type="tel" name="tel">
+
+            </div>
+
+            <input class="modal-box-btn" type="submit" value="Отправить заявку">
+
+        </form>
+    </div>
+</div>
+
+
+<script src="js/sticky.min.js"></script>
+</body>
+</html>
