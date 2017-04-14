@@ -746,6 +746,8 @@
 
     .select-city {
         margin-bottom: 15px;
+        font-size: 1.2em;
+
     }
     .types-ad .types-ad-item:hover{
         background: #ffffff;
@@ -1311,7 +1313,13 @@ body{
     .complex ul li p{
         margin-top: 5px;
     }
-
+    .select-city .arrow-top {
+        left: 25px;
+        bottom: -18px;
+    }
+    .types-ad .active:before{
+        left: 42%;
+    }
 
 /**** Narujnaja end ****/
 
@@ -1329,8 +1337,18 @@ body{
         padding: 12px 10px;
         font-size: .735em;
     }
-
-
+    .types-ad .types-ad-item{
+        height: 143px;
+    }
+    .types-ad .list-city .list-city-row li{
+        font-size: .45em;
+    }
+    .select-city .list-city-top{
+        padding: 20px 45px 20px 15px;
+    }
+    .types-ad .types-ad-item .types-ad-size{
+        margin-top: 0;
+    }
 /**** News page ebd *****/
 
     /*********************/
@@ -1363,6 +1381,9 @@ body{
     }
     .types-ad .types-ad-item{
         width: 50%;
+    }
+    .header-arenda .title {
+        font-size: 1.6em;
     }
 /**** Arenda page end *****/
 
