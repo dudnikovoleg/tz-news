@@ -528,10 +528,10 @@
                 background: url("../img/all_icons.png") no-repeat;
             }
                 .mobile-sidebar .menu-btn {
-                    background-position: -1px -71px;
+                    background: url(/assets/images/header_menu_icons/header_menu_icon_mob-2.png) 50% no-repeat;
                 }
                 .mobile-sidebar .phone-btn {
-                    background-position: -1px -135px;
+                    background: url(/assets/images/header_menu_icons/header_menu_icon_mob-3.png) 50% no-repeat;
                 }
 
 /*** Mobile class for script ***/
@@ -540,7 +540,8 @@
         left: 50px;
     }
     .mobile-sidebar .active {
-        background: #000000 url("../img/all_icons.png") no-repeat 0 -253px;
+        /*background: #000000 url("../img/all_icons.png") no-repeat 0 -253px*/;
+        background: url(/assets/images/header_menu_icons/header_menu_icon_mob-5.png) 50% no-repeat; 
     }
 
     /*********************/
@@ -585,23 +586,29 @@
                 background-color: transparent;
             }
 
-                .header-main .header-main-nav .baner{
-                        background-position: 5px -13px;
+                    .header-main .header-main-nav .baner{
+                        /*background-position: 5px -13px;*/
+                        background: url(/assets/images/header_menu_icons/header_menu_icon-1.png) 50% no-repeat;
                     }
-                .header-main .header-main-nav  .on-tr{
-                        background-position: 3px -72px;
+                    .header-main .header-main-nav  .on-tr{
+                        /*background-position: 3px -72px;*/
+                        background: url(/assets/images/header_menu_icons/header_menu_icon-2.png) 50% no-repeat;
                     }
-                .header-main .header-main-nav  .at-tr{
-                        background-position: 5px -135px;
+                    .header-main .header-main-nav  .at-tr{
+                        /*background-position: 5px -135px;*/
+                        background: url(/assets/images/header_menu_icons/header_menu_icon-3.png) 50% no-repeat;
                     }
-                .header-main .header-main-nav  .print{
-                        background-position: 0 -202px;
+                    .header-main .header-main-nav  .print{
+                        /*background-position: 0 -202px;*/
+                        background: url(/assets/images/header_menu_icons/header_menu_icon-4.png) 50% no-repeat;
                     }
-                .header-main .header-main-nav  .s-wind{
-                        background-position: 2px -266px;
+                    .header-main .header-main-nav  .s-wind{
+                        /*background-position: 2px -266px;*/
+                        background: url(/assets/images/header_menu_icons/header_menu_icon-5.png) 50% no-repeat;
                     }
-                .header-main .header-main-nav .tr{
-                        background-position: -3px -316px;
+                    .header-main .header-main-nav .tr{
+                        /*background-position: -3px -316px;*/
+                        background: url(/assets/images/header_menu_icons/header_menu_icon-6.png) 50% no-repeat;
                     }
 
                 .header-main .header-main-nav span{
