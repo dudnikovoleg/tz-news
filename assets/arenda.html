@@ -18,6 +18,7 @@
     <link href="css/fonts.min.css" rel="stylesheet">
     <link href="css/main.min.css" rel="stylesheet">
     <link href="css/media_queries.min.css" rel="stylesheet">
+    <link href="css/perfect-scrollbar.min.css" rel="stylesheet">
 
     <!-- Scripts -->
 
@@ -25,6 +26,8 @@
     <script src="js/city_selecter.min.js"></script>
     <script src="js/main.min.js"></script>
 
+    <!-- scrollbar for top city list -->
+    <script src="libs/perfect-scrollbar.jquery.min.js"></script>
 
 </head>
 <body>
@@ -120,13 +123,14 @@
             </ol>
             <h2 class="title">Аренда рекламоносителей в Украине</h2>
             <div class="select-city">
-                <div>
                     <span class="selecter">Выберите город</span>
-                        <span class="arrow-top"></span>
-                    <div class="list-city-top">
-                        <span id="removeCity">Все города</span>
+
+                    <div class="list-city list-city-top" >
 
                         <ul class="list-city-row">
+                            <li id="removeCity" class="remove-city">
+                                Все города
+                            </li>
                             <li>Киев</li>
                             <li>Львов</li>
                             <li>Днепропетровск</li>
@@ -136,9 +140,7 @@
                             <li>Запорожье</li>
                             <li>Луцк</li>
                             <li>Полтава</li>
-                        </ul>
 
-                        <ul class="list-city-row">
                             <li>Умань</li>
                             <li>Белая церковь</li>
                             <li>Мариуполь</li>
@@ -148,20 +150,17 @@
                             <li>Чернигов</li>
                             <li>Винница</li>
                             <li>Кировоград</li>
-                        </ul>
 
-                        <ul class="list-city-row">
                             <li>Николаев</li>
                             <li>Тернополь</li>
                             <li>Хмельницкий</li>
                             <li>Черновцы</li>
                             <li>Житомир</li>
                             <li>Ровно</li>
-                            <li>ужгород</li>
-                            <li>черкассы</li>
+                            <li>Ужгород</li>
+                            <li>Черкассы</li>
                         </ul>
                     </div>
-                </div>
             </div>
         </header>
 
@@ -170,214 +169,92 @@
         <!-- Types of advertising start -->
 
         <section class="types-ad ">
-            <ul class="types-ad-list">
-                <li class="types-ad-item">
 
+            <div class="types-ad-wrap">
+                <div class="types-ad-item">
                     <span class="types-ad-icon bilb"></span>
                     <p>Биллборд
                         <span class="types-ad-size">6х3  12х3  4х3</span>
                     </p>
+                </div>
 
-                </li>
-                <li class="types-ad-item">
-
+                <div class="types-ad-item">
                     <span class="types-ad-icon scrl"></span>
                     <p>Скроллер
                         <span class="types-ad-size">3.14х2.32 4х3</span>
                     </p>
+                </div>
 
-                </li>
-                <li class="types-ad-item">
-
+                <div class="types-ad-item">
                     <span class="types-ad-icon ct-lt"></span>
                     <p>Сити-лайт
                         <span class="types-ad-size">1.2х1.8</span>
                     </p>
+                </div>
 
-                </li>
-                <li class="types-ad-item">
-
+                <div class="types-ad-item">
                     <span class="types-ad-icon prizm"></span>
                     <p>Призматрон
                         <span class="types-ad-size">6х3 3х2 4х12</span>
                     </p>
-
-                </li>
-            </ul>
-
-            <div class="list-city">
-                <ul class="list-city-row">
-                    <li>Киев</li>
-                    <li>Львов</li>
-                    <li>Днепропетровск</li>
-                    <li>Одесса</li>
-                    <li>Харьков</li>
-                    <li>Ивано-франковск</li>
-                    <li>Запорожье</li>
-                    <li>Луцк</li>
-                    <li>Полтава</li>
-                </ul>
-
-                <ul class="list-city-row">
-                    <li>Умань</li>
-                    <li>Белая церковь</li>
-                    <li>Мариуполь</li>
-                    <li>Кременчуг</li>
-                    <li>Сумы</li>
-                    <li>Херсон</li>
-                    <li>Чернигов</li>
-                    <li>Винница</li>
-                    <li>Кировоград</li>
-                </ul>
-
-                <ul class="list-city-row">
-                    <li>Николаев</li>
-                    <li>Тернополь</li>
-                    <li>Хмельницкий</li>
-                    <li>Черновцы</li>
-                    <li>Житомир</li>
-                    <li>Ровно</li>
-                    <li>ужгород</li>
-                    <li>черкассы</li>
-                </ul>
+                </div>
             </div>
 
-            <ul class="types-ad-list">
-                <li class="types-ad-item">
 
-                    <span class="types-ad-icon brm"></span>
-                    <p>Брандмауэр
-                        <span class="types-ad-size"></span>
-                    </p>
+            <div class="types-ad-wrap">   <div class="types-ad-item">
+                <span class="types-ad-icon brm"></span>
+                <p>Брандмауэр
+                    <span class="types-ad-size"></span>
+                </p>
+            </div>
 
-                </li>
-                <li class="types-ad-item">
-
+                <div class="types-ad-item">
                     <span class="types-ad-icon ostan"></span>
                     <p>Остановка
                         <span class="types-ad-size"></span>
                     </p>
+                </div>
 
-                </li>
-
-                <li class="types-ad-item">
-
+                <div class="types-ad-item">
                     <span class="types-ad-icon convecs"></span>
                     <p>Конвекс борд
                         <span class="types-ad-size">1.2х1.8</span>
                     </p>
+                </div>
 
-                </li>
-                <li class="types-ad-item">
-
+                <div class="types-ad-item">
                     <span class="types-ad-icon pilon"></span>
                     <p>Пиллон
                         <span class="types-ad-size">6х3</span>
                     </p>
+                </div></div>
 
-                </li>
-            </ul>
-            <div class="list-city">
-                <ul class="list-city-row">
-                    <li>Киев</li>
-                    <li>Львов</li>
-                    <li>Днепропетровск</li>
-                    <li>Одесса</li>
-                    <li>Харьков</li>
-                    <li>Ивано-франковск</li>
-                    <li>Запорожье</li>
-                    <li>Луцк</li>
-                    <li>Полтава</li>
-                </ul>
 
-                <ul class="list-city-row">
-                    <li>Умань</li>
-                    <li>Белая церковь</li>
-                    <li>Мариуполь</li>
-                    <li>Кременчуг</li>
-                    <li>Сумы</li>
-                    <li>Херсон</li>
-                    <li>Чернигов</li>
-                    <li>Винница</li>
-                    <li>Кировоград</li>
-                </ul>
-
-                <ul class="list-city-row">
-                    <li>Николаев</li>
-                    <li>Тернополь</li>
-                    <li>Хмельницкий</li>
-                    <li>Черновцы</li>
-                    <li>Житомир</li>
-                    <li>Ровно</li>
-                    <li>ужгород</li>
-                    <li>черкассы</li>
-                </ul>
+            <div class="types-ad-wrap"> <div class="types-ad-item">
+                <span class="types-ad-icon nest"></span>
+                <p>Нестандартная
+                    реклама
+                    <span class="types-ad-size"></span>
+                </p>
             </div>
-            <ul class="types-ad-list">
-                <li class="types-ad-item">
 
-                    <span class="types-ad-icon nest"></span>
-                    <p>Нестандартная
-                        реклама
-                        <span class="types-ad-size"></span>
-                    </p>
-
-                </li>
-                <li class="types-ad-item">
-
+                <div class="types-ad-item">
                     <span class="types-ad-icon unipol"></span>
                     <p>
                         Юнипол
                         <span class="types-ad-size"></span>
                     </p>
+                </div>
 
-                </li>
-                <li class="types-ad-item">
-
+                <div class="types-ad-item">
                     <span class="types-ad-icon bac-lt"></span>
                     <p>
                         Бэклайт
                         <span class="types-ad-size">4x3 8х4</span>
                     </p>
-
-                </li>
-            </ul>
-            <div class="list-city">
-                <ul class="list-city-row">
-                    <li>Киев</li>
-                    <li>Львов</li>
-                    <li>Днепропетровск</li>
-                    <li>Одесса</li>
-                    <li>Харьков</li>
-                    <li>Ивано-франковск</li>
-                    <li>Запорожье</li>
-                    <li>Луцк</li>
-                    <li>Полтава</li>
-                </ul>
-
-                <ul class="list-city-row">
-                    <li>Умань</li>
-                    <li>Белая церковь</li>
-                    <li>Мариуполь</li>
-                    <li>Кременчуг</li>
-                    <li>Сумы</li>
-                    <li>Херсон</li>
-                    <li>Чернигов</li>
-                    <li>Винница</li>
-                    <li>Кировоград</li>
-                </ul>
-
-                <ul class="list-city-row">
-                    <li>Николаев</li>
-                    <li>Тернополь</li>
-                    <li>Хмельницкий</li>
-                    <li>Черновцы</li>
-                    <li>Житомир</li>
-                    <li>Ровно</li>
-                    <li>ужгород</li>
-                    <li>черкассы</li>
-                </ul>
+                </div>
             </div>
+
         </section>
 
         <!-- Types of advertising end -->
@@ -464,6 +341,7 @@
 </div>
 
 
-<script src="js/sticky.min.js"></script>
+
+<script src="libs/sticky.min.js"></script>
 </body>
 </html>

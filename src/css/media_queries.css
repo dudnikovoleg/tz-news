@@ -751,6 +751,17 @@
     }
     .types-ad .types-ad-item:hover{
         background: #ffffff;
+
+    }
+    .select-city .selecter:hover {
+         color: #2e2e2e;
+    }
+
+    .select-city .selecter:hover:before {
+         background-position: -15px;
+    }
+    .select-city .active:after{
+        bottom: -15px;
     }
 /**** Arenda page end *****/
 
@@ -1337,18 +1348,7 @@ body{
         padding: 12px 10px;
         font-size: .735em;
     }
-    .types-ad .types-ad-item{
-        height: 143px;
-    }
-    .types-ad .list-city .list-city-row li{
-        font-size: .45em;
-    }
-    .select-city .list-city-top{
-        padding: 20px 45px 20px 15px;
-    }
-    .types-ad .types-ad-item .types-ad-size{
-        margin-top: 0;
-    }
+
 /**** News page ebd *****/
 
     /*********************/
@@ -1376,15 +1376,41 @@ body{
 
 /**** Arenda page start *****/
 
-    .types-ad .types-ad-list{
-        white-space: normal;
+
+    .header-arenda .title {
+        font-size: 1.9em;
     }
+    header-arenda {
+         padding: 15px 3%;
+         font-size: .86em;
+     }
+    /*********************/
+
+    .select-city .active:after{
+        bottom: -19px;
+    }
+
+    /*********************/
+
+    .types-ad .open {
+        height: 440px;
+    }
+
     .types-ad .types-ad-item{
+        height: 145px;
+        padding: 15px 0;
         width: 50%;
     }
-    .header-arenda .title {
-        font-size: 1.6em;
-    }
+        .types-ad .list-city .list-city-row{
+            column-count: 2;
+        }
+            .types-ad .list-city .list-city-row li{
+                font-size: .5em;
+            }
+                .types-ad .types-ad-item .types-ad-size{
+                    padding-top: 0;
+                }
+
 /**** Arenda page end *****/
 
 }

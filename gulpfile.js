@@ -41,6 +41,10 @@ gulp.task('scripts', function () {
 gulp.task('css', function () {
     gulp.src('src/**/*.css')
         .pipe(cssmin())
+        .pipe(autoprefixer({
+            browsers: ['last 15 versions', '> 1%', 'ie 8'],
+            cascade: true
+        }))
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('assets'));
 });

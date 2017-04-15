@@ -9,8 +9,6 @@
 
 
         var iconClose       = false, //nid for changed icons menu on close icon
-            maxWith         = 1600,
-            Indentation     = 36,
             modal           = $('.modal-box'),
             opnBtn          = $('.callback-btn'),
             closeBtn        = $('.modal-close'),
@@ -32,7 +30,7 @@
                 $("#sidebar").trigger("sticky_kit:detach");
                 $("#sidebar").css({
                     "position": "fixed",
-                    "top": "0",
+                    "top": "0"
                 });
 
             }else {
@@ -75,7 +73,7 @@
         });
 
 
-/******* If clock out element *******/
+/******* If click out element *******/
 
         $(document).on('click', function(event) {
             if ($(event.target).closest("#sidebar, .mobile-sidebar").length) return;

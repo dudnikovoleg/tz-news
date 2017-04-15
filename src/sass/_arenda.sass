@@ -21,30 +21,34 @@
 			padding-left: 2px
 			background: url("../img/map_marker.png") no-repeat -15px
 			vertical-align: text-top
+	.selecter.active:after
+		content: ""
+		position: absolute
+		left: 46%
+		bottom: -19px
+		border: 11px solid transparent
+		border-bottom: 12px solid #2e2e2e
 		&:hover:before
 			background-position: 3px
 		&:hover
 			color: $red
 
-	.arrow-top
-		display: none
-		content: ""
-		position: absolute
-		left: 55px
-		bottom: -20px
-		border: 15px solid transparent
-		border-bottom: 15px solid #2e2e2e
 
 	.list-city-top
-		display: none
+		height: 0
 		position: absolute
-		padding: 28px 74px 28px 24px
 		max-height: 330px
 		overflow-y: scroll
 		top: 40px
 		left: -60px
 		background: #2e2e2e
 		z-index: 99
+	.list-city-top.open
+		padding: 28px 74px 28px 24px
+
+		height: 330px
+		.remove-city
+			display: inline
 		span,
 		.list-city-row li
 			display: block
@@ -62,16 +66,12 @@
 	background: #f7f8f9
 	text-align: center
 	margin-bottom: -50px
-	.types-ad-list
-		text-align: center
-		font-size: 0
-		white-space: nowrap
+	font-size: 0
 	.types-ad-item
 		position: relative
-		white-space: normal
-		font-size: 20px
 		display: inline-block
 		width: 25%
+		font-size: 20px
 		height: 160px
 		padding: 25px
 		vertical-align: top
@@ -124,13 +124,13 @@
 		height: 0
 		background: #2e2e2e
 		overflow: hidden
-		transition: height .5s
+		font-size: 18px
+		.remove-city
+			display: none
 
 		.list-city-row
-			display: inline-block
-			width: 32%
-
-			padding: 3% 6.4%
+			column-count: 3
+			padding: 2.5% 6.4%
 			vertical-align: text-top
 			text-align: left
 			color: #ffffff
