@@ -21,6 +21,10 @@
 			padding-left: 2px
 			background: url("../img/map_marker.png") no-repeat -15px
 			vertical-align: text-top
+		&:hover:before
+			background-position: 3px
+		&:hover
+			color: $red
 	.selecter.active:after
 		content: ""
 		position: absolute
@@ -28,10 +32,7 @@
 		bottom: -19px
 		border: 11px solid transparent
 		border-bottom: 12px solid #2e2e2e
-		&:hover:before
-			background-position: 3px
-		&:hover
-			color: $red
+
 
 
 	.list-city-top

@@ -360,6 +360,7 @@
         .portfolio-main .folio-list .folio-item{
             width: 46%;
             margin: 25px 0 0 0 ;
+            font-size: 16px;
         }
         .portfolio-main .folio-list .folio-item:nth-child(odd){
             margin-right: 23px;
@@ -707,7 +708,7 @@
                 font-size: 18px;
             }
                 .about-work li p{
-                    margin: 25px 10px 0px 10px;
+                    margin: 25px 10px 0 10px;
                 }
                     .about-work .bottom {
                         margin: 0 14% 1% 14%;
@@ -717,6 +718,9 @@
 
     .header-news{
         padding: 15px 6%;
+    }
+    .navbar .navbar-list a:hover {
+        color: #2e2e2e;
     }
 
     .news{
@@ -760,7 +764,7 @@
     .select-city .selecter:hover:before {
          background-position: -15px;
     }
-    .select-city .active:after{
+    .select-city .selecter.active:after{
         bottom: -15px;
     }
 /**** Arenda page end *****/
@@ -880,6 +884,7 @@ body{
             .portfolio-main .folio-list .folio-item{
                 width: 100%;
                 margin: 0 0 25px 0;
+                font-size: 13px;
             }
                 .portfolio-main .item-img{
                     float: left;
@@ -1349,7 +1354,7 @@ body{
         font-size: .735em;
     }
 
-/**** News page ebd *****/
+/**** News page end *****/
 
     /*********************/
 
@@ -1380,13 +1385,13 @@ body{
     .header-arenda .title {
         font-size: 1.9em;
     }
-    header-arenda {
+    .header-arenda {
          padding: 15px 3%;
          font-size: .86em;
      }
     /*********************/
 
-    .select-city .active:after{
+    .select-city .selecter.active:after{
         bottom: -19px;
     }
 
@@ -1412,6 +1417,50 @@ body{
                 }
 
 /**** Arenda page end *****/
+
+/**** Portfolio page start ****/
+    .portfolio-page .folio-list{
+        margin-right: 0;
+    }
+
+    /*********************/
+
+    .portfolio-page .folio-item:nth-child(7) p,
+    .portfolio-page .folio-item:nth-child(7) p{
+        position: static;
+        color: #2e2e2e;
+    }
+    .portfolio-page .folio-item:nth-child(7) .folio-city,
+    .portfolio-page .folio-item:nth-child(8) .folio-city{
+        position: static;
+    }
+
+    /*********************/
+
+    .portfolio-page .folio-list .folio-item:nth-child(n+5) {
+        display: inline-block;
+    }
+    .portfolio-page .folio-list .folio-item:nth-child(n+8) {
+        display: none;
+    }
+
+    .portfolio-page .folio-list .folio-item:nth-child(5) .item-img,
+    .portfolio-page .folio-list .folio-item:nth-child(6) .item-img {
+        float: none;
+        padding-top: 50%;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .portfolio-page .folio-list .folio-item:nth-child(5) p,
+    .portfolio-page .folio-list .folio-item:nth-child(6) p,
+    .portfolio-page .folio-list .folio-item:nth-child(5) .folio-city,
+    .portfolio-page .folio-list .folio-item:nth-child(6) .folio-city {
+        padding: 0;
+    }
+
+
+/**** Portfolio page end ****/
 
 }
 
