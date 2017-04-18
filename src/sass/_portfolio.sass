@@ -65,7 +65,9 @@
 	margin: 10px 0 0 0
 	.wrap-img
 		width: 100%
-		img
+		.before,
+		.after
+			min-height: 100%
 			width: 100%
 	.twentytwenty-left-arrow,
 	.twentytwenty-right-arrow
@@ -114,11 +116,13 @@
 		font-size: .67em
 
 /**** Portfolio short post ****/
-.header-short-post
-	.wrap-slide-img
-		.folio-img
-			height: 100%
-			width: 100%
+
+.wrap-slide-img
+	text-align: center
+	.folio-img
+		display: inline-block
+		min-height: 100%
+		vertical-align: middle
 .wrap-slide-folio
 	margin: 0
 	position: relative
