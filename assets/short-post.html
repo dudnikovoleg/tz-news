@@ -15,7 +15,6 @@
     <!-- Style -->
 
     <!-- Slide img before after -->
-    <link href="css/twentytwenty.css" rel="stylesheet">
 
     <link href="css/fonts.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -26,9 +25,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Slide img before after -->
-    <script src="libs/jquery.event.move.js"></script>
-    <script src="libs/jquery.twentytwenty.js"></script>
-    <script src="js/portfolio_long-post.js"></script>
+    <script src="js/portfolio_short-post.js"></script>
 
     <script src="js/main.js"></script>
 
@@ -121,16 +118,15 @@
 
         <!-- Header start -->
 
-        <header class="header-news header-long-post " id="home">
+        <header class="header-news header-short-post  " id="home">
             <ol class="breadcrumb breadcrumb-custom ">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="portfolio.html">Портфолио</a></li>
-                <li class="active">Длинный пост</li>
+                <li class="active">Короткий пост</li>
             </ol>
             <h2 class="title">
-               Длинный пост
+                Короткий пост
             </h2>
-            <h3 class="sub-title">Подзаголовок второго уровня</h3>
 
             <ul class="description">
                 <li>
@@ -151,25 +147,23 @@
         <!-- Header end -->
 
 
-        <article class=" folio-long-post  clearfix">
 
-            <p class="task">
-                <span class="bold">Задача:</span> Рекламное оформление витрины магазина
-                «Bolero» было выполнено с применением метода широкоформатной сольвентной печати на самоклеящейся пленке Ritrama.
-                Необходимые контуры букв вырезаны при помощи режущего плоттера.
-            </p>
+        <figure class="wrap-slide-folio" >
+            <i class="fa fa-angle-right fa-2x next-item" aria-hidden="true"></i>
 
-        </article>
-
-        <figure class="wrap-before-after" >
-
-            <div class="wrap-img " id="compare-img">
-                <img class="before" src="img/after_before.jpg" alt="">
-                <img class="after" src="img/after_before.jpg" alt="">
+            <div class="wrap-slide-img " id="compare-slide-img">
+                <img class="folio-img" src="img/after_before.jpg" alt="">
+                <img class="folio-img" src="img/after_before.jpg" alt="">
+                <img class="folio-img" src="img/after_before.jpg" alt="">
+                <img class="folio-img" src="img/after_before.jpg" alt="">
+                <img class="folio-img" src="img/after_before.jpg" alt="">
 
             </div>
+            <i class="fa fa-angle-left fa-2x prev-item" aria-hidden="true"></i>
 
-            <figcaption class="type-work">Оформление витрин бутик BOLERO</figcaption>
+            <figcaption class="type-work">
+                <span class="slick-pag"></span> Оформление витрин бутик BOLERO
+            </figcaption>
 
         </figure>
 
@@ -182,31 +176,6 @@
                 акцент на логотипе, чтоб он отлично читался на фасаде.
                 Не упустили без внимания особенности конструкции витрин.
             </p>
-
-            <figure>
-
-                <img  src="img/bolero_big.jpg" alt="photo">
-
-                <figcaption class="type-work">Оформление витрин бутик BOLERO</figcaption>
-
-            </figure>
-
-            <p class="description">
-                Оформление витрин — это один из лучших способов создать имидж компании.
-                Разработав настолько реалистичную картинку что сложно отличить от аэрографии,
-                мы добавили лишь солидности нашему клиенту. Мы сознательно сделали большой
-                акцент на логотипе, чтоб он отлично читался на фасаде.
-                Не упустили без внимания особенности конструкции витрин.
-            </p>
-
-            <p class="news-tags folio-tags">
-                    <span class="">Теги:</span>
-                    <a href=""> Оклейка витрин,</a>
-                    <a href="">Bolero,</a>
-                    <a href="">Наружная реклама,</a>
-                    <a href="">Revolt</a>
-
-                </p>
 
         </article>
         <div class="bottom-news clearfix">
@@ -306,6 +275,8 @@
     </div>
 </div>
 
+<!-- Slick slider-->
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
 <script src="libs/sticky.js"></script>
 </body>

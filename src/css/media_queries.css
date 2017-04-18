@@ -248,6 +248,22 @@
     .complex ul li{
         padding: 0 15px;
     }
+
+/**** Portfolio short post ****/
+
+    .header-long-post .title{
+        font-size: 2.78em;
+    }
+
+/**** Portfolio short post ****/
+
+    .wrap-slide-folio .prev-item,
+    .wrap-slide-folio .next-item{
+        top: 42%;
+    }
+    .header-short-post .title{
+        font-size: 2.78em;
+    }
 }
 
 
@@ -821,7 +837,12 @@
     }
 
     /**** Long post end ****/
+    /**** short post end ****/
 
+    .wrap-slide-folio .prev-item,
+    .wrap-slide-folio .next-item{
+        top: 39%;
+    }
 }
 
 
@@ -1581,6 +1602,12 @@ body{
 
 /**** Long post end ****/
 
+/**** short post end ****/
+
+    .wrap-slide-folio .prev-item,
+    .wrap-slide-folio .next-item{
+        top: 37%;
+    }
 }
 
 
@@ -1619,4 +1646,10 @@ body{
             .footer-fresh .logo-fresh{
                 margin-left: 0;
             }
+    /**** short post end ****/
+
+    .wrap-slide-folio .prev-item,
+    .wrap-slide-folio .next-item{
+        top: 28%;
+    }
 }
