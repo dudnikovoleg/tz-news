@@ -113,12 +113,11 @@
  * Nav active link
  /* ---------------------------------------------- */
 
-
-        $(".navbar .navbar-list a ").click(function(e) {
-            e.preventDefault();
-            $(".navbar .navbar-list a").removeClass('active');
-            $(this).addClass('active');
-        });
+        // $(".navbar .navbar-list a ").click(function(e) {
+        //     e.preventDefault();
+        //     $(".navbar .navbar-list a").removeClass('active');
+        //     $(this).addClass('active');
+        // });
 
 /* ---------------------------------------------- /*
  *  Pop up
