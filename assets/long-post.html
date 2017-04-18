@@ -14,6 +14,9 @@
 
     <!-- Style -->
 
+    <!-- Slide img before after -->
+    <link href="css/twentytwenty.min.css" rel="stylesheet">
+
     <link href="css/fonts.min.css" rel="stylesheet">
     <link href="css/main.min.css" rel="stylesheet">
     <link href="css/media_queries.min.css" rel="stylesheet">
@@ -21,7 +24,14 @@
     <!-- Scripts -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Slide img before after -->
+    <script src="libs/jquery.event.move.min.js"></script>
+    <script src="libs/jquery.twentytwenty.min.js"></script>
+    <script src="js/portfolio.min.js"></script>
+
     <script src="js/main.min.js"></script>
+
 
 </head>
 <body>
@@ -151,23 +161,17 @@
 
         </article>
 
-        <figure class="wrap-before-after">
+        <figure class="wrap-before-after" >
 
-            <div class="wrap-img">
-                <img src="img/after_before.jpg" alt="">
-                <div class="line">
-                    <div class="arrow">
-                        <i class="fa fa-angle-left" aria-hidden="true"></i>
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <div class="wrap-img " id="compare-img">
+                <img class="before" src="img/after_before.jpg" alt="">
+                <img class="after" src="img/after_before.jpg" alt="">
 
-                    </div>
-                </div>
             </div>
 
             <figcaption class="type-work">Оформление витрин бутик BOLERO</figcaption>
 
         </figure>
-
 
         <article class=" folio-long-post  clearfix">
 
