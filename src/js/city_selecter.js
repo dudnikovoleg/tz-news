@@ -17,17 +17,20 @@
  /* ---------------------------------------------- */
 
 function toggleListCity(target) {
+   
     if ( openCity === false )
     {
         $(target).addClass('active');
-        $('.list-city').addClass('open');
+        $('.select-city .list-city').addClass('open');
 
+        $('.types-ad-item').removeClass('active');
+        
         return openCity = true
     }
     else {
 
-        $('.types-ad-item, .selecter').removeClass('active');//remove all classes active
-        $('.list-city').removeClass('open');
+        $('.selecter, .types-ad-item').removeClass('active');//remove all classes active
+        $('.select-city .list-city').removeClass('open');
 
         return openCity = false
     }
@@ -46,7 +49,24 @@ function toggleListCity(target) {
                 $(".selecter").text(cityName);
             }
 
-            toggleListCity(this);
+            toggleListCity(this); 
+
+            var city = $(this).attr("city");
+
+            if ( $(this).attr("city") ) {
+
+                $('.types-ad-item').hide();
+
+                $('.types-ad-item [city="'+city+'"]').parents(".types-ad-item").show().attr("city", city);
+
+            } else {
+
+                $('.types-ad-item').show();
+
+                $('.types-ad-item').attr("city", '');
+
+            }
+
             return openCity = false
 
         });
@@ -55,9 +75,35 @@ function toggleListCity(target) {
  * Main function for city list
  /* ---------------------------------------------- */
 
-        adItem.on('click', function () {
+        adItem.on('click', function (e) {
 
-            toggleListCity(this);
+            if ( $(this).attr("city") ) {
+
+                location = $(this).find('[city="'+$(this).attr("city")+'"] a').attr("href");
+
+                return false;
+
+            }
+
+            //toggleListCity(this);
+           
+            if( $(this).hasClass("active") ) {
+
+                $("section > .list-city, .types-ad-wrap > .list-city").remove();
+                $('.types-ad-item').removeClass('active');
+
+                return false;
+
+            }            
+
+            $('.selecter, .types-ad-item').removeClass('active');
+            
+            $('.select-city .list-city').removeClass('open');
+            $("section > .list-city, .types-ad-wrap > .list-city").remove();
+
+            $(this).addClass('active');
+
+            var listCity1 = $(this).find(".list-city").clone().attr("style", '');
 
            if (screen.width <= 630){
 
@@ -65,21 +111,37 @@ function toggleListCity(target) {
                 if ($(this).index() === 1 || $(this).index() === 0){
 
                     $(this).parent().children($('.types-ad-item'))
-                        .eq(1).after(listCity);//Inserts an element after the second element
+                        .eq(1).after(listCity1);//Inserts an element after the second element
                                                // if there are two elements in the row
                 }
                 else {
-                    $(this).parent().after(listCity);//Inserts an element after the parent element
+                    $(this).parent().after(listCity1);//Inserts an element after the parent element
                 }
 
 
            }
 
            else {
-               $(this).parent().after(listCity);//Inserts an element after the parent element
+               $(this).parent().after(listCity1);//Inserts an element after the parent element
            }
 
         });
+
+/* ---------------------------------------------- /*
+ * Hide cities block on click outside him
+ /* ---------------------------------------------- */
+
+        $(document).click(function(e){ 
+
+            if( $(e.target).closest(".types-ad-item, .selecter, .list-city").length ) return;  
+
+            $("section > .list-city, .select-city .list-city").removeClass("open");
+
+            $(".types-ad-item, .selecter").removeClass('active');
+
+            e.stopPropagation();
+
+        }); 
 
 /* ---------------------------------------------- /*
  * Function for top city list
@@ -88,9 +150,13 @@ function toggleListCity(target) {
 
         $('.selecter').on('click', function () {
 
+            openCity = false;
+
             toggleListCity(this);
 
-            $('.selecter').after(listCity);
+            $("section > .list-city, .types-ad-wrap > .list-city").remove();            
+
+            //$('.selecter').after(listCity);
 
         });
 
@@ -98,7 +164,7 @@ function toggleListCity(target) {
  * Coled plugin perfectScrollbar for top city list
  /* ---------------------------------------------- */
 
-        $('.list-city-top').perfectScrollbar();
+        //$('.list-city-top').perfectScrollbar();
 
 
           });
