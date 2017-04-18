@@ -5,16 +5,20 @@
 
 .header-news,
 .header-arenda
-	padding: 30px 8%
+	padding: 35px 8%
 	background: #f7f8f9
 	li
 		display: inline-block
 		font-size: .74em
 		color: #2e2e2e
-		li.active
-		color: $grey
-		&:hover
+
+	ol
+		li:hover
 			color: $grey
+		li.active
+			color: $grey
+		i
+			vertical-align: middle
 	//li+li::before
 		content: "\f105"
 		display: inline-block
@@ -22,7 +26,6 @@
 		color: black
 		padding: 0 12px
 		font-weight: 900
-
 
 
 
@@ -80,6 +83,8 @@
 .read-more
 	font-size: .7em
 	font-weight: 700
+	&:hover
+		color: $red
 	i
 		padding-right: 10px
 		font-size: 1.3em
@@ -88,6 +93,7 @@
 	float: right
 	li
 		display: inline-block
+		vertical-align: middle
 	a
 		display: inline-block
 		width: 90px
@@ -126,6 +132,8 @@
 		padding-top: 15px
 		span
 			font-weight: 300
+		a:hover
+			color: $red
 .bottom-news
 	padding: 34px 8% 0 8%
 	border-top: solid 1px #e9ecee

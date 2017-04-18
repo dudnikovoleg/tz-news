@@ -553,7 +553,7 @@
     .callback-box,
     .bottom-news
     {
-        padding: 0 2%;
+        padding: 15px 2% 0 2%;
     }
 
 
@@ -694,6 +694,7 @@
             }
 
     /*********************/
+
     .about-work {
         padding: 40px 0;
     }
@@ -735,7 +736,12 @@
     .navbar .navbar-list:last-child{
         padding-right: 0;
     }
-
+    .fool-news .news-tags a:hover{
+        color: #2e2e2e;
+    }
+    .read-more:hover{
+        color: #2e2e2e;
+    }
 /**** News page end *****/
 
 /**** Arenda page start *****/
@@ -768,6 +774,53 @@
         bottom: -15px;
     }
 /**** Arenda page end *****/
+
+/**** Long post start ****/
+
+    .header-long-post{
+        padding: 10px 3%;
+
+    }
+    .header-long-post .sub-title{
+        margin: 30px 0;
+        font-size: 1.75em;
+    }
+    .header-long-post .description li{
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+    }
+
+    /***********************/
+
+    .folio-long-post{
+        padding: 20px 3%;
+    }
+
+        .folio-long-post .task{
+            font-size: 1.24em;
+        }
+        .folio-long-post .description{
+            font-size: 1.01em;
+        }
+
+    .wrap-before-after .line .arrow:hover{
+        color: #2e2e2e;
+    }
+
+    .type-work{
+        font-size: .75em;
+    }
+
+    .folio-long-post .folio-tags{
+        margin-bottom: 30px;
+        font-size: .75em;
+    }
+
+    .callback-box-folio{
+        margin-top: 45px;
+    }
+
+    /**** Long post end ****/
 
 }
 
@@ -984,62 +1037,7 @@ body{
             margin-top: 10px;
             font-size: .86em;
         }
-    /*********************/
 
-    .news-link,
-    .news-slider,
-    .wrap-pag{
-        float: none;
-    }
-
-    .news-slid .news-slider{
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    .news-slid .news-link{
-        width: 59%;
-        margin: 15px 0 0 15px;
-    }
-        .news-slid .news-link a{
-            font-size: 0.9em;
-            padding: 11px 33px;
-        }
-            .news-slid .news-link a:hover {
-                color: #ffffff;
-                background: transparent;
-            }
-
-    .news-slid .wrap-pag{
-        width: 35%;
-    }
-        .news-slid .slick-pag{
-            font-size: .99em;
-            padding: 0 5%;
-            vertical-align: super;
-        }
-        .news-slid .wrap-pag i{
-            vertical-align: text-bottom;
-        }
-
-    .news-slid .news-slider img{
-        width: 33%;
-    }
-    .news-slid .news-slider .text{
-        padding: 0 20px 0 38%;
-        line-height: 22px;
-    }
-        .news-slid .news-slider time{
-            font-size: .8em;
-        }
-            .news-slid .news-slider h3{
-                margin-top: 10px;
-                font-size: 1.16em;
-            }
-            .news-slid .news-slider p{
-                font-size: .85em;
-                padding-top: 5px;
-            }
 
     /*********************/
 
@@ -1088,29 +1086,7 @@ body{
 
     /*********************/
 
-    .news .news-title {
-        margin-bottom: 10px;
-        font-size: 1.26em;
-        line-height: 25px;
-    }
-    .news .news-content {
-        margin: 10px 0;
-    }
-        .news .news-content .news-text {
-            margin-top: 15px;
-            font-size: .9em;
-            line-height: 22px;
-        }
 
-    .news .read-more {
-        font-size: .8em;
-    }
-
-    .social{
-        margin-top: 15px ;
-    }
-
-/**** Main page end *****/
 
 /**** Narujnaja start ****/
 
@@ -1354,15 +1330,96 @@ body{
         font-size: .735em;
     }
 
-/**** News page end *****/
-
     /*********************/
+
+    .news-link,
+    .news-slider,
+    .wrap-pag{
+        float: none;
+    }
+
+    .news-slid .news-slider{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .news-slid .news-link{
+        width: 59%;
+        margin: 15px 0 0 15px;
+    }
+    .news-slid .news-link a{
+        font-size: 0.9em;
+        padding: 11px 33px;
+    }
+    .news-slid .news-link a:hover {
+        color: #ffffff;
+        background: transparent;
+    }
+
+    .news-slid .wrap-pag{
+        width: 35%;
+        font-size: .99em;
+        padding: 0 5%;
+        vertical-align: super;
+    }
+
+    .news-slid .wrap-pag i{
+        vertical-align: text-bottom;
+    }
+
+    .news-slid .news-slider img{
+        width: 33%;
+    }
+    .news-slid .news-slider .text{
+        padding: 0 20px 0 38%;
+        line-height: 22px;
+    }
+    .news-slid .news-slider time{
+        font-size: .8em;
+    }
+    .news-slid .news-slider h3{
+        margin-top: 10px;
+        font-size: 1.16em;
+    }
+    .news-slid .news-slider p{
+        font-size: .85em;
+        padding-top: 5px;
+    }
+    /*********************/
+
+    .news .news-title {
+        margin-bottom: 10px;
+        font-size: 1.26em;
+        line-height: 25px;
+    }
+    .news .news-content {
+        margin: 10px 0;
+    }
+    .news .news-content .news-text {
+        margin-top: 15px;
+        font-size: .9em;
+        line-height: 22px;
+    }
+    .navbar, .callback-box, .bottom-news {
+        padding: 30px 5% 0 5%;
+    }
+
+    .news .read-more {
+        margin-top: 10px;
+        font-size: .8em;
+    }
+
+    .read-more{
+        float: left;
+        margin-top: 10px;
+    }
 
     .callback-box {
         margin-top: 50px;
     }
         .callback-box h3{
-            margin-right: 0;
+            margin: 0;
+
             font-size: 1.3em;
         }
         .callback-box .callback-btn{
@@ -1423,6 +1480,7 @@ body{
         margin-right: 0;
     }
 
+
     /*********************/
 
     .portfolio-page .folio-item:nth-child(7) p,
@@ -1462,6 +1520,67 @@ body{
 
 /**** Portfolio page end ****/
 
+
+/**** Long post start ****/
+
+    .header-long-post{
+        padding: 22px 6% 10px 6%;
+        font-size: 1.3em;
+    }
+        .header-long-post .description li{
+            display: block;
+        }
+        .header-long-post .description li + li {
+            margin-left: 0;
+        }
+
+            .header-long-post .title{
+                margin: 25px 0 10px 0;
+                font-size: 1.7em;
+            }
+            .header-long-post .sub-title{
+                margin: 10px 0 20px 0;
+                font-size: 1.2em;
+
+            }
+
+    /*********************/
+
+    .folio-long-post {
+        padding: 5px 6%;
+    }
+    .folio-long-post .task{
+        line-height: 24px;
+    }
+    .type-work{
+        font-size: .94em;
+    }
+    .wrap-before-after .line .arrow{
+        top: 41%;
+    }
+    .wrap-before-after .line .arrow i{
+        font-size: 2.15em;
+    }
+
+    .folio-long-post .description{
+        margin-top: 10px;
+        line-height: 22px;
+        font-size: 1.1em;
+    }
+    .folio-long-post figure{
+        margin-bottom: 30px;
+    }
+
+    .folio-long-post .folio-tags{
+        font-size: .92em;
+    }
+    .read-more {
+        margin-top: 25px;
+        font-size: .97em;
+    }
+
+/**** Long post end ****/
+
 }
 
 
@@ -1475,6 +1594,13 @@ body{
 
 
 @media all and (max-width: 524px){
+
+    /*********************/
+
+    .social{
+        float: left;
+        margin-top: 15px ;
+    }
 
     /*********************/
 
