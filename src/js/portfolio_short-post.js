@@ -25,11 +25,14 @@
         });
 
         function slidPage() {
-            pageIndex = $('.folio-img.slick-active').index();
+            pageIndex = $('.slider-image.slick-active').index();
 
-            startPage = ('Фото ' + pageIndex + ' из ' + count + '.' );
+            slideName = $('.slider-image.slick-active').attr("name");
+
+            startPage = ('Фото ' + pageIndex + ' из ' + count + '. ' );
 
             $('.slick-pag').text(startPage)
+            $('.slide-name').text(slideName)
         }
 
         slidPage();
