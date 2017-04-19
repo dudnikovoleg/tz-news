@@ -43,3 +43,37 @@
 			margin-top: 15px
 			font-size: .69em
 			line-height: 20px
+
+/**** Questions and answers ****/
+
+.header-questions-answers
+	.title
+		font-size: 2.77em
+		padding-bottom: 0
+.questions-answers
+	padding: 30px 8% 70px 8%
+	.wrap-questions-answers
+		margin-bottom: 10px
+	.questions
+		font-weight: 700
+		font-size: 1.1em
+		transition: color .3s
+		&:after
+			content: "\f107"
+			display: inline-block
+			font: normal normal normal 14px/1 FontAwesome
+			font-size: inherit
+		&:hover
+			cursor: pointer
+			color: $red
+	.answers
+		height: 0
+		overflow: hidden
+		line-height: 24px
+		font-size: .89em
+	.show-answer
+		display: none
+	.show-answer[type="checkbox"]:checked ~ .answers
+		height: auto
+	.show-answer[type="checkbox"]:checked ~ .questions:after
+		transform: rotateX(180deg)
