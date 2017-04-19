@@ -837,12 +837,54 @@
     }
 
     /**** Long post end ****/
-    /**** short post end ****/
+
+    /**** short post start ****/
 
     .wrap-slide-folio .prev-item,
     .wrap-slide-folio .next-item{
         top: 39%;
     }
+    /**** short post enf ****/
+
+    /**** About us  start ****/
+    .header-about-us {
+        padding: 14px 4%;
+    }
+    .header-about-us .title {
+        font-size: 3.13em;
+        padding: 25px 0 20px 0;
+    }
+    .about-us {
+        padding: 30px 4% 0 4%;
+    }
+        .about-us .col-left{
+            width: 68%;
+        }
+            .about-us .col-left .history {
+                font-size: 1.01em;
+            }
+            .about-us .col-left .revolt-today-text{
+                margin-right: 15px;
+                padding: 20px 10px 20px 35px;
+                font-size: 1.24em;
+            }
+            .about-us .col-left .receives{
+                font-size: 1em;
+            }
+            .about-us .col-left .receives-list li{
+                font-size: 1em;
+            }
+
+        .about-us .col-right{
+            width: 26%;
+            padding-right: 25px;
+        }
+            .about-us .col-right p{
+                font-size: .79em;
+            }
+
+    /**** About us  end ****/
+
 }
 
 
@@ -1602,14 +1644,69 @@ body{
 
 /**** Long post end ****/
 
-/**** short post end ****/
+/**** short post start ****/
 
     .wrap-slide-folio .prev-item,
     .wrap-slide-folio .next-item{
         top: 37%;
     }
-}
+/**** short post end ****/
 
+/**** about us  start ****/
+    .header-about-us {
+        padding: 15px 6%;
+    }
+    .header-about-us li{
+        font-size: .9em;
+    }
+    .header-about-us .title {
+        font-size: 2.2em;
+        padding-bottom: 5px;
+    }
+
+    .about-us {
+        padding: 10px 8% 0 6%;
+    }
+        .about-us .col-right,
+        .about-us .col-left{
+            float: none;
+            width: 100%;
+        }
+
+        .about-us .col-left .history {
+            font-size: 1.26em;
+        }
+        .about-us .col-left .history:nth-child(4n-1) {
+            display: none;
+        }
+        .about-us .col-left .revolt-today-text{
+            margin-right: 0;
+            padding: 20px 25px 20px 27px;
+            font-size: 1.53em;
+        }
+
+        .about-us .col-left .receives {
+            font-size: 1.26em;
+        }
+        .about-us .col-left .receives-list{
+            padding: 0;
+        }
+        .about-us .col-left .receives-list li {
+            padding: 0 0 10px 30px;
+            line-height: 24px;
+            font-size: 1.23em;
+        }
+
+
+    .about-us .col-right{
+        padding: 0;
+    }
+        .about-us .col-right p{
+            font-size: .95em;
+        }
+    /**** about us  end ****/
+
+}
 
 
 
