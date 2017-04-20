@@ -8,7 +8,7 @@
 
 
         var
-            count           = $('.folio-img').length,
+            count           = $('.slider-image').length,
             pageIndex,
             startPage;
 
@@ -31,8 +31,8 @@
 
             startPage = ('Фото ' + pageIndex + ' из ' + count + '. ' );
 
-            $('.slick-pag').text(startPage)
-            $('.slide-name').text(slideName)
+            $('.type-work .slick-pag').text(startPage)
+            $('.type-work .slide-name').text(slideName)
         }
 
         slidPage();
