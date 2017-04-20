@@ -162,5 +162,187 @@ $(document).on('ready', function(){
 
 });
 
+/* ---------------------------------------------- /*
+ *  Forms sending
+ /* ---------------------------------------------- */
+$(function(){
+
+    $(document).on("submit","#Form",function(e){
+
+        e.preventDefault();
+
+        var m_method=$(this).attr('method');
+        var m_action=$(this).attr('action');
+        var m_data=$(this).serialize();
+
+        $.ajax({
+            type: m_method,
+            url: m_action,
+            data: m_data,
+            resetForm: 'true',
+            success: function(result){
+                var data = $(result).find(".modal-content-form").html();                
+                $(".modal-content-form").html(data);
+                $(".mesage-report").css("opacity", "1");
+                setTimeout( function() { $(".mesage-report").css("opacity", "0"); }, 2000);
+
+            }
+
+        });
+
+    });
+
+});
+
+$(function(){
+
+    $(document).on("submit","#Form-question",function(e){
+
+        e.preventDefault();
+
+        var m_method=$(this).attr('method');
+        var m_action=$(this).attr('action');
+        var m_data=$(this).serialize();
+
+        $.ajax({
+            type: m_method,
+            url: m_action,
+            data: m_data,
+            resetForm: 'true',
+            success: function(result){
+                var data = $(result).find(".question-form-content").html();                
+                $(".question-form-content").html(data);
+                $(".question-form-report").css("opacity", "1");
+                setTimeout( function() { $(".question-form-report").css("opacity", "0"); }, 2000);
+
+            }
+
+        });
+
+    });
+
+});
+
+
+/* ---------------------------------------------- /*
+ *  Forms validation
+ /* ---------------------------------------------- */
+
+$(document).on( 'blur' , '[name="name"] , [name="surname"] , [name="email"] , [name="tel"] , [name="question"] ' , function(){
+
+    var field = $(this).attr("name");
+    var fieldValue = $(this).val();
+    var message, error;
+
+    switch (field) {
+
+        case 'name':
+            message = 'Имя должно быть не меньше 3 символов';
+
+            error = is_not_empty( fieldValue , message , 1 );
+
+            if ( error ) {
+                
+                $(this).siblings(".form-field-error").text(error);
+
+            } else {
+                $(this).siblings(".form-field-error").empty();
+            }
+               
+            break;
+
+
+        case 'surname':
+            message = 'Фамилия должна быть не меньше 3 символов';
+            
+            error = is_not_empty( fieldValue , message , 1 );
+
+            if ( error ) {
+
+                $(this).siblings(".form-field-error").text(error);
+
+            } else {
+                $(this).siblings(".form-field-error").empty();
+            }
+             
+            break;
+
+
+        case 'email': 
+
+            var mailRegExp = /^[-\w.]+@([A-z0-9][-A-z0-9]*\.)+[A-z]{2,4}$/i;           
+
+            if( !mailRegExp.test(fieldValue) ) {
+
+                message = 'E-mаil введен не корректно';
+
+                $(this).siblings(".form-field-error").text(message);
+                              
+            } else {
+                $(this).siblings(".form-field-error").empty();
+            }
+
+            break;
+
+
+        case 'tel':            
+
+            var telRegExp = /[0-9]{10}/i;           
+
+            if( !telRegExp.test(fieldValue) || fieldValue.length != 10 ) {
+
+                message = 'Телефон должен состоять из 10 цифр';
+
+                $(this).siblings(".form-field-error").text(message);
+                              
+            } else {
+                $(this).siblings(".form-field-error").empty();
+            }
+
+            break;
+
+
+        case 'question':
+            message = 'Сообщение должно быть не меньше 3 символов';
+            
+            if ( fieldValue.length < 3 ) {
+            
+                $(this).siblings(".form-field-error").text(message);
+
+            } else {
+                $(this).siblings(".form-field-error").empty();
+            }
+
+            break;
+
+   
+    }
+
+    function is_not_empty ( value , message , forbid = 0 , limit = 3 ) { 
+
+        var Reg62=/^[а-яА-ЯёЁa-zA-Z0-9]+$/i;
+        
+
+        if( !Reg62.test(value) && forbid == 1 ) {
+
+            message = 'Только цифры и буквы';
+
+            return message;              
+        }               
+
+        if ( value.length < limit ) {
+            
+            return message;
+        }
+
+        return false;   
+
+    }
+
+
+});
+
+
+
 
 
