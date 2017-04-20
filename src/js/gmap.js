@@ -66,9 +66,14 @@
 
 $(document).ready(function(){
 
-	var coordinateX = $("#map-coordinates").attr("coordinate-x");
-    var coordinateY = $("#map-coordinates").attr("coordinate-y");     
-    initMap(coordinateX,coordinateY);
+    console.log( $("#map").length > 0 );
+
+    if ( $("#map").length > 0 ) {
+
+        var coordinateX = $("#map-coordinates").attr("coordinate-x");
+        var coordinateY = $("#map-coordinates").attr("coordinate-y");     
+        initMap(coordinateX,coordinateY);
+        
+    }	
 
 });
-	
