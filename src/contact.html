@@ -24,7 +24,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
 
-
+    <!-- google map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyXktCeBzpuTe7o6qYFIhunxgYcaVI1eo"></script>
+    <script src="js/gmap.js"></script>
 </head>
 <body>
 
@@ -113,93 +115,79 @@
     <div class="container" id="article">
 
         <!-- Header start -->
-        <header id="home" class="header-news header-about-us">
+        <header id="home" class="header-news header-questions-answers">
             <ol class="breadcrumb breadcrumb-custom ">
                 <li><a href="index.html">Главная</a></li>
-                <li class="active">O нас</li>
+                <li class="active">Контакты</li>
             </ol>
-            <h2 class="title">Агентство «Револт»</h2>
+            <h2 class="title">Контактная информация</h2>
         </header>
 
         <!-- Header end -->
 
-        <!-- About us start -->
-        <article class="about-us clearfix">
-                <div class="col-left">
 
-                   <p class="history">История компании Револт началась в 2003 году,
-                       на то время Револт (еще тогда будучи Outdoor — сервис)
-                       стал одной из первых компаний в
-                       Украине специализирующейся исключительно на размещении наружной рекламы.
-                   </p>
-                    <p class="history">
-                        В 2007 году компания стала активно предлагать эксклюзивное
-                        размещение рекламы на фасадах и крышах зданий.
-                    </p>
-                    <p class="history">
-                        В 2010 году наши клиенты заказывающие
-                        брендирование частного или общественного транспорта,
-                        а также внутрисалонную рекламу стали обслуживаться
-                        отдельным подразделением компании «Реклама на/в общественном
-                        и частном транспорте».
-                    </p>
+        <section class="contact">
 
-                    <p class="revolt-today-text">
-                        Револт сегодня — это уникальное агентство Украины
-                        сфокусированное только на уличной рекламе.
-                        Мы можем забрендировать небоскреб, вашу машину,
-                        рекламный щит или остановку трамвая в любом городе.
-                    </p>
+            <div class="phone-mail ">
 
-                    <p class="receives">
-                        Обращаясь к нам, как к экспертам по уличной рекламе, наш клиент получает:
-                    </p>
-
-                    <ul class="receives-list">
-                        <li>
-                            Грамотные адресные программы из 100000 плоскостей
-                            Украины нанесенные на карту
-                        </li>
-                        <li>
-                            Популярные маршруты городского транспорта
-                        </li>
-                        <li>
-                            Качественное нанесение рекламы
-                        </li>
-                        <li>
-                            Сервис
-                        </li>
-                        <li>
-                            Гарантию
-                        </li>
-                        <li>
-                            Скорость
-                        </li>
-                        <li>
-                            Выгодную цену
-                        </li>
-                    </ul>
-
+                <div class="phone  clearfix">
+                    <span class="text">телефон</span>
+                    <a href="tel:0675669206">(067) <span class="bold">566-92-06</span></a><br>
+                    <a href="tel:0504503132">(050) <span class="bold">450-31-32</span></a><br>
+                    <a href="tel:0442477287">(044) <span class="bold">247-72-87</span></a><br>
+                    <a href="tel:0567900336">(056) <span class="bold">790-03-36</span></a>
                 </div>
-                <div class="col-right">
-                    <p>
-                        Из сотен компаний Украины, занимающихся наружной
-                        рекламой мы — одна из немногих, обладающая мощным
-                        программно-информационным комплексом для медиапланирования,
-                        анализа, и сопровождения рекламных кампаний на наружке.
-                    </p>
-                    <p>
-                        Буквально за первые два года Револт стал надежным
-                        подрядчиком для многих сетевых агентств и предприятий
-                        Украины по размещению рекламы на стандартных
-                        рекламоносителях: биллбордах, ситилайтах и пр.
-                    </p>
+
+                <div class="mail clearfix">
+                    <span class="text">эл. почта</span>
+                    <a href="mailto:info@revolt.com.ua">info@revolt.com.ua</a>
+                </div>
+
+            </div>
+
+            <address class="address">
+                <span class="text">адрес</span>
+                <p>
+                    49044, Украина,
+                    Днепропетровская обл.,
+                    г.Днепр, ул. Шевченко 37,
+                    офис 551</p>
+            </address>
+
+            <div class="work-time ">
+                <span class="text">Режим работы</span>
+                <p>Пн—Пт: с 9:00 до 18:00<br>
+                Сб—Вс: Выходной</p>
+            </div>
+
+        </section>
+
+        <!-- Map -->
+
+        <div id="map" class="map"></div>
+
+
+        <div class="contact-form">
+            <h3>Вопрос специалисту</h3>
+            <form >
+
+                <div class="">
+
+                    <input  class="input" type="text" name="name" placeholder="Представтесь" tabindex="1">
+                    <input class="input" type="email" name="email" placeholder="Эл. почта"  tabindex="2" >
 
                 </div>
 
-        </article>
+                <div class="">
+                    <textarea class="input-text"  placeholder="Сообщение" tabindex="3"></textarea>
 
-        <!-- About us end -->
+                </div>
+
+                <input class="contact-form-btn" type="submit" value="Задать вопрос">
+
+            </form>
+        </div>
+
 
         <!-- Pop up -->
 

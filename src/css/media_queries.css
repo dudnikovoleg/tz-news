@@ -271,6 +271,39 @@
     .questions-answers {
         padding: 20px 0 20px 8%;
     }
+
+/**** Questions and answers end ****/
+
+/**** Contact start ****/
+
+    .contact .phone-mail .phone a,
+    .contact .phone-mail .mail a{
+        float: none;
+        width: auto;
+    }
+
+    .contact .phone-mail .text, .contact .address .text, .contact .work-time .text{
+        display: block;
+        width: auto;
+    }
+        .contact .phone-mail .text{
+            margin-bottom: 6px;
+        }
+
+
+
+    .contact .phone-mail,
+    .contact .address,
+    .contact .work-time {
+        padding: 40px 10px 44px 48px;
+        font-size: .88em;
+    }
+        .contact .phone-mail{
+            padding-right: 60px;
+        }
+/**** Contact start ****/
+
+
 }
 
 
@@ -914,6 +947,29 @@
         }
     /**** Questions and answers  end ****/
 
+    /**** Contact start ****/
+    .contact {
+        padding: 0;
+    }
+        .contact .phone-mail, .contact .address, .contact .work-time {
+            padding: 45px 30px 30px 27px;
+            font-size: 1em;
+        }
+            .contact .phone-mail .mail{
+                font-size: 1em;
+            }
+
+    .contact-form {
+        padding: 30px 5% 45px 4%;
+    }
+        .contact-form h3 {
+            font-size: 1.76em;
+        }
+        .contact-form .contact-form-btn{
+            font-size: 1em;
+        }
+    /**** Contact enf ****/
+
 }
 
 
@@ -1170,7 +1226,44 @@ body{
             left: 30px;
         }
 
-    /*********************/
+    /***** Pop up start*****/
+
+    .modal-box .modal-close{
+        font-size: 2em;
+    }
+    .callback-box {
+        margin-top: 50px;
+    }
+    .callback-box h3{
+        margin: 0;
+
+        font-size: 1.3em;
+    }
+    .callback-box .callback-btn{
+        margin: 20px 0 ;
+    }
+
+    .modal-box  .modal-content{
+        height: 100%;
+        margin: 20px;
+        padding: 0 6%;
+    }
+
+        .modal-box .modal-box-inp{
+            display: block;
+            width: 100%;
+            margin: 20px 0 ;
+            font-size: 1.7em;
+        }
+        .modal-box .modal-box-btn {
+            padding: 15px 23px;
+            font-size: 1.2em;
+        }
+
+    .modal-box .modal-response p {
+        font-size: .97em;
+    }
+    /***** Pop up end*****/
 
     .footer-box{
         font-size: .94em;
@@ -1452,6 +1545,7 @@ body{
         width: 35%;
         font-size: .99em;
         padding: 0 5%;
+        white-space: nowrap;
         vertical-align: super;
     }
 
@@ -1506,27 +1600,8 @@ body{
         margin-top: 10px;
     }
 
-    .callback-box {
-        margin-top: 50px;
-    }
-        .callback-box h3{
-            margin: 0;
 
-            font-size: 1.3em;
-        }
-        .callback-box .callback-btn{
-            margin: 20px 0 ;
-        }
 
-    .modal-box  .modal-content{
-        height: 100%;
-        margin: 0 auto;
-    }
-    .modal-box .modal-box-inp{
-        display: block;
-        width: 100%;
-        margin: 20px 0 ;
-    }
 
 /**** Arenda page start *****/
 
@@ -1754,6 +1829,49 @@ body{
     }
 
     /**** Question and answers end ****/
+
+    /**** Contact start ****/
+    .contact .phone-mail,
+    .contact .address,
+    .contact .work-time{
+        display: block;
+        width: auto;
+        padding: 32px 6% 12px 6%;
+        font-size: 1.22em;
+    }
+        .contact .phone-mail .mail {
+            margin-top: 20px;
+        }
+
+    .contact-form {
+        padding: 30px 6% 10px 6%;
+    }
+        .contact-form h3 {
+            font-size: 1.53em;
+        }
+        .contact-form form {
+            margin-top: 30px;
+        }
+            .contact-form .input-text,
+            .contact-form .input{
+                width: 100%;
+            }
+                .contact-form .input + .input{
+                    margin: 25px 0 0 0 ;
+                }
+                .contact-form .input {
+                    font-size: 1.3em;
+                }
+                .contact-form .input-text {
+                    font-size: 1.46em;
+                }
+
+    .contact-form .contact-form-btn {
+        font-size: 1.22em;
+        padding: 15px 35px;
+    }
+    /**** Contact end ****/
+
 
 }
 

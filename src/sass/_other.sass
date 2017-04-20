@@ -77,3 +77,84 @@
 		height: auto
 	.show-answer[type="checkbox"]:checked ~ .questions:after
 		transform: rotateX(180deg)
+
+/**** Contacts ****/
+
+.contact
+	padding: 0 2% 0 2%
+	.phone-mail,
+	.address
+		border-right: solid 1px #e9ecee
+	.phone-mail,
+	.address,
+	.work-time
+		display: table-cell
+		width: 33.33%
+		padding: 35px 40px 45px  5%
+		font-style: normal
+		font-size: .89em
+		.text
+			text-transform: uppercase
+			letter-spacing: 1px
+			font-size: .78em
+			color: $grey
+	.phone-mail
+		.phone
+			a
+				float: right
+				width: 62%
+				line-height: 28px
+		.mail
+			margin-top: 15px
+			a
+				float: right
+				width: 62%
+	.address
+		p
+			margin-top: 10px
+	.work-time
+		p
+			margin-top: 10px
+			line-height: 28px
+
+.map
+	width: 100%
+	height: 373px
+
+.contact-form
+	padding: 30px 8% 45px 8%
+	h3
+		font-weight: 700
+		font-size: 1.55em
+	form
+		margin-top: 25px
+	.input
+		font-size: .93em
+		width: 33.333%
+	.input + .input
+		margin-left: 3.7%
+	.input-text
+		margin: 20px 0
+		font-size: 1.06em
+		resize: none
+		width: 71%
+		height: 95px
+	.input-text::placeholder,
+	.input::placeholder
+		color: $grey
+		font-size: 1em
+	.input-text,
+	.input
+		padding: 10px
+		border: solid 1px #bebebe
+		box-shadow: inset 0 2px 0 0 rgba(199, 190, 190, 0.2)
+	.contact-form-btn
+		padding: 15px 44px
+		font-size: .9em
+		font-weight: 700
+		text-transform: uppercase
+		letter-spacing: 2px
+		border: solid 3px #000000
+		border-radius: 25px
+		background: transparent
+		transition: all .3s
