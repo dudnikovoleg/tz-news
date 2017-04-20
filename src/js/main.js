@@ -162,5 +162,60 @@ $(document).on('ready', function(){
 
 });
 
+$(function(){
 
+    $(document).on("submit","#Form",function(e){
 
+        e.preventDefault();
+
+        var m_method=$(this).attr('method');
+        var m_action=$(this).attr('action');
+        var m_data=$(this).serialize();
+
+        $.ajax({
+            type: m_method,
+            url: m_action,
+            data: m_data,
+            resetForm: 'true',
+            success: function(result){
+                var data = $(result).find(".modal-content-form").html();                
+                $(".modal-content-form").html(data);
+                $(".mesage-report").css("opacity", "1");
+                setTimeout( function() { $(".mesage-report").css("opacity", "0"); }, 2000);
+
+            }
+
+        });
+
+    });
+
+});
+
+$(function(){
+
+    $(document).on("submit","#Form-question",function(e){
+
+        e.preventDefault();
+
+        var m_method=$(this).attr('method');
+        var m_action=$(this).attr('action');
+        var m_data=$(this).serialize();
+
+        $.ajax({
+            type: m_method,
+            url: m_action,
+            data: m_data,
+            resetForm: 'true',
+            success: function(result){
+                var data = $(result).find(".question-form-content").html();                
+                $(".question-form-content").html(data);
+                $(".question-form-report").css("opacity", "1");
+                setTimeout( function() { $(".question-form-report").css("opacity", "0"); }, 2000);
+
+            }
+
+        });
+
+    });
+
+});
