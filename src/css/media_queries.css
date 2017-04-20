@@ -1853,10 +1853,16 @@ body{
             margin-top: 30px;
         }
             .contact-form .input-text,
-            .contact-form .input{
+            .contact-form .input,
+            .contact-form .form-field-block{
                 width: 100%;
             }
-                .contact-form .input + .input{
+            .contact-form .form-field-block + .form-field-block {
+                margin-left: 0;
+            }
+
+                .contact-form .form-field-block,
+                .contact-form .input + .input{ 
                     margin: 25px 0 0 0 ;
                 }
                 .contact-form .input {
