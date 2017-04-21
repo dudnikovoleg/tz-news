@@ -9,7 +9,7 @@
 
 
 
-@media all  and (min-width: 1280px) and (max-width: 1600px) {
+@media all  and (min-width: 1281px) and (max-width: 1600px) {
 
 /**** Main page start ****/
 
@@ -57,6 +57,12 @@
     .howe-work .online {
         padding: 4% 44% 4% 11.5%;
     }
+/**** Portfolio ****/
+
+    .portfolio-main .folio-2 + .folio-text,
+    .portfolio-main .folio-3 + .folio-text{
+        padding: 5% 17%;
+    }
 }
 
 
@@ -86,7 +92,7 @@
     /*********************/
 
     .portfolio-main {
-        padding: 40px 4% 50px;
+        padding: 25px 4% 50px;
     }
         .portfolio-main .folio-btn{
             margin-top: 60px;
@@ -237,11 +243,12 @@
     }
 
 /**** Portfolio short post ****/
+    .header-news .title{
 
-    .header-long-post .title{
         font-size: 2.78em;
-    }
 
+        padding-bottom: 0;
+    }
 
     .wrap-slide-folio .prev-item,
     .wrap-slide-folio .next-item{
@@ -250,8 +257,13 @@
     .header-short-post .title{
         font-size: 2.78em;
     }
+    .portfolio-main .folio-2 + .folio-text,
+    .portfolio-main .folio-3 + .folio-text{
+        padding: 6% 10%;
+    }
 
-/**** Portfolio short end ****/
+
+    /**** Portfolio short end ****/
 
 /**** Questions and answers start ****/
 
@@ -289,7 +301,9 @@
             padding-right: 60px;
         }
 /**** Contact start ****/
-
+    .revolt-today .statistic li span {
+        background-position-y: 50% !important; 
+    } 
 
 }
 
@@ -327,15 +341,16 @@
         letter-spacing: 1px;
         font-size: 1.12em;
     }
+
     .header-main .calc-btn {
         padding: 16px 36px;
         font-size: 1em;
         letter-spacing: 2px;
     }
-    .header-main .header-calc h3 {
-        font-size: .65em;
-    }
-    /*********************/
+        .header-main .header-calc h3 {
+            font-size: .75em;
+            letter-spacing: 0.15px
+        }
 
     .portfolio-main{
         padding: 30px 3% 40px;
@@ -347,8 +362,10 @@
         .portfolio-main .folio-link:hover p{
             color: #ffffff;
         }
-        .portfolio-main .folio-grad{
-            display: none;
+
+        .portfolio-main .folio-1 .folio-grad{
+            display: block;
+            opacity: .5;
         }
 
         .portfolio-main .img-big{
@@ -358,48 +375,53 @@
             .portfolio-main .folio-1{
                 padding-top: 25%;
             }
-                .portfolio-main .folio-1 .folio-text{
-                    padding: 15px 30px;
-                     font-size: .99em;
-                  }
-                    .portfolio-main .folio-1 .folio-grad{
-                        display: block;
-                        opacity: 1;
-                    }
 
-            .img-small .folio-city {
-                font-size: .75em;
-            }
-            .folio-city {
-                 font-size: .8em;
+             .portfolio-main  .folio-1 + .folio-text{
+                 padding: 3% 5%;
              }
+                .portfolio-main .folio-1 + .folio-text p {
+                    font-size: 1.76em;
+                }
+
+            .img-small .folio-city,
+            .folio-city {
+                font-size: .8em;
+            }
 
     /*********************/
 
     .portfolio-main .img-small{
-            width: 100%;
-            margin-top: 30px;
+        width: 100%;
+        margin-top: 30px;
+        font-size: 1.05em;
+
+    }
+        .portfolio-main .wrap-folio-2{
+            float: left;
+            width: 48%;
+        }
+        .portfolio-main .wrap-folio-3{
+            float: right;
+            width: 48%;
+        }
+            .portfolio-main .wrap-folio-2{
+                margin-bottom: 0;
             }
+
             .portfolio-main .folio-2,
             .portfolio-main .folio-3{
                 display: inline-block;
-                width: 48%;
-                padding-top: 24%;
-            }
-            .portfolio-main .folio-2{
-                margin-bottom: 0;
-                margin-right: 18px;
-                float: left;
-            }
-            .portfolio-main .folio-3{
-                float: right;
+                width: 100%;
             }
 
+
     /*********************/
+
     .portfolio-main .folio-list{
         margin-right: 0;
     }
-        .folio-list:after{
+
+    .folio-list:after{
             content: ".";
             display: block;
             clear: both;
@@ -415,6 +437,7 @@
             .portfolio-main .folio-list .folio-item:nth-child(odd){
                 margin-right: 4%;
             }
+
     .portfolio-main .folio-list .folio-item:last-child {
         margin-right: 0;
     }
@@ -422,6 +445,11 @@
         position: relative;
         width: 48%;
         margin-right: 0;
+    }
+
+    .portfolio-page .folio-item:nth-child(8n-1) p,
+    .portfolio-page .folio-item:nth-child(8n-1) + .folio-item p{
+        font-size: .98em;
     }
      /*********************/
 
@@ -466,7 +494,7 @@
         font-size: 1.1em;
     }
         .description-ad li{
-            padding: 0 6% 3% 16%;
+            padding: 0 3.5% 3% 16%;
         }
 
         .news-slid .news-link
@@ -532,13 +560,12 @@
             display: none;
         }
             .sidebar .sidebar-main a {
-                font-size: 0.75em;
                 letter-spacing: 0;
                 line-height: 20px;
             }
 
     .sidebar nav {
-        margin-top: 70px;
+        margin-top: 50px;
         margin-left: 4px;
     }
         .sidebar .sidebar-sub a ,
@@ -586,10 +613,12 @@
                 background: url("../img/all_icons.png") no-repeat;
             }
                 .mobile-sidebar .menu-btn {
-                    background-position: -1px -71px;
+                    /*background-position: -1px -71px;*/
+                    background: url("/assets/images/header_menu_icons/header_menu_icon_mob-2.png") 50% no-repeat;
                 }
                 .mobile-sidebar .phone-btn {
-                    background-position: -1px -135px;
+                    /*background-position: -1px -135px;*/
+                    background: url("/assets/images/header_menu_icons/header_menu_icon_mob-3.png") 50% no-repeat;
                 }
 
 /*** Mobile class for script ***/
@@ -598,7 +627,7 @@
         left: 50px;
     }
     .mobile-sidebar .active {
-        background: #000000 url("../img/all_icons.png") no-repeat 0 -253px;
+        background: #000000 url("/assets/images/header_menu_icons/header_menu_icon_mob-5.png") 50% no-repeat;
     }
 
     /*********************/
@@ -610,7 +639,7 @@
     .callback-box,
     .bottom-news
     {
-        padding: 0 2% 0 4%;
+        padding: 0 3% 0 3%;
     }
 
 
@@ -622,7 +651,7 @@
         padding: 13px 0;
     }
     .callback-box h3{
-        width: 59%;
+        width: 54%;
         text-align: right;
         margin: 25px 15px 0 0;
         font-size: 1.2em;
@@ -633,7 +662,7 @@
 /**** Main ****/
 
     .header-main{
-        padding: 0 3%;
+        padding: 1% 0 0 3%;
     }
         .header-main .header-main-cont{
             padding-bottom: 37px;
@@ -660,22 +689,22 @@
             }
 
                 .header-main .header-main-nav .baner{
-                        background-position: 5px -13px;
+                        /*background-position: 5px -13px;*/
                     }
                 .header-main .header-main-nav  .on-tr{
-                        background-position: 3px -72px;
+                        /*background-position: 3px -72px;*/
                     }
                 .header-main .header-main-nav  .at-tr{
-                        background-position: 5px -135px;
+                        /*background-position: 5px -135px;*/
                     }
                 .header-main .header-main-nav  .print{
-                        background-position: 0 -202px;
+                        /*background-position: 0 -202px;*/
                     }
                 .header-main .header-main-nav  .s-wind{
-                        background-position: 2px -266px;
+                        /*background-position: 2px -266px;*/
                     }
                 .header-main .header-main-nav .tr{
-                        background-position: -3px -316px;
+                        /*background-position: -3px -316px;*/
                     }
 
                 .header-main .header-main-nav span{
@@ -759,8 +788,8 @@
     /*********************/
 
     .portfolio-main .folio-btn span {
-        padding: 13px 30px;
-        font-size: .76em;
+        padding: 13px 10px;
+        font-size: .9em;
 
     }
 
@@ -804,6 +833,7 @@
 
     .header-news{
         padding: 15px 4%;
+
     }
     .navbar .navbar-list a:hover {
         color: #2e2e2e;
@@ -920,6 +950,7 @@
     .header-questions-answers{
         padding: 14px 4%;
     }
+    .header-news .title,
     .header-about-us .title,
     .header-questions-answers .title{
         font-size: 3.13em;
@@ -999,6 +1030,10 @@
         }
     /**** Contact enf ****/
 
+    .portfolio-main .folio-btn {
+        margin-top: 35px;
+    }
+
 }
 
 
@@ -1052,88 +1087,6 @@ body{
                 padding: 0 3%;
             }
 
-    /*********************/
-
-    .portfolio-main {
-        padding: 30px 6% 40px;
-    }
-        .portfolio-main h2{
-            font-size: 2.299em;
-        }
-
-        .portfolio-main .folio-2,
-        .portfolio-main .folio-3{
-            margin-top: 100px;
-        }
-        .portfolio-main .folio-1,
-        .portfolio-main .folio-2,
-        .portfolio-main .folio-3{
-            overflow: visible;
-            width: 100%;
-            padding-top: 50%;
-            font-size: 1em;
-        }
-            .portfolio-main .folio-1 .folio-text{
-                bottom: -95px;
-                padding: 0;
-                font-size: .81em;
-                color: #1a191a;
-            }
-                .folio-1 .folio-city{
-                    display: inline-block;
-                    padding-top: 8px;
-                    font-size: 1em;
-                }
-                    .portfolio-main .folio-1 .folio-grad{
-                        display: none;
-                    }
-            .portfolio-main .folio-2 .folio-text{
-                bottom: -70px;
-                padding: 0;
-                font-size: 1.25em;
-                color: #1a191a;
-            }
-            .portfolio-main .folio-3 .folio-text{
-                bottom: -50px;
-                padding: 0;
-                font-size: 1.25em;
-                color: #1a191a;
-            }
-
-    .portfolio-main .folio-list{
-        margin-top: 75px;
-    }
-        .portfolio-main .folio-list .folio-item p{
-            padding: 5px 15px 10px 34%;
-            font-size: 1.3em;
-
-        }
-            .portfolio-main .folio-list .folio-item:nth-child(n+5) {
-                display: none;
-            }
-            .portfolio-main .folio-list .folio-item{
-                width: 100%;
-                margin: 0 0 25px 0;
-                font-size: 13px;
-            }
-                .portfolio-main .item-img{
-                    float: left;
-                    width: 27%;
-                    padding-top: 14%;
-                    margin-top: 10px;
-                    margin-bottom: 45px;
-                }
-
-    .folio-list .folio-city{
-        padding-left: 7%;
-        font-size: .89em;
-
-    }
-    .portfolio-main .folio-btn{
-        margin-top: 5px;
-    }
-
-    /*********************/
 
     .revolt-today .about h2{
         font-size: 2.1em;
@@ -1204,7 +1157,7 @@ body{
         .description-ad li {
 
             min-width: 100%;
-            padding: 0 6% 4% 37%;
+            padding: 0 8% 4% 28%;
         }
             .description-ad li h3{
                 font-size: 1.4em;
@@ -1378,6 +1331,12 @@ body{
 
     /*********************/
 
+    .number-statistic .total-info{
+        position: static;
+    }
+    .number-statistic .total-billboard{
+        padding: 10% 6%;
+    }
     .number-statistic .total-info .info-text,
     .number-statistic .total-info .info-number{
         display: block;
@@ -1424,7 +1383,7 @@ body{
     .compare .plus, .compare .minus{
         float: none;
         width: 100%;
-        padding: 0 30px 0 20px;
+        padding: 0 30px 0 0;
         font-size: 1.4em;
     }
 
@@ -1527,12 +1486,14 @@ body{
         display: block;
     }
     .navbar .navbar-list a {
-        padding: 12px 10px;
-        font-size: .735em;
+        padding: 12px 0;
+        font-size: .89em;
     }
 
     /*********************/
-
+    .header-news .title {
+        font-size: 2.1em;
+    }
     .news-link,
     .news-slider,
     .wrap-pag{
@@ -1602,9 +1563,13 @@ body{
         font-size: .9em;
         line-height: 22px;
     }
-    .navbar, .callback-box, .bottom-news {
+    .callback-box, .bottom-news {
         padding: 30px 5% 0 5%;
     }
+    .navbar{
+        padding: 0 5% 0
+    }
+
 
     .news .read-more {
         margin-top: 10px;
@@ -1623,10 +1588,10 @@ body{
 
 
     .header-arenda .title {
-        font-size: 1.9em;
+        font-size: 2.3em;
     }
     .header-arenda {
-         padding: 15px 3%;
+         padding: 15px 4%;
          font-size: .86em;
      }
     /*********************/
@@ -1634,7 +1599,9 @@ body{
     .select-city .selecter.active:after{
         bottom: -25px;
     }
-
+    .select-city .selecter{
+        font-size: .8em;
+    }
     /*********************/
 
     .types-ad .open {
@@ -1659,8 +1626,112 @@ body{
 /**** Arenda page end *****/
 
 /**** Portfolio page start ****/
-    .portfolio-page .folio-list{
-        margin-right: 0;
+
+
+
+    /*********************/
+
+    .portfolio-main {
+        padding: 30px 6% 40px;
+    }
+    .portfolio-main h2{
+        font-size: 2.299em;
+    }
+    .folio-1 .folio-city{
+        display: inline-block;
+        padding-top: 8px;
+        font-size: 1em;
+    }
+
+
+    .portfolio-main .folio-1,
+    .portfolio-main .folio-2,
+    .portfolio-main .folio-3{
+        overflow: visible;
+        width: 100%;
+        padding-top: 50%;
+        font-size: 1em;
+    }
+    .portfolio-main .wrap-folio-2,
+    .portfolio-main .wrap-folio-3{
+        margin-top: 35px;
+        float: none;
+        width: 100%;
+    }
+    .portfolio-main .folio-1 + .folio-text,
+    .portfolio-main .folio-2 + .folio-text,
+    .portfolio-main .folio-3 + .folio-text{
+        position: static;
+        color: #2e2e2e;
+        display: inline-block;
+        padding: 0;
+    }
+    .portfolio-main .folio-2 + .folio-text,
+    .portfolio-main .folio-3 + .folio-text {
+        font-size: 1.167em;
+    }
+
+
+    .portfolio-main .folio-text p{
+        margin: 5px 0 10px 0;
+    }
+
+    .portfolio-main  .folio-grad,
+    .portfolio-main .folio-1 .folio-grad{
+        display: none;
+    }
+    .portfolio-main .folio-1 + .folio-text p{
+        font-size: 1.24em;
+    }
+    .portfolio-main .img-small{
+        margin-top: 0;
+    }
+    .img-small .folio-city, .folio-city{
+        font-size: 12px;
+    }
+
+
+
+
+    /*********************/
+
+
+    .portfolio-main .folio-list .folio-item p{
+        padding: 5px 15px 10px 34%;
+        font-size: 1.25em;
+
+    }
+    .portfolio-main .folio-list .folio-item:nth-child(n+5) {
+        display: none;
+    }
+    .portfolio-main .folio-list .folio-item{
+        width: 100%;
+        margin: 0 0 25px 0;
+        font-size: 13px;
+    }
+    .portfolio-main .item-img{
+        float: left;
+        width: 27%;
+        padding-top: 14%;
+        margin-top: 10px;
+        margin-bottom: 45px;
+    }
+
+    .folio-list .folio-city{
+        padding-left: 7%;
+        font-size: .89em;
+
+    }
+    .portfolio-main .folio-btn{
+        margin-top: 5px;
+    }
+
+    /*********************/
+
+
+
+    .folio-list{
+        margin-top: 30px;
     }
 
 
