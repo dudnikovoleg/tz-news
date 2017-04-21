@@ -9,7 +9,7 @@
 
 
 
-@media all and (min-width: 1600px) {
+@media all  and (min-width: 1280px) and (max-width: 1600px) {
 
 /**** Main page start ****/
 
@@ -63,13 +63,13 @@
 
 
 /***********************/
-/***** Width 1024 *****/
+/***** min-width: 1024px and max-width: 1280px *****/
 /***********************/
 
 
 
 
-@media all and (max-width: 1024px) {
+@media all  and  (max-width: 1279px) {
 
 
 /**** Main page start ****/
@@ -228,20 +228,7 @@
         margin-top: 20px;
     }
 
-    /*********************/
 
-    .callback-box .callback-btn{
-        vertical-align: text-bottom;
-        width: 200px;
-        margin-top: 0 ;
-        padding: 13px 0;
-    }
-    .callback-box h3{
-        width: 59%;
-        text-align: right;
-        margin: 25px 15px 0 0;
-
-    }
 
     /*********************/
 
@@ -309,33 +296,16 @@
 
 
 
-/***********************/
-/***** min-width: 769px max-width: 1023px*****/
-/***********************/
-
-
-
-
-@media all and (min-width: 769px) and (max-width: 1023px) {
-    .header-main .header-main-nav li{
-        width: 28%;
-        margin: 0 -50px;
-
-    }
-}
-
-
-
 
 
 /***********************/
-/***** Width 768px *****/
+/***** max-width: 1023px *****/
 /***********************/
 
 
 
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 1023px) {
     body{
         font-size: 16px;
     }
@@ -344,7 +314,11 @@
     }
 
 /**** Main page start ****/
+    .header-main .header-main-nav li{
+        width: 28%;
+        margin: 0 -50px;
 
+    }
     .header-main .header-main-cont h1{
         font-size: 2.9em;
     }
@@ -392,12 +366,16 @@
                         display: block;
                         opacity: 1;
                     }
+
             .img-small .folio-city {
                 font-size: .75em;
             }
             .folio-city {
                  font-size: .8em;
              }
+
+    /*********************/
+
     .portfolio-main .img-small{
             width: 100%;
             margin-top: 30px;
@@ -411,17 +389,40 @@
             .portfolio-main .folio-2{
                 margin-bottom: 0;
                 margin-right: 18px;
+                float: left;
+            }
+            .portfolio-main .folio-3{
+                float: right;
             }
 
-        .portfolio-main .folio-list .folio-item{
-            width: 46%;
-            margin: 25px 0 0 0 ;
-            font-size: 16px;
+    /*********************/
+    .portfolio-main .folio-list{
+        margin-right: 0;
+    }
+        .folio-list:after{
+            content: ".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            height: 0;
         }
-        .portfolio-main .folio-list .folio-item:nth-child(odd){
-            margin-right: 23px;
-        }
-
+            .portfolio-main .folio-list .folio-item{
+                display: inline-table;
+                width: 48%;
+                margin: 25px 0 0 0 ;
+                font-size: 16px;
+            }
+            .portfolio-main .folio-list .folio-item:nth-child(odd){
+                margin-right: 4%;
+            }
+    .portfolio-main .folio-list .folio-item:last-child {
+        margin-right: 0;
+    }
+    .portfolio-page .folio-item:nth-child(8n-1) + .folio-item {
+        position: relative;
+        width: 48%;
+        margin-right: 0;
+    }
      /*********************/
 
     .revolt-today .about p {
@@ -613,6 +614,22 @@
     }
 
 
+    /*********************/
+
+    .callback-box .callback-btn{
+        vertical-align: text-bottom;
+        width: 200px;
+        padding: 13px 0;
+    }
+    .callback-box h3{
+        width: 59%;
+        text-align: right;
+        margin: 25px 15px 0 0;
+        font-size: 1.2em;
+
+    }
+
+    /*********************/
 /**** Main ****/
 
     .header-main{
@@ -728,11 +745,23 @@
     .number-statistic{
         margin-bottom: 15px;
     }
-
+    .number-statistic .total-info{
+        top: 21%;
+        left: 3%;
+        right: 3%;
+        padding: 45px 12% 20px 4%;
+    }
     /*********************/
 
     .portfolio-main .folio-btn {
         margin-top: 75px;
+    }
+    /*********************/
+
+    .portfolio-main .folio-btn span {
+        padding: 13px 30px;
+        font-size: .76em;
+
     }
 
     /*********************/
@@ -774,7 +803,7 @@
     /********** News ***********/
 
     .header-news{
-        padding: 15px 6%;
+        padding: 15px 4%;
     }
     .navbar .navbar-list a:hover {
         color: #2e2e2e;
@@ -974,13 +1003,13 @@
 
 
 /***********************/
-/***** Width 630px *****/
+/***** max-width: 767px *****/
 /***********************/
 
 
 
 
-@media all and (max-width: 630px){
+@media all and (max-width: 767px){
 body{
     font-size: 13px;
 }
@@ -1355,12 +1384,7 @@ body{
         width: 100%;
     }
 
-    .number-statistic .total-info{
-        top: 13%;
-        left: 4%;
-        right: 6%;
-        padding: 30px 7% 35px 11%;
-        }
+
             .number-statistic .total-info .info-number {
                 font-size: 1.29em;
             }
@@ -1394,21 +1418,13 @@ body{
         right: 5px;
     }
 
-    /*********************/
-
-    .portfolio-main .folio-btn span {
-        padding: 14px 20px;
-        font-size: .98em;
-        letter-spacing: 1px;
-
-    }
 
     /*********************/
 
     .compare .plus, .compare .minus{
         float: none;
         width: 100%;
-        padding: 0;
+        padding: 0 30px 0 20px;
         font-size: 1.4em;
     }
 
@@ -1616,7 +1632,7 @@ body{
     /*********************/
 
     .select-city .selecter.active:after{
-        bottom: -19px;
+        bottom: -25px;
     }
 
     /*********************/
